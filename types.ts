@@ -1,4 +1,5 @@
 
+
 export interface HistoricalEcho {
   id: number;
   type: string;
@@ -9,6 +10,7 @@ export interface HistoricalEcho {
   location: string;
   theme: string;
   icon: string;
+  connection: string;
 }
 
 export interface DiaryEntry {

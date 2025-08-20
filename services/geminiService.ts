@@ -21,10 +21,11 @@ const responseSchema = {
             text: { type: Type.STRING, description: "A short, representative quote or summary." },
             context: { type: Type.STRING, description: "A brief explanation of the historical significance." },
             location: { type: Type.STRING, description: "Where the echo took place." },
-            theme: { type: Type.STRING, description: "A single, lowercase word summarizing the core theme." },
+            theme: { type: Type.STRING, description: "A short, descriptive theme (2-4 words) that captures the emotional core of the connection (e.g., 'finding solace in solitude')." },
             icon: { type: Type.STRING, description: "A single emoji that visually represents the echo." },
+            connection: { type: Type.STRING, description: "A concise, one-sentence explanation of why this historical echo is relevant to the user's diary entry." },
         },
-        required: ['id', 'type', 'era', 'author', 'text', 'context', 'location', 'theme', 'icon']
+        required: ['id', 'type', 'era', 'author', 'text', 'context', 'location', 'theme', 'icon', 'connection']
     },
 };
 
@@ -43,6 +44,10 @@ export const getHistoricalEchoes = async (diaryText: string, pastThemes: string)
         Find up to 6 historical echoes (diary entries, poems, events, quotes) that resonate with the new entry.
 
         Crucially, you should look for "familiar moments." This means if the new entry touches on a theme seen in the user's past (e.g., they often write about 'solitude'), try to find an echo that deepens this recurring theme, perhaps from a different angle or a different historical figure who also contemplated it. This makes the connection feel personal and part of an ongoing conversation with history.
+
+        For each echo, you must provide these fields:
+        1. 'theme': A short, descriptive phrase (2-4 words), not just a single word (e.g., 'the bittersweetness of memory').
+        2. 'connection': A single sentence explaining *why* this echo connects to the user's entry. This is the most critical field; it MUST NOT be empty. For instance, if the user writes about feeling isolated while working late, and you find an echo from a lonely lighthouse keeper, the connection could be: 'This reflects your own sense of isolation, showing that this feeling has been shared by people in even the most remote circumstances throughout history.'
 
         User's Past Themes (for context):
         "${pastThemes}"

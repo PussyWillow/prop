@@ -1,15 +1,15 @@
 
+
 import React from 'react';
 import type { HistoricalEcho } from '../types';
-import { Star, MapPin, BookOpen } from './Icons';
-import { getThemeColor } from '../utils/themeColors';
+import { Star, MapPin, Link } from './Icons';
 
 interface TimelineEchoCardProps {
     echo: HistoricalEcho;
 }
 
 export const TimelineEchoCard = ({ echo }: TimelineEchoCardProps) => (
-    <div className="bg-stone-50/80 dark:bg-stone-800/50 backdrop-blur-sm border border-stone-200 dark:border-stone-700 rounded-lg p-3">
+    <div className="bg-stone-50/80 dark:bg-stone-800/50 backdrop-blur-sm border border-stone-200 dark:border-stone-700 rounded-lg p-3 space-y-3">
         <div className="flex items-start gap-3">
             <span className="text-2xl mt-1">{echo.icon}</span>
             <div className="flex-1">
@@ -18,8 +18,14 @@ export const TimelineEchoCard = ({ echo }: TimelineEchoCardProps) => (
                 <p className="text-sm text-gray-600 dark:text-stone-400 italic mt-1">"{echo.text}"</p>
             </div>
         </div>
-        <div className="mt-2 flex items-center justify-between">
-            <div className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-medium text-white bg-gradient-to-r ${getThemeColor(echo.theme)}`}>
+
+        <div className="flex items-start gap-2 text-sm text-amber-800 dark:text-amber-300 bg-amber-100/50 dark:bg-amber-900/20 p-2 rounded-md">
+            <Link className="w-4 h-4 mt-0.5 flex-shrink-0" />
+            <p><span className="font-semibold">Connection:</span> {echo.connection}</p>
+        </div>
+        
+        <div className="flex items-center justify-between">
+            <div className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-medium text-purple-800 dark:text-purple-200 bg-purple-100 dark:bg-purple-900/40`}>
                 <Star className="w-3 h-3"/>
                 <span className="capitalize">{echo.theme}</span>
             </div>

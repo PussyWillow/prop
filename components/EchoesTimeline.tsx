@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import type { HistoricalEcho } from '../types';
-import { Heart, MapPin, BookOpen, Star, ChevronDown } from './Icons';
-import { getThemeColor } from '../utils/themeColors';
+import { Heart, MapPin, BookOpen, Star, ChevronDown, Link } from './Icons';
 
 const EchoTimelineCard = ({ echo, isExpanded, onToggle, isHebrew }: { echo: HistoricalEcho; isExpanded: boolean; onToggle: () => void; isHebrew: boolean; }) => {
     const isEchoHebrew = /[\u0590-\u05FF]/.test(echo.text);
@@ -21,7 +20,7 @@ const EchoTimelineCard = ({ echo, isExpanded, onToggle, isHebrew }: { echo: Hist
                             <div className="flex-1">
                                 <h4 className="font-semibold font-serif text-amber-900 dark:text-amber-200">{echo.author}</h4>
                                 <p className="text-sm text-amber-700 dark:text-amber-400">{echo.era}</p>
-                                <div className={`inline-flex items-center gap-1 mt-2 px-2 py-0.5 rounded-full text-xs font-medium text-white bg-gradient-to-r ${getThemeColor(echo.theme)}`}>
+                                <div className={`inline-flex items-center gap-1 mt-2 px-2 py-0.5 rounded-full text-xs font-medium text-purple-800 dark:text-purple-200 bg-purple-100 dark:bg-purple-900/40`}>
                                     <Heart className="w-3 h-3"/>
                                     <span className="capitalize">{echo.theme}</span>
                                 </div>
@@ -38,6 +37,10 @@ const EchoTimelineCard = ({ echo, isExpanded, onToggle, isHebrew }: { echo: Hist
                              <blockquote className={`text-md font-serif italic text-gray-700 dark:text-stone-300 mb-4 pl-3 border-l-2 border-amber-300 dark:border-amber-500 ${isEchoHebrew ? 'text-right' : 'text-left'}`} style={{ direction: isEchoHebrew ? 'rtl' : 'ltr' }}>
                                 "{echo.text}"
                             </blockquote>
+                            <div className="flex items-start gap-3 text-sm text-amber-800 dark:text-amber-300 bg-amber-100/50 dark:bg-amber-900/20 p-3 rounded-md mb-4">
+                                <Link className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                                <p><span className="font-semibold">Connection:</span> {echo.connection}</p>
+                            </div>
                             <div className="space-y-3 text-sm">
                                 <div className="flex items-start gap-3"><MapPin className="w-4 h-4 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0" /><div><p className="font-medium text-gray-800 dark:text-stone-200">Location:</p><p className="text-gray-600 dark:text-stone-400">{echo.location}</p></div></div>
                                 <div className="flex items-start gap-3"><BookOpen className="w-4 h-4 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0" /><div><p className="font-medium text-gray-800 dark:text-stone-200">Context:</p><p className="text-gray-600 dark:text-stone-400 leading-relaxed">{echo.context}</p></div></div>
