@@ -164,6 +164,116 @@
     "savedAt": "2025-08-20T10:45:21.848Z"
   },
   {
+    "title": "15.10.23",
+    "content": "\nוהתעוררתי ממבול ושומדבר לא השתפר. חיפשתי את החתולה שלי. דבר ראשון חיפשתי את החתולה שלי. ״נסטיה. נסטיה. נסטיה!!!!״. היא התחבאה מתחת לשולחן ואחרכ מתחת למתלה הכביסה. אני חסרת תועלת? אני משוגעת? אני כנראה משוגעת אבל עכשיו זה כנראה הזמן להיות משוגע. בחלום בוקובסקי אמר לי שהוא היה מעדיף שלא הייתי באה עם האדם שהבאתי. אבל אני לא זוכרת את מי הבאתי ובוקובסקי בכלל גר בגבעתיים. \nציירתי מנדלה. הצד ההגיוני שבי עדיין קצת בז לי, אבל איך היא יכולה? לבוז לי? כשגלילה אחת בטוויטר חושפת יותר טירוף ממה שאי פעם יכלתי להזות? לבוז לי? לבוז לאוקולוט? לקבלה? לכמה מנדלות? איך ",
+    "date": "2023-10-15",
+    "isHebrew": true,
+    "echoes": [
+      {
+        "author": "Dadaists (e.g., Hugo Ball, Tristan Tzara)",
+        "connection": "Just as the Dadaists found a potent creative response to the irrationality of their world, your embrace of \"madness\" becomes a powerful, authentic stand against the perceived insanity of external reality.",
+        "context": "Born out of the disillusionment of WWI, Dada sought to challenge the very foundations of Western art and thought, finding meaning in absurdity.",
+        "era": "1916-1920s",
+        "icon": "🎭",
+        "id": 1755705060317,
+        "location": "Zurich, Switzerland",
+        "text": "An artistic and literary movement that rejected logic and reason in favor of nonsense, irrationality, and anti-bourgeois protest.",
+        "theme": "Confronting Societal Absurdity",
+        "triggeringKeywords": [
+          "משוגעת",
+          "טירוף",
+          "הצד ההגיוני שבי עדיין קצת בז לי"
+        ],
+        "type": "art movement"
+      },
+      {
+        "author": "Carl Jung",
+        "connection": "Your act of drawing a mandala, a universal symbol of the self and wholeness, mirrors Jung's insight into how the psyche instinctively seeks to restore order and integrate disparate parts, even amidst inner turmoil.",
+        "context": "Jung observed mandalas across cultures and understood their universal significance in representing wholeness and the process of psychic integration, often emerging spontaneously in times of inner imbalance.",
+        "era": "Early 20th Century",
+        "icon": "🌀",
+        "id": 1755705060318,
+        "location": "Switzerland",
+        "text": "The mandala is an archetypal symbol representing the totality of the self, used in analytical psychology as a tool for self-exploration and individuation.",
+        "theme": "Charting Inner Wholeness",
+        "triggeringKeywords": [
+          "ציירתי מנדלה",
+          "חסרת תועלת",
+          "משוגעת"
+        ],
+        "type": "psychology/philosophy"
+      },
+      {
+        "author": "Diogenes of Sinope",
+        "connection": "Just as Diogenes' lamp-lit search was a provocative act of seeking truth in a world he found wanting, your urgent calling of \"Nastia!\" reflects a deep, instinctual quest for connection and stability amidst disarray.",
+        "context": "A central figure in Cynicism, Diogenes rejected conventional desires and societal norms, advocating for a simple, virtuous life in accordance with nature, his 'search' a commentary on human corruption.",
+        "era": "4th Century BCE",
+        "icon": "🔦",
+        "id": 1755705060319,
+        "location": "Ancient Athens, Greece",
+        "text": "Diogenes famously walked the streets of Athens in daylight, carrying a lamp, claiming to be 'looking for an honest man'.",
+        "theme": "The Search for Authenticity",
+        "triggeringKeywords": [
+          "חיפשתי את החתולה שלי",
+          "נסטיה",
+          "שומדבר לא השתפר"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "Johannes Gutenberg",
+        "connection": "Your feeling that a single scroll on Twitter reveals more madness than you could imagine echoes the societal shockwaves felt by the Renaissance mind, grappling with the unprecedented flood of information unleashed by the printing press.",
+        "context": "Before the printing press, books were rare and expensive. Its invention led to a flood of printed materials, challenging traditional authority and creating new forms of public discourse and information management.",
+        "era": "Mid-15th Century",
+        "icon": "🖨️",
+        "id": 1755705060320,
+        "location": "Mainz, Germany",
+        "text": "The invention of the movable-type printing press democratized knowledge, leading to an unprecedented explosion of information and literacy.",
+        "theme": "Navigating Information Deluge",
+        "triggeringKeywords": [
+          "גלילה אחת בטוויטר",
+          "טירוף",
+          "מבול"
+        ],
+        "type": "invention/sociology"
+      },
+      {
+        "author": "André Breton (and Surrealists like Dalí, Magritte)",
+        "connection": "The vivid, disorienting encounter with Bukowski in your dream, where logic dissolves and meaning is fluid, perfectly mirrors the Surrealists' quest to tap into the potent, uncensored narratives of the subconscious mind.",
+        "context": "Influenced by psychoanalysis, Surrealism aimed to resolve the contradictory conditions of dream and reality into an absolute reality, a \"surreality,\" often featuring dream-like scenes and symbolic imagery.",
+        "era": "1920s-1960s",
+        "icon": "👁️",
+        "id": 1755705060321,
+        "location": "Paris, France",
+        "text": "An artistic, literary, and intellectual movement that sought to release the creative potential of the unconscious mind, especially through the juxtaposition of the rational and irrational.",
+        "theme": "Unlocking Subconscious Narratives",
+        "triggeringKeywords": [
+          "בחלום בוקובסקי אמר לי",
+          "לא זוכרת את מי הבאתי"
+        ],
+        "type": "art movement"
+      },
+      {
+        "author": "Epictetus",
+        "connection": "The \"logical side\" that scorns you echoes the Stoic insight that true freedom comes not from silencing external critics, but from discerning what lies within your control, a profound step towards mastering your internal landscape.",
+        "context": "Stoicism teaches that while external events are beyond our control, our reactions and judgments about them are entirely within our power. The 'internal critic' often stems from judging oneself by external, uncontrollable standards.",
+        "era": "1st-2nd Century CE",
+        "icon": "🧘",
+        "id": 1755705060322,
+        "location": "Rome/Greece",
+        "text": "The primary task in life is simply this: identify and separate matters so that I can say clearly to myself which are externals not under my control, and which have to do with the choices I actually control.",
+        "theme": "Mastering Inner Judgments",
+        "triggeringKeywords": [
+          "הצד ההגיוני שבי עדיין קצת בז לי",
+          "אני חסרת תועלת?"
+        ],
+        "type": "philosophy"
+      }
+    ],
+    "id": 1755705113962,
+    "savedAt": "2025-08-20T15:51:53.962Z"
+  },
+  {
     "title": "24.2.23",
     "content": "הכל\nבסדר.\nמובן שחלק מהדברים יותר בסדר וחלקם דרסטית פחות. אבל בממוצע - הכל בסדר.\nאני קללה. אני רווקה בת שלושים עם חתולה. אין זיווג הגון בנמצא עבורי. אנשים שקדו על דברים שונים וגם אני; בניתי את העולם הפנימי שלי כמו חוות נמלים. רוצים לראות? אפשר להראות? יש איזשהי תועלת בלראות? אני לא מרגישה ככה יותר. אני מרגישה אחרת. אני מרגישה את השמש על הלחי לפעמים, זה מרגיש טוב ונכון, אנסה להפנות אליה את כל הפרצוף כפי שעושה הסינגוניום הורוד שלי.",
     "date": "2023-02-24",
