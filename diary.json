@@ -1,5 +1,81 @@
 [
   {
+    "title": "23.08.21",
+    "content": "כמו שפרויד אמר, תחושות פיזיות באמת יכולות לעורר חלום ואני הלכתי לישון עם צורך קל לעשות קקי. עברתי בחווה מבודדת, ונכנסתי אליה על מנת להשתמש בשירותים. בדלת הכניסה, הצגתי את עצמי וביקשתי רשות והגבר אמר כמובן. בעודי ישובה על האסלה הוא נכנס, החליף גליל של נייר טואלט, והתעסק עם דברים. בחלוף זמן מה, נכנסה גם אשתו והתיישבה מולי. רציתי לבקש פרטיות, אבל להישאר מנומסת. לא ידעתי אם זה קטע של כפריים. אמרתי, הממ. אוקיי, זה לא שאתם מפריעים, אני פשוט מוטרדת. בחיים לא ייצא לי ככה.\n",
+    "date": "2025-08-20",
+    "isHebrew": true,
+    "echoes": [
+      {
+        "author": "Roman citizens",
+        "context": "Unlike modern standards, privacy in ancient Roman public restrooms was largely nonexistent. These communal spaces served as social hubs where people conducted business and gossip, highlighting a stark contrast in cultural norms regarding personal space.",
+        "era": "1st-4th Century CE Roman Empire",
+        "icon": "🚽",
+        "id": 1755679664107,
+        "location": "Rome and other Roman cities",
+        "text": "Imagine public latrines where dozens of citizens shared marble benches, side-by-side, engaging in conversation while attending to their natural calls.",
+        "theme": "privacy",
+        "type": "historical practice"
+      },
+      {
+        "author": "Desiderius Erasmus",
+        "context": "This influential etiquette guide from the Renaissance aimed to civilize European society, offering strict rules for everything from table manners to personal hygiene, reflecting a conscious effort to define and enforce social boundaries.",
+        "era": "1530, Renaissance",
+        "icon": "📖",
+        "id": 1755679664108,
+        "location": "Europe",
+        "text": "Erasmus provided detailed instructions on proper conduct, including how to discreetly manage bodily functions and maintain a polite demeanor in social settings.",
+        "theme": "etiquette",
+        "type": "treatise"
+      },
+      {
+        "author": "Captain James Cook",
+        "context": "European explorers like Captain Cook frequently documented their observations of indigenous cultures, often expressing confusion or judgment over practices that differed from their own, illustrating the universal challenge of cross-cultural understanding.",
+        "era": "Late 18th Century, Age of Exploration",
+        "icon": "🌍",
+        "id": 1755679664109,
+        "location": "Pacific Islands, Australia, New Zealand",
+        "text": "Upon landing, we often encountered customs and social behaviors that defied our European expectations, leading to moments of mutual bewilderment.",
+        "theme": "cultural relativism",
+        "type": "travel log"
+      },
+      {
+        "author": "Various Architects & Sociologists",
+        "context": "For centuries, most homes, even among the wealthy, had open floor plans where family and servants shared spaces. The gradual emergence of distinct, private rooms reflected a changing societal emphasis on personal boundaries and solitude.",
+        "era": "17th-19th Century, Western Europe",
+        "icon": "🏡",
+        "id": 1755679664110,
+        "location": "Western Europe",
+        "text": "The rise of specialized rooms like bedrooms and bathrooms marked a significant shift towards valuing individual privacy within the domestic sphere.",
+        "theme": "privacy",
+        "type": "historical trend"
+      },
+      {
+        "author": "Franz Kafka",
+        "context": "Kafka's novel explores themes of absurdity, alienation, and the individual's powerlessness against opaque bureaucratic systems, resonating with feelings of being exposed and misunderstood in illogical situations.",
+        "era": "1914-1915, Early 20th Century",
+        "icon": "✍️",
+        "id": 1755679664111,
+        "location": "Prague, Austro-Hungarian Empire",
+        "text": "Josef K. finds himself arrested and tried by an inaccessible authority, grappling with bewildering procedures and a constant sense of violation of his personal autonomy.",
+        "theme": "vulnerability",
+        "type": "fiction"
+      },
+      {
+        "author": "Michel de Montaigne",
+        "context": "Montaigne, writing in an era less concerned with physical privacy, passionately advocated for an internal 'back shop'—a space of mental solitude and self-reflection—as essential for personal freedom and authenticity, even amidst societal demands.",
+        "era": "Late 16th Century, French Renaissance",
+        "icon": "🧠",
+        "id": 1755679664112,
+        "location": "Bordeaux, France",
+        "text": "We must reserve a back shop all our own, entirely free, in which to set up our true liberty, and our principal retreat and solitude.",
+        "theme": "solitude",
+        "type": "philosophy"
+      }
+    ],
+    "id": 1755679667069,
+    "savedAt": "2025-08-20T08:47:47.069Z"
+  },
+  {
     "title": ".24.02",
     "content": "ספיר סבורה שכל מה שניתן להגיד כבר נאמר, לכן על מנת לומר דבר מה בעל חשיבות כל שצריך לעשות הוא לנסח מחדש. אז היא אומרת: ׳יומני היקר; מוריסי היה אבא שלי, האמטיוי היה אמא שלי. בשנת 92 הותירו אותי מולו ולא בדקו מה קורה עם זה במשך חמש עשרה שנה. כבנה הנטוש של מארי אנטואנט, גם אני גדלתי פרא׳. ספיר זורקת שמות. היא מרגישה חיבור עז לעונות השנה, ומחויבות לאביב. היא תוהה אם תפרח בזמן. היא תוהה אם בתור ביתו של מוריסי גם היא היורשת של ביישנות, גסה בצורה נפשעת.\n",
     "date": "2025-08-17",
