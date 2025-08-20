@@ -1,242 +1,5 @@
 [
   {
-    "title": "24.2.23",
-    "content": "הכל\nבסדר.\nמובן שחלק מהדברים יותר בסדר וחלקם דרסטית פחות. אבל בממוצע - הכל בסדר.\nאני קללה. אני רווקה בת שלושים עם חתולה. אין זיווג הגון בנמצא עבורי. אנשים שקדו על דברים שונים וגם אני; בניתי את העולם הפנימי שלי כמו חוות נמלים. רוצים לראות? אפשר להראות? יש איזשהי תועלת בלראות? אני לא מרגישה ככה יותר. אני מרגישה אחרת. אני מרגישה את השמש על הלחי לפעמים, זה מרגיש טוב ונכון, אנסה להפנות אליה את כל הפרצוף כפי שעושה הסינגוניום הורוד שלי.",
-    "date": "2023-02-24",
-    "isHebrew": true,
-    "echoes": [
-      {
-        "author": "Ralph Waldo Emerson",
-        "connection": "This echoes your resolve to cultivate your unique inner world, reminding you that true strength comes from trusting your own path and not seeking external validation for your deepest self.",
-        "context": "Emerson's essay advocates for individualism and self-reliance, encouraging people to trust their own thoughts and intuitions rather than conforming to societal pressures.",
-        "era": "19th Century America",
-        "icon": "🌳",
-        "id": 1755688957570,
-        "location": "Concord, Massachusetts, USA",
-        "text": "\"Trust thyself: every heart vibrates to that iron string.\" - from Self-Reliance.",
-        "theme": "Trusting inner wisdom",
-        "triggeringKeywords": [
-          "built my inner world",
-          "Is there any use in showing?"
-        ],
-        "type": "philosophy"
-      },
-      {
-        "author": "Mary Wollstonecraft",
-        "connection": "Your feeling of being \"a curse\" as a single woman resonates with historical critiques of societal pressures that often confined women's worth to their marital status, a theme Wollstonecraft passionately challenged.",
-        "context": "Wollstonecraft argued for women's education and rationality, criticizing the societal expectation for women to be solely focused on marriage and domesticity.",
-        "era": "Late 18th - Early 19th Century Europe",
-        "icon": "📜",
-        "id": 1755688957571,
-        "location": "London, England",
-        "text": "\"It is time to effect a revolution in female manners—time to restore to them their lost dignity—and make them, as a part of the human species, labour by improving their reason to become more excellent.\"",
-        "theme": "Challenging societal norms",
-        "triggeringKeywords": [
-          "I am a curse",
-          "single woman",
-          "no suitable match"
-        ],
-        "type": "social commentary"
-      },
-      {
-        "author": "Matsuo Bashō",
-        "connection": "Your turning towards the sun on your cheek mirrors the timeless wisdom found in Bashō's haiku, highlighting how profound peace and contentment can be found in the quiet, simple moments of nature.",
-        "context": "A classic haiku by Bashō, embodying the Zen aesthetic of finding profound beauty and tranquility in simple, transient moments of nature.",
-        "era": "17th Century Japan",
-        "icon": "🐸",
-        "id": 1755688957572,
-        "location": "Japan",
-        "text": "\"Old pond... a frog jumps in... sound of water.\"",
-        "theme": "Simplicity's profound beauty",
-        "triggeringKeywords": [
-          "sun on my cheek",
-          "feels good and right"
-        ],
-        "type": "poetry"
-      },
-      {
-        "author": "Marcus Aurelius",
-        "connection": "Your reflection that 'everything is okay' despite varying degrees of 'okayness' aligns with the Stoic practice of acknowledging life's challenges while asserting control over one's internal response to them.",
-        "context": "Marcus Aurelius's Meditations are a series of personal writings on Stoic philosophy, emphasizing the importance of controlling one's perceptions and maintaining inner tranquility amidst external chaos.",
-        "era": "2nd Century Roman Empire",
-        "icon": "🏛️",
-        "id": 1755688957573,
-        "location": "Roman Empire",
-        "text": "\"If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.\"",
-        "theme": "Mastering inner peace",
-        "triggeringKeywords": [
-          "Everything is okay",
-          "drastically less so",
-          "on average"
-        ],
-        "type": "philosophy"
-      },
-      {
-        "author": "Rainer Maria Rilke",
-        "connection": "Your declaration of feeling 'different' and the intention to turn towards the sun echoes Rilke's powerful call for personal transformation, a recognition that growth demands an active shift in one's path.",
-        "context": "This famous concluding line from Rilke's poem is an imperative to self-transformation, suggesting that encountering profound beauty or truth demands a fundamental change in one's existence.",
-        "era": "Early 20th Century Germany/France",
-        "icon": "🦋",
-        "id": 1755688957574,
-        "location": "Paris, France",
-        "text": "\"You must change your life.\" - from Archaic Torso of Apollo.",
-        "theme": "Imperative for change",
-        "triggeringKeywords": [
-          "I don't feel like that anymore",
-          "I feel different",
-          "turn my whole face towards it"
-        ],
-        "type": "poetry"
-      },
-      {
-        "author": "Henry David Thoreau",
-        "connection": "Your meticulous building of an 'inner world like an ant farm' resonates with Thoreau's deliberate pursuit of a life stripped down to its essentials, focused on rich internal experience rather than external accumulation.",
-        "context": "Thoreau's account of living simply in a cabin by Walden Pond, advocating for self-sufficiency, introspection, and a deliberate engagement with life, often by cultivating one's inner world away from societal distractions.",
-        "era": "19th Century America",
-        "icon": "🌲",
-        "id": 1755688957575,
-        "location": "Concord, Massachusetts, USA",
-        "text": "\"I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.\" - from Walden.",
-        "theme": "Deliberate self-cultivation",
-        "triggeringKeywords": [
-          "built my inner world",
-          "ant farm"
-        ],
-        "type": "memoir"
-      }
-    ],
-    "id": 1755688931696,
-    "savedAt": "2025-08-20T11:23:03.033Z"
-  },
-  {
-    "title": "10.10.21",
-    "content": "ירדתי לאו-באן. U5 באלכסנדרפלאץ. ניגשתי לאוטומאט, לרכוש כרטיס. נפתח לי צ‘אט של וולט. הלקוחה שלחה תמונות, היא קיבלה שרצים מבחילים, מזעזעים, הופכי קיבה במשלוח שלה. הבעיה הייתה שהמסעדה התמחתה במשלוח של שרצים מזעזעים שכאלו, ולי רק נותר לנסות להבין איזהו השרץ הנכון. עברתי על התמונות של התולעים, החשופיות, הסרטנים כרותי הראש וניסיתי להשוותם לאלו שבתפריט. \n",
-    "date": "2021-10-10",
-    "isHebrew": true,
-    "echoes": [],
-    "id": 1755688870676,
-    "savedAt": "2025-08-20T11:31:16.483Z",
-    "internalEcho": null
-  },
-  {
-    "title": "25.01.23",
-    "content": "אם זה משמח אותך. נראה שזה הפסיק לשמח אותך.\nאני יודעת שאני לא בת יחידה, אבל אני מרגישה את עצמי עומדת בפינה זה כבר זמן מה. אלוהים, השם, אבא - אתה בוודאי דואג לי. אבל מה קורה ללב שלי? ולמה ככה? לפעמים נדמה לי שאינני יכולה לשאת עוד. הלב שלי מלא והוא אומנם מעוצב על מנת שיוכל להתרוקן ולהתמלא שוב עד אין קץ, אבל צריך להיות קץ, לא קץ כל הקיצים, אולי ליתר דיוק הפוגה קלה, צריכה להיות איזשהי בריזה קלה ורכה, צריך לתת לו לייצר איזה עלה או שניים בטרם יפול קורבן שוב לחתולה שמנה וימצא עצמו הפוך על הרצפה ",
-    "date": "2023-01-25",
-    "isHebrew": true,
-    "echoes": [
-      {
-        "author": "Emily Dickinson",
-        "connection": "This reflects your feeling of \"standing in the corner,\" highlighting how profound personal solitude, whether chosen or imposed, can be a space where the soul grapples with its inner state.",
-        "context": "Dickinson famously lived a reclusive life, and her poetry often explores themes of inner experience, isolation, and the mind's private world, emphasizing a chosen or inherent solitude.",
-        "era": "19th Century America",
-        "icon": "🚪",
-        "id": 1755689597606,
-        "location": "Amherst, Massachusetts, USA",
-        "text": "The Soul selects her own Society – Then – shuts the Door – To her divine Majority – Present no more –",
-        "theme": "Inner world's solitude",
-        "triggeringKeywords": [
-          "מרגישה את עצמי עומדת בפינה"
-        ],
-        "type": "poetry"
-      },
-      {
-        "author": "King David (Traditional)",
-        "connection": "This psalm echoes your cry to \"God, the Name, Father\" and your poignant questions \"what's happening to my heart? And why like this?\", reflecting a timeless human struggle with faith and suffering.",
-        "context": "Psalms of lament are a genre within the biblical Psalms, expressing deep personal suffering, confusion, and direct questions to God, seeking understanding or intervention in times of distress.",
-        "era": "Ancient Israel (c. 10th Century BCE)",
-        "icon": "❓",
-        "id": 1755689597607,
-        "location": "Ancient Israel",
-        "text": "How long, Lord? Will you forget me forever? How long will you hide your face from me? How long must I wrestle with my thoughts and day after day have sorrow in my heart?",
-        "theme": "Questioning divine presence",
-        "triggeringKeywords": [
-          "אלוהים",
-          "השם",
-          "אבא",
-          "מה קורה ללב שלי?",
-          "למה ככה?"
-        ],
-        "type": "religious text"
-      },
-      {
-        "author": "Virginia Woolf",
-        "connection": "This mirrors your feeling of being unable to \"bear it anymore\" and the desire for a \"slight pause\" or \"light and soft breeze\" amidst the ceaseless demands, reflecting a universal need for mental and emotional respite.",
-        "context": "Woolf often wrote in her private diaries and letters about the relentless pressures of her intellectual and social life, along with her struggles with mental health, frequently expressing a profound weariness and longing for peace.",
-        "era": "Early 20th Century England",
-        "icon": "🌬️",
-        "id": 1755689597608,
-        "location": "London, England",
-        "text": "I am a little weary of the life itself; it goes on and on, with the same problems, the same adjustments. What I need is a holiday for the mind.",
-        "theme": "Weariness and yearning for respite",
-        "triggeringKeywords": [
-          "אינני יכולה לשאת עוד",
-          "להתרוקן ולהתמלא שוב",
-          "הפוגה קלה",
-          "בריזה קלה ורכה"
-        ],
-        "type": "diary"
-      },
-      {
-        "author": "Anne Morrow Lindbergh",
-        "connection": "Your poignant metaphor of the heart needing to \"produce a leaf or two\" before being overturned by a \"fat cat\" reflects Lindbergh's concern about the loss of quiet space needed for inner ripening and renewal in a relentless world.",
-        "context": "In 'Gift from the Sea,' Lindbergh reflects on the need for solitude, simplicity, and mental space for personal growth and creativity, contrasting it with the overwhelming and demanding nature of modern life.",
-        "era": "Mid 20th Century America",
-        "icon": "🌱",
-        "id": 1755689597609,
-        "location": "Captiva Island, Florida, USA",
-        "text": "One needs a certain amount of time to ripen, a certain amount of privacy, a certain amount of leisure... We are forced, by the machine age, into a life of incessant activity. We have no time to be.",
-        "theme": "Nurturing inner growth",
-        "triggeringKeywords": [
-          "ייצר איזה עלה או שניים",
-          "יפול קורבן שוב",
-          "חתולה שמנה",
-          "הפוגה קלה"
-        ],
-        "type": "reflection"
-      },
-      {
-        "author": "Sei Shōnagon",
-        "connection": "This mirrors your observation that \"it seems to have stopped making you happy,\" reflecting a universal sentiment of disappointment when something once vibrant or comforting loses its ability to bring joy.",
-        "context": "Sei Shōnagon, a court lady in Heian Japan, kept a collection of observations, lists, and anecdotes. Her 'things that have lost their power' lists often describe the fading of beauty, utility, or pleasure from once cherished things due to time or circumstance.",
-        "era": "10th Century Heian Japan",
-        "icon": "🍂",
-        "id": 1755689597610,
-        "location": "Heian-kyō (Kyoto), Japan",
-        "text": "Things that have lost their power: a large boat when the wind drops in the middle of a crossing... a beautiful kimono that is now faded and stained.",
-        "theme": "Fading of delight",
-        "triggeringKeywords": [
-          "הפסיק לשמח אותך"
-        ],
-        "type": "diary"
-      },
-      {
-        "author": "Anaïs Nin",
-        "connection": "This echo resonates with your plea for an \"end\" or a \"slight pause\" when your \"heart is full\" and struggles to endlessly \"empty and fill again,\" reflecting the universal human need for emotional reprieve from continuous flux.",
-        "context": "Nin's voluminous diaries are renowned for their raw honesty about her intense emotional life, complex relationships, and the exhaustion that often accompanied her experiences, leading to moments of profound mental and emotional drainage.",
-        "era": "Mid 20th Century Europe/America",
-        "icon": "⏸️",
-        "id": 1755689597611,
-        "location": "Paris, France / New York, USA",
-        "text": "I can't go on like this. My energies are drained. I want to lie down and sleep and sleep, till I am empty of everything.",
-        "theme": "Ceasefire for the soul",
-        "triggeringKeywords": [
-          "הלב שלי מלא",
-          "להתרוקן ולהתמלא שוב",
-          "צריך להיות קץ, הפוגה קלה",
-          "אינני יכולה לשאת עוד"
-        ],
-        "type": "diary"
-      }
-    ],
-    "id": 1755688688396,
-    "savedAt": "2025-08-20T11:33:22.938Z",
-    "internalEcho": {
-      "connection": "Both entries convey an overwhelming sense of emotional burden and a deep longing for gentle relief or divine grace to alleviate the internal suffering.",
-      "keyQuote": "היום, מועקה גדולה... אני צריכה חסד, אני לא יודעת בדיוק איזה.",
-      "pastEntryId": 1755686186877
-    }
-  },
-  {
     "title": "6.02.25",
     "content": "ובחלומי שוב לא זכרת את שמי, ונדמה לי שגם אני לא, וצורתך התעוותה מלפניי, וכל החדרים הוצפו, ושוב לא הייתי במקומי.\nטיילתי בגנים, זה מדהים אבל כל האנשים היו חברים שלך. גם כשלא דיברו בשבחך, היו חברייך. הם קיבלו את הפגמים האיומים שלך, וכששאלתי, הסתבר שלא היו ככ איומים ממילא.\nעליתי במדרגות המטונפות, המלוכלכות, והבית היה מטונף גם כן, אבל המרפסת לא. וכשפניתי ללכת עדיין לא זכרת את שמי, אבל הפעם נדמה לי שניסית להעלות את זכרונו באוב.\n  \n*",
     "date": "2025-02-06",
@@ -463,6 +226,348 @@
     }
   },
   {
+    "title": "26.02.23",
+    "content": "אני…. לא רוצה לשאת את הכאב הזה יותר. זה לא משנה אם אני יכולה, וגם זאת מוטל בספק. אני לא רוצה. אני לא יודעת אם זה פייר או לא ואני לא יודעת אם מה שמגיע מגיע. בבקשה קח ממני את הכמיהה, אני לא רוצה בה, שים אושר פשוט במקום, או סתירה לפנים שתפיל ותזעזע אותי, אבל הכמיהה הזאת של עש עיוור לעבר האש שאינה מכלה, רק מכאיבה, קורעת אותי מבפנים\n",
+    "date": "2023-02-26",
+    "isHebrew": true,
+    "echoes": [
+      {
+        "author": "Siddhartha Gautama (The Buddha)",
+        "connection": "Your plea to be rid of 'longing' directly mirrors the Buddhist principle that suffering ('dukkha') arises from craving ('tanha'), suggesting that release from this intense desire is the path to inner peace.",
+        "context": "A core teaching of Buddhism, identifying desire as the root cause of dissatisfaction and suffering, and cessation of craving as the path to liberation.",
+        "era": "6th Century BCE",
+        "icon": "🧘",
+        "id": 1755690363421,
+        "location": "Ancient India",
+        "text": "All suffering (dukkha) arises from craving (tanha).",
+        "theme": "Escaping desire's suffering",
+        "triggeringKeywords": [
+          "הכאב הזה",
+          "הכמיהה",
+          "קורעת אותי מבפנים"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "Epicurus",
+        "connection": "Your wish for 'simple happiness' resonates with Epicurus's philosophy, which taught that true contentment comes from the absence of pain and the enjoyment of life's fundamental pleasures, a stark contrast to the painful longing you describe.",
+        "context": "Epicurean philosophy advocated for a life of modest pleasure and tranquility, achieved by avoiding pain and fear, and valuing simple, natural desires over artificial ones.",
+        "era": "3rd Century BCE",
+        "icon": "🌿",
+        "id": 1755690363422,
+        "location": "Ancient Greece",
+        "text": "The greatest good is the absence of pain in the body and trouble in the soul.",
+        "theme": "Valuing simple contentment",
+        "triggeringKeywords": [
+          "אושר פשוט",
+          "הכאב הזה"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "Greek Mythology",
+        "connection": "The vivid imagery of your 'longing of a blind moth towards the fire that does not consume, only hurts' powerfully mirrors the ancient myth of Tantalus, forever tormented by desires just beyond his grasp, reflecting the destructive nature of unfulfilled cravings.",
+        "context": "Tantalus was punished in Tartarus, condemned to eternal hunger and thirst, with food and water always just out of reach, a symbol of insatiable and unfulfilled desire.",
+        "era": "Ancient Greece",
+        "icon": "🔥",
+        "id": 1755690363423,
+        "location": "The Underworld",
+        "text": "He stood in a pool of water beneath a fruit tree with low branches, with the fruit and water ever receding from his grasp.",
+        "theme": "Unquenchable torturous craving",
+        "triggeringKeywords": [
+          "הכמיהה הזאת",
+          "עש עיוור לעבר האש",
+          "מכאיבה, קורעת אותי מבפנים"
+        ],
+        "type": "mythology"
+      },
+      {
+        "author": "Emily Dickinson",
+        "connection": "Your desperate yearning for a 'slap in the face that will knock me down and shock me' as an alternative to prolonged suffering resonates with Dickinson's stark and introspective portrayals of pain, highlighting a shared human desire for a definitive end to torment.",
+        "context": "Emily Dickinson's poetry often explores themes of suffering, despair, and the internal experience of pain, sometimes contemplating abrupt shifts or ultimate release from agony.",
+        "era": "19th Century America",
+        "icon": "✒️",
+        "id": 1755690363424,
+        "location": "Amherst, Massachusetts",
+        "text": "Pain – has an Element of Blank – It cannot recollect when it began – Or if it ever had a time – / Its Instant of Despair.",
+        "theme": "Confronting overwhelming pain",
+        "triggeringKeywords": [
+          "לא רוצה לשאת את הכאב הזה יותר",
+          "סתירה לפנים שתפיל ותזעזע אותי",
+          "הכאב הזה"
+        ],
+        "type": "poetry"
+      },
+      {
+        "author": "Unknown",
+        "connection": "Your questioning, 'I don't know if it's fair or not and I don't know if what's coming is coming,' echoes the timeless struggle of Job, who, despite immense suffering, grappled with the fairness of his fate, reflecting a deep human need to understand the justice of their pain.",
+        "context": "The Book of Job narrates the story of a righteous man who endures immense suffering and loss, prompting him to question divine justice and the fairness of his fate, despite his unwavering faith.",
+        "era": "Ancient Israel (est. 6th-4th Century BCE)",
+        "icon": "🙏",
+        "id": 1755690363425,
+        "location": "Land of Uz",
+        "text": "Why then did you bring me forth from the womb? I should have died, and no eye have seen me.",
+        "theme": "Grappling with unjust suffering",
+        "triggeringKeywords": [
+          "פייר או לא",
+          "מה שמגיע מגיע",
+          "הכאב הזה"
+        ],
+        "type": "religious text"
+      },
+      {
+        "author": "Marcus Aurelius",
+        "connection": "While currently experiencing profound internal torment, your desire for 'simple happiness' and an end to pain aligns with Marcus Aurelius's Stoic pursuit of inner peace, reminding us that cultivating resilience and mastering one's mind is a continuous struggle against external and internal turmoil.",
+        "context": "Marcus Aurelius, a Roman Emperor and Stoic philosopher, wrote 'Meditations' as a series of personal reflections on self-improvement, duty, and finding inner tranquility amidst adversity and the unpredictable nature of life.",
+        "era": "2nd Century CE",
+        "icon": "🏛️",
+        "id": 1755690363426,
+        "location": "Roman Empire",
+        "text": "You have power over your mind – not outside events. Realize this, and you will find strength.",
+        "theme": "Cultivating inner resilience",
+        "triggeringKeywords": [
+          "לא רוצה לשאת את הכאב הזה יותר",
+          "אושר פשוט"
+        ],
+        "type": "philosophy"
+      }
+    ],
+    "internalEcho": {
+      "connection": "This entry echoes your past words by expressing an overwhelming burden you feel unable to bear, yearning for a simple respite or drastic change from the consuming pain.",
+      "keyQuote": "לפעמים נדמה לי שאינני יכולה לשאת עוד.",
+      "pastEntryId": 1755688688396
+    },
+    "id": 1755690375015,
+    "savedAt": "2025-08-20T11:46:15.015Z"
+  },
+  {
+    "title": "24.2.23",
+    "content": "הכל\nבסדר.\nמובן שחלק מהדברים יותר בסדר וחלקם דרסטית פחות. אבל בממוצע - הכל בסדר.\nאני קללה. אני רווקה בת שלושים עם חתולה. אין זיווג הגון בנמצא עבורי. אנשים שקדו על דברים שונים וגם אני; בניתי את העולם הפנימי שלי כמו חוות נמלים. רוצים לראות? אפשר להראות? יש איזשהי תועלת בלראות? אני לא מרגישה ככה יותר. אני מרגישה אחרת. אני מרגישה את השמש על הלחי לפעמים, זה מרגיש טוב ונכון, אנסה להפנות אליה את כל הפרצוף כפי שעושה הסינגוניום הורוד שלי.",
+    "date": "2023-02-24",
+    "isHebrew": true,
+    "echoes": [
+      {
+        "author": "Ralph Waldo Emerson",
+        "connection": "This echoes your resolve to cultivate your unique inner world, reminding you that true strength comes from trusting your own path and not seeking external validation for your deepest self.",
+        "context": "Emerson's essay advocates for individualism and self-reliance, encouraging people to trust their own thoughts and intuitions rather than conforming to societal pressures.",
+        "era": "19th Century America",
+        "icon": "🌳",
+        "id": 1755688957570,
+        "location": "Concord, Massachusetts, USA",
+        "text": "\"Trust thyself: every heart vibrates to that iron string.\" - from Self-Reliance.",
+        "theme": "Trusting inner wisdom",
+        "triggeringKeywords": [
+          "built my inner world",
+          "Is there any use in showing?"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "Mary Wollstonecraft",
+        "connection": "Your feeling of being \"a curse\" as a single woman resonates with historical critiques of societal pressures that often confined women's worth to their marital status, a theme Wollstonecraft passionately challenged.",
+        "context": "Wollstonecraft argued for women's education and rationality, criticizing the societal expectation for women to be solely focused on marriage and domesticity.",
+        "era": "Late 18th - Early 19th Century Europe",
+        "icon": "📜",
+        "id": 1755688957571,
+        "location": "London, England",
+        "text": "\"It is time to effect a revolution in female manners—time to restore to them their lost dignity—and make them, as a part of the human species, labour by improving their reason to become more excellent.\"",
+        "theme": "Challenging societal norms",
+        "triggeringKeywords": [
+          "I am a curse",
+          "single woman",
+          "no suitable match"
+        ],
+        "type": "social commentary"
+      },
+      {
+        "author": "Matsuo Bashō",
+        "connection": "Your turning towards the sun on your cheek mirrors the timeless wisdom found in Bashō's haiku, highlighting how profound peace and contentment can be found in the quiet, simple moments of nature.",
+        "context": "A classic haiku by Bashō, embodying the Zen aesthetic of finding profound beauty and tranquility in simple, transient moments of nature.",
+        "era": "17th Century Japan",
+        "icon": "🐸",
+        "id": 1755688957572,
+        "location": "Japan",
+        "text": "\"Old pond... a frog jumps in... sound of water.\"",
+        "theme": "Simplicity's profound beauty",
+        "triggeringKeywords": [
+          "sun on my cheek",
+          "feels good and right"
+        ],
+        "type": "poetry"
+      },
+      {
+        "author": "Marcus Aurelius",
+        "connection": "Your reflection that 'everything is okay' despite varying degrees of 'okayness' aligns with the Stoic practice of acknowledging life's challenges while asserting control over one's internal response to them.",
+        "context": "Marcus Aurelius's Meditations are a series of personal writings on Stoic philosophy, emphasizing the importance of controlling one's perceptions and maintaining inner tranquility amidst external chaos.",
+        "era": "2nd Century Roman Empire",
+        "icon": "🏛️",
+        "id": 1755688957573,
+        "location": "Roman Empire",
+        "text": "\"If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.\"",
+        "theme": "Mastering inner peace",
+        "triggeringKeywords": [
+          "Everything is okay",
+          "drastically less so",
+          "on average"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "Rainer Maria Rilke",
+        "connection": "Your declaration of feeling 'different' and the intention to turn towards the sun echoes Rilke's powerful call for personal transformation, a recognition that growth demands an active shift in one's path.",
+        "context": "This famous concluding line from Rilke's poem is an imperative to self-transformation, suggesting that encountering profound beauty or truth demands a fundamental change in one's existence.",
+        "era": "Early 20th Century Germany/France",
+        "icon": "🦋",
+        "id": 1755688957574,
+        "location": "Paris, France",
+        "text": "\"You must change your life.\" - from Archaic Torso of Apollo.",
+        "theme": "Imperative for change",
+        "triggeringKeywords": [
+          "I don't feel like that anymore",
+          "I feel different",
+          "turn my whole face towards it"
+        ],
+        "type": "poetry"
+      },
+      {
+        "author": "Henry David Thoreau",
+        "connection": "Your meticulous building of an 'inner world like an ant farm' resonates with Thoreau's deliberate pursuit of a life stripped down to its essentials, focused on rich internal experience rather than external accumulation.",
+        "context": "Thoreau's account of living simply in a cabin by Walden Pond, advocating for self-sufficiency, introspection, and a deliberate engagement with life, often by cultivating one's inner world away from societal distractions.",
+        "era": "19th Century America",
+        "icon": "🌲",
+        "id": 1755688957575,
+        "location": "Concord, Massachusetts, USA",
+        "text": "\"I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.\" - from Walden.",
+        "theme": "Deliberate self-cultivation",
+        "triggeringKeywords": [
+          "built my inner world",
+          "ant farm"
+        ],
+        "type": "memoir"
+      }
+    ],
+    "id": 1755688931696,
+    "savedAt": "2025-08-20T11:23:03.033Z"
+  },
+  {
+    "title": "25.01.23",
+    "content": "אם זה משמח אותך. נראה שזה הפסיק לשמח אותך.\nאני יודעת שאני לא בת יחידה, אבל אני מרגישה את עצמי עומדת בפינה זה כבר זמן מה. אלוהים, השם, אבא - אתה בוודאי דואג לי. אבל מה קורה ללב שלי? ולמה ככה? לפעמים נדמה לי שאינני יכולה לשאת עוד. הלב שלי מלא והוא אומנם מעוצב על מנת שיוכל להתרוקן ולהתמלא שוב עד אין קץ, אבל צריך להיות קץ, לא קץ כל הקיצים, אולי ליתר דיוק הפוגה קלה, צריכה להיות איזשהי בריזה קלה ורכה, צריך לתת לו לייצר איזה עלה או שניים בטרם יפול קורבן שוב לחתולה שמנה וימצא עצמו הפוך על הרצפה ",
+    "date": "2023-01-25",
+    "isHebrew": true,
+    "echoes": [
+      {
+        "author": "Emily Dickinson",
+        "connection": "This reflects your feeling of \"standing in the corner,\" highlighting how profound personal solitude, whether chosen or imposed, can be a space where the soul grapples with its inner state.",
+        "context": "Dickinson famously lived a reclusive life, and her poetry often explores themes of inner experience, isolation, and the mind's private world, emphasizing a chosen or inherent solitude.",
+        "era": "19th Century America",
+        "icon": "🚪",
+        "id": 1755689597606,
+        "location": "Amherst, Massachusetts, USA",
+        "text": "The Soul selects her own Society – Then – shuts the Door – To her divine Majority – Present no more –",
+        "theme": "Inner world's solitude",
+        "triggeringKeywords": [
+          "מרגישה את עצמי עומדת בפינה"
+        ],
+        "type": "poetry"
+      },
+      {
+        "author": "King David (Traditional)",
+        "connection": "This psalm echoes your cry to \"God, the Name, Father\" and your poignant questions \"what's happening to my heart? And why like this?\", reflecting a timeless human struggle with faith and suffering.",
+        "context": "Psalms of lament are a genre within the biblical Psalms, expressing deep personal suffering, confusion, and direct questions to God, seeking understanding or intervention in times of distress.",
+        "era": "Ancient Israel (c. 10th Century BCE)",
+        "icon": "❓",
+        "id": 1755689597607,
+        "location": "Ancient Israel",
+        "text": "How long, Lord? Will you forget me forever? How long will you hide your face from me? How long must I wrestle with my thoughts and day after day have sorrow in my heart?",
+        "theme": "Questioning divine presence",
+        "triggeringKeywords": [
+          "אלוהים",
+          "השם",
+          "אבא",
+          "מה קורה ללב שלי?",
+          "למה ככה?"
+        ],
+        "type": "religious text"
+      },
+      {
+        "author": "Virginia Woolf",
+        "connection": "This mirrors your feeling of being unable to \"bear it anymore\" and the desire for a \"slight pause\" or \"light and soft breeze\" amidst the ceaseless demands, reflecting a universal need for mental and emotional respite.",
+        "context": "Woolf often wrote in her private diaries and letters about the relentless pressures of her intellectual and social life, along with her struggles with mental health, frequently expressing a profound weariness and longing for peace.",
+        "era": "Early 20th Century England",
+        "icon": "🌬️",
+        "id": 1755689597608,
+        "location": "London, England",
+        "text": "I am a little weary of the life itself; it goes on and on, with the same problems, the same adjustments. What I need is a holiday for the mind.",
+        "theme": "Weariness and yearning for respite",
+        "triggeringKeywords": [
+          "אינני יכולה לשאת עוד",
+          "להתרוקן ולהתמלא שוב",
+          "הפוגה קלה",
+          "בריזה קלה ורכה"
+        ],
+        "type": "diary"
+      },
+      {
+        "author": "Anne Morrow Lindbergh",
+        "connection": "Your poignant metaphor of the heart needing to \"produce a leaf or two\" before being overturned by a \"fat cat\" reflects Lindbergh's concern about the loss of quiet space needed for inner ripening and renewal in a relentless world.",
+        "context": "In 'Gift from the Sea,' Lindbergh reflects on the need for solitude, simplicity, and mental space for personal growth and creativity, contrasting it with the overwhelming and demanding nature of modern life.",
+        "era": "Mid 20th Century America",
+        "icon": "🌱",
+        "id": 1755689597609,
+        "location": "Captiva Island, Florida, USA",
+        "text": "One needs a certain amount of time to ripen, a certain amount of privacy, a certain amount of leisure... We are forced, by the machine age, into a life of incessant activity. We have no time to be.",
+        "theme": "Nurturing inner growth",
+        "triggeringKeywords": [
+          "ייצר איזה עלה או שניים",
+          "יפול קורבן שוב",
+          "חתולה שמנה",
+          "הפוגה קלה"
+        ],
+        "type": "reflection"
+      },
+      {
+        "author": "Sei Shōnagon",
+        "connection": "This mirrors your observation that \"it seems to have stopped making you happy,\" reflecting a universal sentiment of disappointment when something once vibrant or comforting loses its ability to bring joy.",
+        "context": "Sei Shōnagon, a court lady in Heian Japan, kept a collection of observations, lists, and anecdotes. Her 'things that have lost their power' lists often describe the fading of beauty, utility, or pleasure from once cherished things due to time or circumstance.",
+        "era": "10th Century Heian Japan",
+        "icon": "🍂",
+        "id": 1755689597610,
+        "location": "Heian-kyō (Kyoto), Japan",
+        "text": "Things that have lost their power: a large boat when the wind drops in the middle of a crossing... a beautiful kimono that is now faded and stained.",
+        "theme": "Fading of delight",
+        "triggeringKeywords": [
+          "הפסיק לשמח אותך"
+        ],
+        "type": "diary"
+      },
+      {
+        "author": "Anaïs Nin",
+        "connection": "This echo resonates with your plea for an \"end\" or a \"slight pause\" when your \"heart is full\" and struggles to endlessly \"empty and fill again,\" reflecting the universal human need for emotional reprieve from continuous flux.",
+        "context": "Nin's voluminous diaries are renowned for their raw honesty about her intense emotional life, complex relationships, and the exhaustion that often accompanied her experiences, leading to moments of profound mental and emotional drainage.",
+        "era": "Mid 20th Century Europe/America",
+        "icon": "⏸️",
+        "id": 1755689597611,
+        "location": "Paris, France / New York, USA",
+        "text": "I can't go on like this. My energies are drained. I want to lie down and sleep and sleep, till I am empty of everything.",
+        "theme": "Ceasefire for the soul",
+        "triggeringKeywords": [
+          "הלב שלי מלא",
+          "להתרוקן ולהתמלא שוב",
+          "צריך להיות קץ, הפוגה קלה",
+          "אינני יכולה לשאת עוד"
+        ],
+        "type": "diary"
+      }
+    ],
+    "id": 1755688688396,
+    "savedAt": "2025-08-20T11:33:22.938Z",
+    "internalEcho": {
+      "connection": "Both entries convey an overwhelming sense of emotional burden and a deep longing for gentle relief or divine grace to alleviate the internal suffering.",
+      "keyQuote": "היום, מועקה גדולה... אני צריכה חסד, אני לא יודעת בדיוק איזה.",
+      "pastEntryId": 1755686186877
+    }
+  },
+  {
     "title": "4.12.22",
     "content": "כולם קצת לא בסדר וגם אני לא. היום, מועקה גדולה. היום, עיניים שלא נפקחות עד הסוף. ייתכן שזו קרקע פורה לתפילות. ייתכן גם שלא כיביתי את הדוד.\nלפעמים אני מרגישה את הנשימות הכבדות של אלוהים על הצוואר וזה אחלה. אבל אני רוצה להרגיש גם את קצות אצבעותיו, דוחפות אותי בעדינות לכיוון הנכון.\nיהיה עכשיו סבבה; יש גוש עמוק של מועקה סמיכה והאוזניים והלחיים שלי בוערות. לרגליים שלי הייתה תכונה ללכת בעצמן לפעמים, הן יתהלכו שוב בעצמן לו אבקש. ואני מבקשת. אני רוצה מאוד. אני צריכה חסד, אני לא יודעת בדיוק איזה, אני צריכה שייעשה עימי חסד מתוק",
     "date": "2022-12-04",
@@ -573,116 +678,183 @@
     }
   },
   {
-    "title": ".24.02",
-    "content": "ספיר סבורה שכל מה שניתן להגיד כבר נאמר, לכן על מנת לומר דבר מה בעל חשיבות כל שצריך לעשות הוא לנסח מחדש. אז היא אומרת: ׳יומני היקר; מוריסי היה אבא שלי, האמטיוי היה אמא שלי. בשנת 92 הותירו אותי מולו ולא בדקו מה קורה עם זה במשך חמש עשרה שנה. כבנה הנטוש של מארי אנטואנט, גם אני גדלתי פרא׳. ספיר זורקת שמות. היא מרגישה חיבור עז לעונות השנה, ומחויבות לאביב. היא תוהה אם תפרח בזמן. היא תוהה אם בתור ביתו של מוריסי גם היא היורשת של ביישנות, גסה בצורה נפשעת.\n ",
-    "date": "2020-02-24",
+    "title": "11.11.22",
+    "content": "בניגוד למה שנהוג לחשוב, אלוהים לא ישן בשואה; הוא בכה. הוא בכה ובכה ובכה, רעד ממש. \nאלו היו שנים נוראות, אך לא דלות בחסדים. למעשה להיפך. הסביבה העוינת מטבעה לחסד וצדקה הכפילה את ערכו של כל חסד שבעתיים. ולאורך כל הזמן הזה אלוהים לא הפסיק לבכות",
+    "date": "2022-11-11",
     "isHebrew": true,
     "echoes": [
       {
-        "author": "Lucius Annaeus Seneca",
-        "connection": "Your reflection that all has been said and importance lies in rephrasing echoes Seneca's stoic view that ancient wisdom is perpetually relevant and can be re-expressed to resonate anew.",
-        "context": "A prominent Roman Stoic philosopher, Seneca often emphasized that true wisdom comes from internalizing and applying existing knowledge rather than always seeking novelty, and that old truths gain new power through re-examination.",
-        "era": "1st Century CE",
-        "icon": "📚",
-        "id": 1755689805501,
-        "location": "Ancient Rome",
-        "text": "What has been said by one may be repeated by another, but it does not follow that what is repeated is less useful.",
-        "theme": "Wisdom in rephrasing",
-        "triggeringKeywords": [
-          "כל מה שניתן להגיד כבר נאמר",
-          "לנסח מחדש"
-        ],
+        "author": "Elie Wiesel",
+        "context": "Wiesel's harrowing account of his experiences as a prisoner in Auschwitz and Buchenwald during the Holocaust, exploring the depths of human cruelty and the profound questioning of faith and divine presence amidst unimaginable suffering.",
+        "era": "1956 (published)",
+        "icon": "🕯️",
+        "id": 1755686066756,
+        "location": "Auschwitz-Birkenau",
+        "text": "Never shall I forget that night, the first night in camp, which has turned my life into one long night, seven times cursed and seven times sealed.",
+        "theme": "suffering",
+        "type": "memoir"
+      },
+      {
+        "author": "Unknown (Biblical)",
+        "context": "The story of Job, a righteous man who endures immense suffering and loss, prompting a profound debate on the nature of divine justice and human resilience in the face of inexplicable adversity and perceived divine neglect.",
+        "era": "Ancient Israel",
+        "icon": "🌪️",
+        "id": 1755686066757,
+        "location": "Land of Uz",
+        "text": "Naked I came from my mother's womb, and naked I shall return there. The Lord gave and the Lord has taken away. Blessed be the name of the Lord.",
+        "theme": "resilience",
+        "type": "religious text"
+      },
+      {
+        "author": "Viktor Frankl",
+        "context": "Frankl's logotherapy, based on his experiences as a Holocaust survivor, posits that finding meaning in life, even in suffering, is the primary motivational force for humans. He highlighted the importance of acts of kindness and human connection even in the most inhumane conditions, magnifying their value.",
+        "era": "1946 (published)",
+        "icon": "🧭",
+        "id": 1755686066758,
+        "location": "Auschwitz concentration camp",
+        "text": "Everything can be taken from a man but one thing: the last of the human freedoms—to choose one’s attitude in any given set of circumstances, to choose one’s own way.",
+        "theme": "meaning",
         "type": "philosophy"
       },
       {
-        "author": "Jean-Jacques Rousseau",
-        "connection": "Your feeling of 'growing wild' like Marie Antoinette's abandoned son resonates with Rousseau's philosophical advocacy for a natural, unconstrained development, contrasting with societal norms, reflecting a search for authentic identity outside conventional structures.",
-        "context": "An influential Enlightenment philosopher, Rousseau critiqued traditional education and society, advocating for an upbringing that allowed individuals to develop naturally, guided by their innate goodness rather than corrupting social conventions.",
-        "era": "18th Century",
-        "icon": "🌳",
-        "id": 1755689805502,
-        "location": "Geneva / France",
-        "text": "Man is born free, and everywhere he is in chains.",
-        "theme": "Freedom in wild growth",
-        "triggeringKeywords": [
-          "כבנה הנטוש של מארי אנטואנט",
-          "גדלתי פרא"
-        ],
-        "type": "philosophy"
+        "author": "Traditionally Jeremiah",
+        "context": "A poetic book mourning the destruction of Jerusalem and the First Temple. It vividly describes collective grief, suffering, and the questioning of divine action, reflecting the deep sorrow of a people in exile and resonating with the idea of a shared divine suffering.",
+        "era": "6th century BCE",
+        "icon": "💧",
+        "id": 1755686066759,
+        "location": "Jerusalem",
+        "text": "My eyes are spent with weeping; my stomach churns; my liver is poured out on the ground because of the destruction of the daughter of my people, because infants and babies are fainting in the streets of the city.",
+        "theme": "lament",
+        "type": "religious poetry"
       },
       {
-        "author": "Matsuo Bashō",
-        "connection": "Your contemplation of blooming in time, tied to the seasons, finds an echo in Bashō's haiku, which often captures the subtle, perfect unfolding of nature, suggesting that growth has its own inherent rhythm.",
-        "context": "The most famous Edo period poet, Bashō elevated haiku to a serious art form, often composing poems that distilled moments of profound natural observation and introspection into a few syllables, emphasizing tranquility and the passage of time.",
-        "era": "17th Century",
-        "icon": "🐸",
-        "id": 1755689805503,
-        "location": "Japan",
-        "text": "The old pond / A frog jumps in / The sound of water.",
-        "theme": "Nature's perfect timing",
-        "triggeringKeywords": [
-          "חיבור עז לעונות השנה",
-          "מחויבות לאביב",
-          "תפרח בזמן"
-        ],
-        "type": "poetry"
+        "author": "Rabbi Levi Yitzchak of Berditchev",
+        "context": "A famous, almost defiant, plea from a Hasidic master to God, challenging divine justice and advocating fiercely for the Jewish people, while simultaneously expressing profound love and faith. It embodies the audacious intimacy and shared suffering often found in Jewish spirituality.",
+        "era": "Late 18th - Early 19th Century",
+        "icon": "🗣️",
+        "id": 1755686066760,
+        "location": "Berditchev, Ukraine",
+        "text": "Master of the Universe! I, Levi Yitzchak, son of Sarah, come before You. What do You want from Your people Israel? Why do You persecute them so?",
+        "theme": "advocacy",
+        "type": "hasidic lore"
       },
       {
-        "author": "Søren Kierkegaard",
-        "connection": "Your self-description as inheriting 'shyness' yet being 'grossly offensive' mirrors Kierkegaard's exploration of the individual's struggle to find authentic selfhood, often by confronting their perceived flaws or anxieties rather than conforming.",
-        "context": "A Danish philosopher often considered the first existentialist, Kierkegaard explored the complexities of individual existence, freedom, and the subjective nature of truth, frequently through intense self-reflection and an analysis of human despair and anxiety.",
-        "era": "19th Century",
-        "icon": "🤔",
-        "id": 1755689805504,
-        "location": "Copenhagen, Denmark",
-        "text": "To dare is to lose one's footing for a moment. To not dare is to lose oneself.",
-        "theme": "Authenticity through daring",
-        "triggeringKeywords": [
-          "ביישנות",
-          "גסה בצורה נפשעת",
-          "היורשת של ביישנות"
-        ],
-        "type": "philosophy"
-      },
-      {
-        "author": "Marshall McLuhan",
-        "connection": "Your identification with Morrissey and MTV as 'parents' resonates with McLuhan's theory that the medium itself profoundly shapes our experience and identity, highlighting how cultural channels can become formative influences.",
-        "context": "A visionary Canadian philosopher of communication theory, McLuhan famously asserted that 'the medium is the message,' arguing that the form of media (like television or music) is more impactful than its content in shaping human thought and society.",
-        "era": "20th Century",
-        "icon": "📺",
-        "id": 1755689805505,
-        "location": "Toronto, Canada",
-        "text": "The medium is the message.",
-        "theme": "Media shaping identity",
-        "triggeringKeywords": [
-          "מוריסי היה אבא שלי",
-          "האמטיוי היה אמא שלי"
-        ],
-        "type": "theory"
-      },
-      {
-        "author": "Jorge Luis Borges",
-        "connection": "Your observation that all has been said and the importance lies in rephrasing aligns with Borges's playful yet profound ideas about how true originality might be found not in creating anew, but in re-interpreting and re-contextualizing existing works.",
-        "context": "An Argentine short-story writer, essayist, poet, and translator, Borges is celebrated for his philosophical and fantastical tales that often explore themes of identity, reality, infinity, and the nature of literature itself, frequently questioning the very concept of originality.",
-        "era": "20th Century",
-        "icon": "📖",
-        "id": 1755689805506,
-        "location": "Buenos Aires, Argentina",
-        "text": "Originality is an impossibility, a foolish dream.",
-        "theme": "Originality in reinterpretation",
-        "triggeringKeywords": [
-          "כל מה שניתן להגיד כבר נאמר",
-          "לנסח מחדש"
-        ],
-        "type": "literature"
+        "author": "Rabbinic Sages",
+        "context": "Various Midrashic texts describe God literally weeping over the destruction of the Temple and the exile of the Jewish people, symbolizing divine empathy and shared grief in the face of national catastrophe. This directly parallels the new entry's imagery of God weeping during the Holocaust.",
+        "era": "2nd-8th Century CE (compiled)",
+        "icon": "😭",
+        "id": 1755686066761,
+        "location": "Ancient Israel/Babylon",
+        "text": "When the Holy One, Blessed be He, remembered His children who were exiled, He wept, saying, 'Woe is to the father who has banished his children from his table!'",
+        "theme": "empathy",
+        "type": "midrash"
       }
     ],
-    "id": 1755406432810,
-    "savedAt": "2025-08-20T11:38:28.774Z",
+    "id": 1755686039274,
+    "savedAt": "2025-08-20T10:34:34.722Z"
+  },
+  {
+    "title": "10.10.21",
+    "content": "ירדתי לאו-באן. U5 באלכסנדרפלאץ. ניגשתי לאוטומאט, לרכוש כרטיס. נפתח לי צ‘אט של וולט. הלקוחה שלחה תמונות, היא קיבלה שרצים מבחילים, מזעזעים, הופכי קיבה במשלוח שלה. הבעיה הייתה שהמסעדה התמחתה במשלוח של שרצים מזעזעים שכאלו, ולי רק נותר לנסות להבין איזהו השרץ הנכון. עברתי על התמונות של התולעים, החשופיות, הסרטנים כרותי הראש וניסיתי להשוותם לאלו שבתפריט. \n",
+    "date": "2021-10-10",
+    "isHebrew": true,
+    "echoes": [
+      {
+        "author": "Franz Kafka",
+        "connection": "Your detailed and disturbing task of identifying the 'correct' abomination from the delivery menu echoes the protagonist's family in Kafka's work, who are forced to contend with an equally bizarre and repulsive new reality with a strange sense of obligation.",
+        "context": "The opening line of Kafka's novella 'The Metamorphosis,' depicting an absurd and grotesque transformation that forces the protagonist and his family into a surreal and disturbing new reality.",
+        "era": "1915",
+        "icon": "🐛",
+        "id": 1755690224823,
+        "location": "Prague, Austro-Hungarian Empire",
+        "text": "When Gregor Samsa awoke one morning from troubled dreams, he found himself transformed in his bed into a monstrous insect.",
+        "theme": "Confronting grotesque reality",
+        "triggeringKeywords": [
+          "שרצים מבחילים",
+          "הופכי קיבה",
+          "השרץ הנכון",
+          "תולעים",
+          "חשופיות",
+          "סרטנים כרותי הראש"
+        ],
+        "type": "Literature"
+      },
+      {
+        "author": "Early European Explorer",
+        "connection": "Your visceral reaction to the 'stomach-churning creepy crawlies' mirrors the historical shock and revulsion experienced by explorers encountering foods so alien to their own customs that they were deemed utterly unpalatable.",
+        "context": "Early European explorers and travelers frequently documented their encounters with unfamiliar and sometimes revolting foods in newly discovered lands, reflecting cultural clashes over culinary norms.",
+        "era": "16th Century",
+        "icon": "🤢",
+        "id": 1755690224824,
+        "location": "Various non-European lands",
+        "text": "We often encountered diverse foods and customs, some so strange and unpalatable that they tested the very limits of our constitution.",
+        "theme": "Encountering culinary repulsion",
+        "triggeringKeywords": [
+          "מבחילים",
+          "מזעזעים",
+          "הופכי קיבה",
+          "שרצים"
+        ],
+        "type": "Travelogue"
+      },
+      {
+        "author": "Maria Sibylla Merian",
+        "connection": "Your painstaking comparison of the 'worms, slugs, and decapitated crabs' to the menu reflects the dedicated, if sometimes unsettling, observation of naturalists like Maria Sibylla Merian, who meticulously documented creatures often viewed with revulsion by others.",
+        "context": "Maria Sibylla Merian was a naturalist and scientific illustrator known for her meticulous and beautiful depictions of insects and their metamorphoses, often studying creatures considered repulsive by others.",
+        "era": "17th-18th Century",
+        "icon": "🔍",
+        "id": 1755690224825,
+        "location": "Suriname / Netherlands",
+        "text": "Indeed, I have found that one must observe with great care and diligence the smallest of creatures, for they hold secrets untold.",
+        "theme": "Meticulous natural observation",
+        "triggeringKeywords": [
+          "עברתי על התמונות",
+          "תולעים",
+          "חשופיות",
+          "סרטנים כרותי הראש",
+          "ניסיתי להשוותם"
+        ],
+        "type": "Scientific Illustration"
+      },
+      {
+        "author": "Marcus Gavius Apicius (attributed)",
+        "connection": "The restaurant specializing in 'creepy crawlies' subverts modern culinary norms, much like the ancient Roman elite who indulged in dishes like roasted dormice, expanding the boundaries of what was considered an acceptable and even desirable delicacy.",
+        "context": "Ancient Roman wealthy citizens, particularly influenced by figures like Apicius, reveled in exotic and unconventional dishes like roasted dormice, sea urchins, or flamingo tongues, pushing the boundaries of what was considered edible and desirable.",
+        "era": "1st Century AD",
+        "icon": "🍽️",
+        "id": 1755690224826,
+        "location": "Ancient Rome",
+        "text": "The gourmet must seek out novelties to delight the palate, even if they challenge common tastes.",
+        "theme": "Redefining culinary norms",
+        "triggeringKeywords": [
+          "המסעדה התמחתה במשלוח של שרצים מזעזעים שכאלו",
+          "שרצים"
+        ],
+        "type": "Historical Cuisine"
+      },
+      {
+        "author": "Albert Camus",
+        "connection": "Your perplexing task of discerning the 'correct' abomination from the menu reflects the human condition of confronting absurdity, where meaning or purpose must be found even when faced with inherently nonsensical or disturbing realities.",
+        "context": "Albert Camus, a key figure in absurdism, explored the human condition of finding meaning in a meaningless world, often through confronting and accepting inherently illogical or futile tasks, like Sisyphus's eternal struggle.",
+        "era": "20th Century",
+        "icon": "⛰️",
+        "id": 1755690224827,
+        "location": "France",
+        "text": "The struggle itself toward the heights is enough to fill a man's heart. One must imagine Sisyphus happy.",
+        "theme": "Finding meaning in absurdity",
+        "triggeringKeywords": [
+          "לי רק נותר לנסות להבין איזהו השרץ הנכון",
+          "הבעיה הייתה שהמסעדה התמחתה במשלוח של שרצים מזעזעים שכאלו"
+        ],
+        "type": "Philosophy"
+      }
+    ],
+    "id": 1755688870676,
+    "savedAt": "2025-08-20T11:44:12.090Z",
     "internalEcho": {
-      "connection": "This entry echoes your contemplation on identity and inherited traits, particularly through the lens of a parental figure's influence and the yearning for timely personal growth amidst vulnerability.",
-      "keyQuote": "אלוהים, השם, אבא - אתה בוודאי דואג לי. אבל מה קורה ללב שלי? ... צריך לתת לו לייצר איזה עלה או שניים בטרם יפול קורבן שוב...",
-      "pastEntryId": 1755688688396
+      "connection": "This entry echoes your dream from February 2025, highlighting a recurring encounter with distorted or grotesque imagery that challenges your perception.",
+      "keyQuote": "צורתך התעוותה מלפניי, וכל החדרים הוצפו, ושוב לא הייתי במקומי.",
+      "pastEntryId": 1755685320692
     }
   },
   {
@@ -810,79 +982,116 @@
     }
   },
   {
-    "title": "11.11.22",
-    "content": "בניגוד למה שנהוג לחשוב, אלוהים לא ישן בשואה; הוא בכה. הוא בכה ובכה ובכה, רעד ממש. \nאלו היו שנים נוראות, אך לא דלות בחסדים. למעשה להיפך. הסביבה העוינת מטבעה לחסד וצדקה הכפילה את ערכו של כל חסד שבעתיים. ולאורך כל הזמן הזה אלוהים לא הפסיק לבכות",
-    "date": "2022-11-11",
+    "title": ".24.02",
+    "content": "ספיר סבורה שכל מה שניתן להגיד כבר נאמר, לכן על מנת לומר דבר מה בעל חשיבות כל שצריך לעשות הוא לנסח מחדש. אז היא אומרת: ׳יומני היקר; מוריסי היה אבא שלי, האמטיוי היה אמא שלי. בשנת 92 הותירו אותי מולו ולא בדקו מה קורה עם זה במשך חמש עשרה שנה. כבנה הנטוש של מארי אנטואנט, גם אני גדלתי פרא׳. ספיר זורקת שמות. היא מרגישה חיבור עז לעונות השנה, ומחויבות לאביב. היא תוהה אם תפרח בזמן. היא תוהה אם בתור ביתו של מוריסי גם היא היורשת של ביישנות, גסה בצורה נפשעת.\n ",
+    "date": "2020-02-24",
     "isHebrew": true,
     "echoes": [
       {
-        "author": "Elie Wiesel",
-        "context": "Wiesel's harrowing account of his experiences as a prisoner in Auschwitz and Buchenwald during the Holocaust, exploring the depths of human cruelty and the profound questioning of faith and divine presence amidst unimaginable suffering.",
-        "era": "1956 (published)",
-        "icon": "🕯️",
-        "id": 1755686066756,
-        "location": "Auschwitz-Birkenau",
-        "text": "Never shall I forget that night, the first night in camp, which has turned my life into one long night, seven times cursed and seven times sealed.",
-        "theme": "suffering",
-        "type": "memoir"
-      },
-      {
-        "author": "Unknown (Biblical)",
-        "context": "The story of Job, a righteous man who endures immense suffering and loss, prompting a profound debate on the nature of divine justice and human resilience in the face of inexplicable adversity and perceived divine neglect.",
-        "era": "Ancient Israel",
-        "icon": "🌪️",
-        "id": 1755686066757,
-        "location": "Land of Uz",
-        "text": "Naked I came from my mother's womb, and naked I shall return there. The Lord gave and the Lord has taken away. Blessed be the name of the Lord.",
-        "theme": "resilience",
-        "type": "religious text"
-      },
-      {
-        "author": "Viktor Frankl",
-        "context": "Frankl's logotherapy, based on his experiences as a Holocaust survivor, posits that finding meaning in life, even in suffering, is the primary motivational force for humans. He highlighted the importance of acts of kindness and human connection even in the most inhumane conditions, magnifying their value.",
-        "era": "1946 (published)",
-        "icon": "🧭",
-        "id": 1755686066758,
-        "location": "Auschwitz concentration camp",
-        "text": "Everything can be taken from a man but one thing: the last of the human freedoms—to choose one’s attitude in any given set of circumstances, to choose one’s own way.",
-        "theme": "meaning",
+        "author": "Lucius Annaeus Seneca",
+        "connection": "Your reflection that all has been said and importance lies in rephrasing echoes Seneca's stoic view that ancient wisdom is perpetually relevant and can be re-expressed to resonate anew.",
+        "context": "A prominent Roman Stoic philosopher, Seneca often emphasized that true wisdom comes from internalizing and applying existing knowledge rather than always seeking novelty, and that old truths gain new power through re-examination.",
+        "era": "1st Century CE",
+        "icon": "📚",
+        "id": 1755689805501,
+        "location": "Ancient Rome",
+        "text": "What has been said by one may be repeated by another, but it does not follow that what is repeated is less useful.",
+        "theme": "Wisdom in rephrasing",
+        "triggeringKeywords": [
+          "כל מה שניתן להגיד כבר נאמר",
+          "לנסח מחדש"
+        ],
         "type": "philosophy"
       },
       {
-        "author": "Traditionally Jeremiah",
-        "context": "A poetic book mourning the destruction of Jerusalem and the First Temple. It vividly describes collective grief, suffering, and the questioning of divine action, reflecting the deep sorrow of a people in exile and resonating with the idea of a shared divine suffering.",
-        "era": "6th century BCE",
-        "icon": "💧",
-        "id": 1755686066759,
-        "location": "Jerusalem",
-        "text": "My eyes are spent with weeping; my stomach churns; my liver is poured out on the ground because of the destruction of the daughter of my people, because infants and babies are fainting in the streets of the city.",
-        "theme": "lament",
-        "type": "religious poetry"
+        "author": "Jean-Jacques Rousseau",
+        "connection": "Your feeling of 'growing wild' like Marie Antoinette's abandoned son resonates with Rousseau's philosophical advocacy for a natural, unconstrained development, contrasting with societal norms, reflecting a search for authentic identity outside conventional structures.",
+        "context": "An influential Enlightenment philosopher, Rousseau critiqued traditional education and society, advocating for an upbringing that allowed individuals to develop naturally, guided by their innate goodness rather than corrupting social conventions.",
+        "era": "18th Century",
+        "icon": "🌳",
+        "id": 1755689805502,
+        "location": "Geneva / France",
+        "text": "Man is born free, and everywhere he is in chains.",
+        "theme": "Freedom in wild growth",
+        "triggeringKeywords": [
+          "כבנה הנטוש של מארי אנטואנט",
+          "גדלתי פרא"
+        ],
+        "type": "philosophy"
       },
       {
-        "author": "Rabbi Levi Yitzchak of Berditchev",
-        "context": "A famous, almost defiant, plea from a Hasidic master to God, challenging divine justice and advocating fiercely for the Jewish people, while simultaneously expressing profound love and faith. It embodies the audacious intimacy and shared suffering often found in Jewish spirituality.",
-        "era": "Late 18th - Early 19th Century",
-        "icon": "🗣️",
-        "id": 1755686066760,
-        "location": "Berditchev, Ukraine",
-        "text": "Master of the Universe! I, Levi Yitzchak, son of Sarah, come before You. What do You want from Your people Israel? Why do You persecute them so?",
-        "theme": "advocacy",
-        "type": "hasidic lore"
+        "author": "Matsuo Bashō",
+        "connection": "Your contemplation of blooming in time, tied to the seasons, finds an echo in Bashō's haiku, which often captures the subtle, perfect unfolding of nature, suggesting that growth has its own inherent rhythm.",
+        "context": "The most famous Edo period poet, Bashō elevated haiku to a serious art form, often composing poems that distilled moments of profound natural observation and introspection into a few syllables, emphasizing tranquility and the passage of time.",
+        "era": "17th Century",
+        "icon": "🐸",
+        "id": 1755689805503,
+        "location": "Japan",
+        "text": "The old pond / A frog jumps in / The sound of water.",
+        "theme": "Nature's perfect timing",
+        "triggeringKeywords": [
+          "חיבור עז לעונות השנה",
+          "מחויבות לאביב",
+          "תפרח בזמן"
+        ],
+        "type": "poetry"
       },
       {
-        "author": "Rabbinic Sages",
-        "context": "Various Midrashic texts describe God literally weeping over the destruction of the Temple and the exile of the Jewish people, symbolizing divine empathy and shared grief in the face of national catastrophe. This directly parallels the new entry's imagery of God weeping during the Holocaust.",
-        "era": "2nd-8th Century CE (compiled)",
-        "icon": "😭",
-        "id": 1755686066761,
-        "location": "Ancient Israel/Babylon",
-        "text": "When the Holy One, Blessed be He, remembered His children who were exiled, He wept, saying, 'Woe is to the father who has banished his children from his table!'",
-        "theme": "empathy",
-        "type": "midrash"
+        "author": "Søren Kierkegaard",
+        "connection": "Your self-description as inheriting 'shyness' yet being 'grossly offensive' mirrors Kierkegaard's exploration of the individual's struggle to find authentic selfhood, often by confronting their perceived flaws or anxieties rather than conforming.",
+        "context": "A Danish philosopher often considered the first existentialist, Kierkegaard explored the complexities of individual existence, freedom, and the subjective nature of truth, frequently through intense self-reflection and an analysis of human despair and anxiety.",
+        "era": "19th Century",
+        "icon": "🤔",
+        "id": 1755689805504,
+        "location": "Copenhagen, Denmark",
+        "text": "To dare is to lose one's footing for a moment. To not dare is to lose oneself.",
+        "theme": "Authenticity through daring",
+        "triggeringKeywords": [
+          "ביישנות",
+          "גסה בצורה נפשעת",
+          "היורשת של ביישנות"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "Marshall McLuhan",
+        "connection": "Your identification with Morrissey and MTV as 'parents' resonates with McLuhan's theory that the medium itself profoundly shapes our experience and identity, highlighting how cultural channels can become formative influences.",
+        "context": "A visionary Canadian philosopher of communication theory, McLuhan famously asserted that 'the medium is the message,' arguing that the form of media (like television or music) is more impactful than its content in shaping human thought and society.",
+        "era": "20th Century",
+        "icon": "📺",
+        "id": 1755689805505,
+        "location": "Toronto, Canada",
+        "text": "The medium is the message.",
+        "theme": "Media shaping identity",
+        "triggeringKeywords": [
+          "מוריסי היה אבא שלי",
+          "האמטיוי היה אמא שלי"
+        ],
+        "type": "theory"
+      },
+      {
+        "author": "Jorge Luis Borges",
+        "connection": "Your observation that all has been said and the importance lies in rephrasing aligns with Borges's playful yet profound ideas about how true originality might be found not in creating anew, but in re-interpreting and re-contextualizing existing works.",
+        "context": "An Argentine short-story writer, essayist, poet, and translator, Borges is celebrated for his philosophical and fantastical tales that often explore themes of identity, reality, infinity, and the nature of literature itself, frequently questioning the very concept of originality.",
+        "era": "20th Century",
+        "icon": "📖",
+        "id": 1755689805506,
+        "location": "Buenos Aires, Argentina",
+        "text": "Originality is an impossibility, a foolish dream.",
+        "theme": "Originality in reinterpretation",
+        "triggeringKeywords": [
+          "כל מה שניתן להגיד כבר נאמר",
+          "לנסח מחדש"
+        ],
+        "type": "literature"
       }
     ],
-    "id": 1755686039274,
-    "savedAt": "2025-08-20T10:34:34.722Z"
+    "id": 1755406432810,
+    "savedAt": "2025-08-20T11:38:28.774Z",
+    "internalEcho": {
+      "connection": "This entry echoes your contemplation on identity and inherited traits, particularly through the lens of a parental figure's influence and the yearning for timely personal growth amidst vulnerability.",
+      "keyQuote": "אלוהים, השם, אבא - אתה בוודאי דואג לי. אבל מה קורה ללב שלי? ... צריך לתת לו לייצר איזה עלה או שניים בטרם יפול קורבן שוב...",
+      "pastEntryId": 1755688688396
+    }
   }
 ]
