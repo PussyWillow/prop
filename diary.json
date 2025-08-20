@@ -858,6 +858,118 @@
     }
   },
   {
+    "title": "14.06",
+    "content": "Shimmering, socialite Jew\nבבקרים אני סקרנית ועייפה. מעוכה, כאילו משאית עלתה עליי. במקלחת אני מעריצה את שרירי הבטן שלי. בשלב הזה הגיזרה הלוהטת שלי היא ההוכחה האולטימטיבית להשגחה אלוהית, שכן הצורה שבה אני חיה…\nבצהריים אני מתחילה להתמרמר על ערן. ועל אופיר. ”תאכלו תשורטס שלי, תאכלו תכובע“ אני מאחלת להם. אני מתחילה להתבלבל לגבי מי מכבד את מערכת היחסים שלנו פחות. אני מדמיינת אותם אומרים עלי דברים רעים, ומעליבים, והרי ערן איתי לא משוחח בכלל. אבל איתו, עם האיש שאמר לו שעליו לזיין אותי ותו לא, הוא כן. ובהתחשב בידע שכן יש לי עליו, הידע שאין לי עליו מחליא אותי.\n\nאחרי הצהריים אני מנסה להציל חיים, כל חיים יחשבו. ציפור או עש. עכביש או זבוב. מה שהלורד יזרוק עליי. לפעמים אני מרגישה כאילו אני מביטה בעולם, והעולם אינו מביט בי בחזרה. ובכל מקרה. יש הרבה עבודה לפניי.",
+    "date": "2020-06-14",
+    "isHebrew": true,
+    "echoes": [
+      {
+        "author": "Albert Camus",
+        "connection": "Your feeling that \"העולם אינו מביט בי בחזרה\" powerfully echoes Camus's concept of the absurd, where humanity seeks meaning in an indifferent universe, highlighting a shared experience of existential disconnect.",
+        "context": "Camus's philosophy of the absurd explores the human search for meaning in a universe that remains silent and indifferent to our questions. He argued that true freedom comes from acknowledging this confrontation without despair.",
+        "era": "Mid 20th Century",
+        "icon": "🌌",
+        "id": 1755690473385,
+        "location": "France",
+        "text": "In the depth of winter, I finally learned that within me lay an invincible summer. The absurd is born of this confrontation between the human need and the unreasonable silence of the world.",
+        "theme": "The absurd indifference",
+        "triggeringKeywords": [
+          "העולם אינו מביט בי בחזרה"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "Mary Shelley",
+        "connection": "Your distress over Eran speaking about you rather than to you, and the \"הידע שאין לי עליו מחליא אותי,\" mirrors the anguish found in historical personal accounts of relationships strained by perceived betrayals and the corrosive power of unspoken truths.",
+        "context": "Mary Shelley's letters and journals often reveal her struggles with personal relationships, the pain of misunderstanding, and the isolation that can arise even within intimate circles when communication falters or trust is broken.",
+        "era": "Early 19th Century",
+        "icon": "💔",
+        "id": 1755690473386,
+        "location": "England",
+        "text": "How can one love a person with whom one has nothing in common? ... It is a misery to feel isolated even when in company.",
+        "theme": "The pain of miscommunication",
+        "triggeringKeywords": [
+          "אני מתחילה להתמרמר על ערן",
+          "ערן איתי לא משוחח בכלל",
+          "הידע שאין לי עליו מחליא אותי"
+        ],
+        "type": "personal letter"
+      },
+      {
+        "author": "Walt Whitman",
+        "connection": "Your appreciation for your physical form as a testament to \"השגחה אלוהית\" resonates with Whitman's democratic celebration of the body, finding the sacred and divine within the very physical self, even amidst exhaustion.",
+        "context": "From his seminal work \"Leaves of Grass,\" Whitman celebrated the human body in all its forms, seeing it as sacred and divine, a vessel of democratic and spiritual power, challenging conventional pieties.",
+        "era": "Mid 19th Century",
+        "icon": "💪",
+        "id": 1755690473387,
+        "location": "United States",
+        "text": "I sing the body electric.",
+        "theme": "Celebrating the self",
+        "triggeringKeywords": [
+          "שרירי הבטן שלי",
+          "הגיזרה הלוהטת שלי",
+          "השגחה אלוהית"
+        ],
+        "type": "poetry"
+      },
+      {
+        "author": "Saint Francis of Assisi",
+        "connection": "Your tender impulse to save the lives of the smallest creatures, from spiders to flies, connects deeply with Saint Francis's radical reverence for all living things, emphasizing a shared spiritual inclination towards universal compassion.",
+        "context": "Saint Francis of Assisi is revered for his profound love and respect for all of creation, often preaching to animals and advocating for a life of poverty and simplicity, emphasizing kinship with nature and all living beings.",
+        "era": "Early 13th Century",
+        "icon": "🦋",
+        "id": 1755690473388,
+        "location": "Assisi, Italy",
+        "text": "For it is in giving that we receive.",
+        "theme": "Reverence for all life",
+        "triggeringKeywords": [
+          "לנסות להציל חיים",
+          "ציפור או עש",
+          "עכביש או זבוב"
+        ],
+        "type": "spiritual teaching"
+      },
+      {
+        "author": "Marcus Aurelius",
+        "connection": "Your concluding thought, \"יש הרבה עבודה לפניי,\" encapsulates the Stoic wisdom of facing life's continuous demands with steadfast resolve, finding purpose in enduring and acting despite the weight of burdens.",
+        "context": "As Roman Emperor and Stoic philosopher, Marcus Aurelius wrote \"Meditations\" as a guide to self-improvement and resilience, often reflecting on duty, the impermanence of life, and the importance of perseverance in the face of challenges.",
+        "era": "2nd Century CE",
+        "icon": "🏛️",
+        "id": 1755690473389,
+        "location": "Roman Empire",
+        "text": "Frightened by change? But what can exist without it? What is more pleasing or more suited to the nature of the universal than change?",
+        "theme": "Stoic endurance",
+        "triggeringKeywords": [
+          "יש הרבה עבודה לפניי"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "Virginia Woolf",
+        "connection": "Your opening self-description \"Shimmering, socialite Jew\" and the shifting emotions throughout your day resonate with Woolf's profound exploration of identity's fluidity, highlighting how different \"selves\" emerge in response to internal feelings and external expectations.",
+        "context": "In *Orlando*, Woolf explores the fluidity of identity through a protagonist who lives for centuries and changes gender, challenging conventional notions of self, time, and societal roles.",
+        "era": "Early 20th Century",
+        "icon": "🎭",
+        "id": 1755690473390,
+        "location": "England",
+        "text": "For she had a great variety of selves to call upon, far more than we have been able to show, and some are visible, others are not.",
+        "theme": "Multiplicity of self",
+        "triggeringKeywords": [
+          "Shimmering, socialite Jew",
+          "fluidity of identity"
+        ],
+        "type": "novel"
+      }
+    ],
+    "internalEcho": {
+      "connection": "This entry echoes your past reflections on reaching an emotional breaking point, where the heart feels overwhelmed and unable to bear further burdens.",
+      "keyQuote": "לפעמים נדמה לי שאינני יכולה לשאת עוד.",
+      "pastEntryId": 1755688688396
+    },
+    "id": 1755690480020,
+    "savedAt": "2025-08-20T11:48:00.020Z"
+  },
+  {
     "title": "25.02",
     "content": "על אף האמונה המוצקה בברכותיי,  מצאתי את עצמי נאלצת לספור אותן. חלמתי שאני נכשלת בכל האוניברסיטאות. חלמתי שאני בונה קופסאות קטנות, קטנטנות, פיציות ממש מנייר a4. כל הדיבורים האלו על אלוהים, וחוק, ועוני, רוקנו אותי ממש מתוכן. יצא לי המילוי כמו מכרית ישנה, ונשאר לשכב שם בשמש. בחלום עברתי דרך הגנים למוסד היחיד שניאות לקבלני: המכללה לאדריכלות נוף. \n",
     "date": "2020-05-25",
