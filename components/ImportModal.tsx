@@ -1,6 +1,7 @@
-import React, { useState, useCallback, useRef } from 'react';
+import React from 'react';
 import type { DiaryEntry } from '../types';
 import { Upload, X, CheckCircle, AlertTriangle, Info } from './Icons';
+import { useImportHandler } from '../hooks/useImportHandler';
 
 interface ImportModalProps {
   isOpen: boolean;
@@ -9,108 +10,31 @@ interface ImportModalProps {
 }
 
 export const ImportModal = ({ isOpen, onClose, onImport }: ImportModalProps) => {
-  const [isDragging, setIsDragging] = useState(false);
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
-
-  const resetState = useCallback(() => {
-    setIsDragging(false);
-    setSelectedFile(null);
-    setError(null);
-  }, []);
+  const {
+    isDragging,
+    selectedFile,
+    error,
+    fileInputRef,
+    handleDragEnter,
+    handleDragLeave,
+    handleDragOver,
+    handleDrop,
+    handleFileSelect,
+    getParsedEntries,
+    reset,
+  } = useImportHandler();
 
   const handleClose = () => {
-    resetState();
+    reset();
     onClose();
   };
-
-  const validateAndParseFile = (file: File) => {
-    if (file.type !== 'application/json') {
-      setError("Invalid file type. Please upload a '.json' file.");
-      setSelectedFile(null);
-      return;
-    }
-
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      try {
-        const text = e.target?.result;
-        if (typeof text !== 'string') throw new Error("File could not be read");
-        const importedEntries = JSON.parse(text);
-
-        const isValid = Array.isArray(importedEntries) && 
-            (importedEntries.length === 0 || 
-             (typeof importedEntries[0].id === 'number' &&
-              typeof importedEntries[0].content === 'string' &&
-              typeof importedEntries[0].title === 'string' &&
-              typeof importedEntries[0].date === 'string'));
-
-        if (isValid) {
-          setSelectedFile(file);
-          setError(null);
-        } else {
-          setError("Invalid backup file format. The JSON structure is incorrect.");
-          setSelectedFile(null);
-        }
-      } catch (err) {
-        console.error("Error parsing file:", err);
-        setError("Failed to parse backup. The file may be corrupted or not valid JSON.");
-        setSelectedFile(null);
-      }
-    };
-    reader.readAsText(file);
-  };
-
-  const handleDragEnter = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setIsDragging(true);
-  };
-
-  const handleDragLeave = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setIsDragging(false);
-  };
-
-  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-  };
-
-  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setIsDragging(false);
-    if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-      validateAndParseFile(e.dataTransfer.files[0]);
-      e.dataTransfer.clearData();
-    }
-  };
-
-  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files.length > 0) {
-      validateAndParseFile(e.target.files[0]);
-    }
-    if (fileInputRef.current) {
-        fileInputRef.current.value = "";
-    }
-  };
   
-  const handleImportClick = () => {
-    if (!selectedFile) return;
-
-    const reader = new FileReader();
-    reader.onload = (e) => {
-        const text = e.target?.result;
-        if (typeof text === 'string') {
-            const importedEntries = JSON.parse(text) as DiaryEntry[];
-            onImport(importedEntries);
-            handleClose();
-        }
-    };
-    reader.readAsText(selectedFile);
+  const handleImportClick = async () => {
+    const entries = await getParsedEntries();
+    if (entries) {
+        onImport(entries);
+        handleClose();
+    }
   };
 
   if (!isOpen) return null;
