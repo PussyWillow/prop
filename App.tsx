@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import type { DiaryEntry, HistoricalEcho } from './types';
-import { getHistoricalEchoes } from './services/geminiService';
-import { useLocalStorage } from './hooks/useLocalStorage';
+import React, { useState, useCallback } from 'react';
+import type { DiaryEntry } from './types';
+import { useDiary } from './hooks/useDiary';
 import { Feather, Plus, Save, Search, Edit, LayoutDashboard, Clock } from './components/Icons';
 import { ImportModal } from './components/ImportModal';
 import { EchoesTimeline } from './components/EchoesTimeline';
@@ -12,113 +11,39 @@ type View = 'editor' | 'dashboard';
 
 const App = () => {
   const [currentView, setCurrentView] = useState<View>('editor');
-  
-  const [diaryEntry, setDiaryEntry] = useState('');
-  const [entryTitle, setEntryTitle] = useState('');
-  const [historicalEchoes, setHistoricalEchoes] = useState<HistoricalEcho[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  
-  const [customDate, setCustomDate] = useState(new Date().toISOString().split('T')[0]);
-  const [isHebrewText, setIsHebrewText] = useState(false);
-  
-  const [savedEntries, setSavedEntries] = useLocalStorage<DiaryEntry[]>('diary-entries', []);
-  const [currentEntryId, setCurrentEntryId] = useState<number | null>(null);
   const [showImportModal, setShowImportModal] = useState(false);
-  const [hasBeenAnalyzed, setHasBeenAnalyzed] = useState(false);
 
-  useEffect(() => {
-    const hebrewPattern = /[\u0590-\u05FF]/;
-    setIsHebrewText(hebrewPattern.test(diaryEntry));
-  }, [diaryEntry]);
+  const {
+    diaryEntry,
+    entryTitle,
+    setEntryTitle,
+    handleDiaryChange,
+    historicalEchoes,
+    isLoading,
+    error,
+    customDate,
+    setCustomDate,
+    isHebrewText,
+    savedEntries,
+    setSavedEntries,
+    hasBeenAnalyzed,
+    fetchEchoes,
+    saveEntry,
+    createNewEntry,
+    loadEntry,
+    deleteEntry,
+    isSaved
+  } = useDiary();
 
-  const handleDiaryChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-      setDiaryEntry(e.target.value);
-      setHasBeenAnalyzed(false);
-      if (historicalEchoes.length > 0) {
-        setHistoricalEchoes([]);
-      }
-  }
+  const handleLoadEntry = useCallback((entry: DiaryEntry) => {
+      loadEntry(entry);
+      setCurrentView('editor');
+  }, [loadEntry]);
 
-  const pastThemes = useMemo(() => {
-    if (savedEntries.length === 0) return '';
-    const recentThemes = savedEntries.slice(0, 10).flatMap(entry => entry.echoes?.map(echo => echo.theme) || []).filter(Boolean);
-    if (recentThemes.length === 0) return '';
-    const themeCounts = recentThemes.reduce((acc, theme) => {
-        const lowerTheme = theme.toLowerCase();
-        acc[lowerTheme] = (acc[lowerTheme] || 0) + 1;
-        return acc;
-    }, {} as Record<string, number>);
-    const topThemes = Object.entries(themeCounts).sort((a, b) => b[1] - a[1]).slice(0, 5).map(entry => entry[0]);
-    return topThemes.join(', ');
-  }, [savedEntries]);
-
-  const fetchEchoes = async () => {
-    if (diaryEntry.trim().length < 20) {
-      setError("Please write at least 20 characters to find echoes.");
-      return;
-    }
-    setIsLoading(true);
-    setError(null);
-    try {
-      const echoes = await getHistoricalEchoes(diaryEntry, pastThemes);
-      setHistoricalEchoes(echoes);
-      setHasBeenAnalyzed(true);
-    } catch (err) {
-      setError('Failed to fetch historical echoes. Please try again.');
-      console.error(err);
-      setHasBeenAnalyzed(false);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-  
-  const saveEntry = () => {
-    if (!diaryEntry.trim()) return;
-    
-    const entryData: Omit<DiaryEntry, 'id' | 'savedAt'> = {
-      title: entryTitle || (isHebrewText ? 'רשומה ללא כותרת' : 'Untitled Entry'),
-      content: diaryEntry,
-      date: customDate,
-      isHebrew: isHebrewText,
-      echoes: historicalEchoes
-    };
-
-    if (currentEntryId && savedEntries.some(e => e.id === currentEntryId)) {
-      setSavedEntries(prev => prev.map(e => e.id === currentEntryId ? { ...e, ...entryData, savedAt: new Date().toISOString() } : e));
-    } else {
-      const newEntry: DiaryEntry = { ...entryData, id: Date.now(), savedAt: new Date().toISOString() };
-      setSavedEntries(prev => [newEntry, ...prev].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()));
-      setCurrentEntryId(newEntry.id);
-    }
-  };
-
-  const createNewEntry = () => {
-    setDiaryEntry('');
-    setEntryTitle('');
-    setHistoricalEchoes([]);
-    setCurrentEntryId(null);
-    setCustomDate(new Date().toISOString().split('T')[0]);
-    setHasBeenAnalyzed(false);
-    setCurrentView('editor');
-  };
-  
-  const loadEntry = (entry: DiaryEntry) => {
-    setDiaryEntry(entry.content);
-    setEntryTitle(entry.title);
-    setCurrentEntryId(entry.id);
-    setCustomDate(entry.date);
-    setHistoricalEchoes(entry.echoes || []);
-    setHasBeenAnalyzed(entry.echoes && entry.echoes.length > 0);
-    setCurrentView('editor');
-  };
-
-  const deleteEntry = (entryId: number) => {
-      setSavedEntries(prev => prev.filter(e => e.id !== entryId));
-      if (currentEntryId === entryId) {
-        createNewEntry();
-      }
-  };
+  const handleCreateNewEntry = useCallback(() => {
+      createNewEntry();
+      setCurrentView('editor');
+  }, [createNewEntry]);
 
   const handleExport = () => {
     if (savedEntries.length === 0) return;
@@ -162,7 +87,7 @@ const App = () => {
                              (isHebrewText ? 'מוכן לניתוח' : 'Ready to analyze')}
                         </span>
                     </div>
-                    <div className="flex items-center gap-2">{savedEntries.some(e => e.id === currentEntryId) ? (<span className="text-green-600 font-medium">✓ Saved</span>) : (<span className="text-orange-600 font-medium">○ Unsaved</span>)}</div>
+                    <div className="flex items-center gap-2">{isSaved ? (<span className="text-green-600 font-medium">✓ Saved</span>) : (<span className="text-orange-600 font-medium">○ Unsaved</span>)}</div>
                 </div></div>)}
             </div>
         </div>
@@ -196,11 +121,11 @@ const App = () => {
             <Feather className="w-8 h-8 text-amber-600 scale-x-[-1]" />
           </div>
           <div className="flex items-center justify-center gap-4 mb-4 flex-wrap">
-            <button onClick={createNewEntry} className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors shadow-md"><Plus className="w-4 h-4" />{isHebrewText ? 'רשומה חדשה' : 'New Entry'}</button>
+            <button onClick={handleCreateNewEntry} className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors shadow-md"><Plus className="w-4 h-4" />{isHebrewText ? 'רשומה חדשה' : 'New Entry'}</button>
             {currentView === 'editor' && (
               <>
                 <button onClick={fetchEchoes} disabled={isLoading || diaryEntry.trim().length < 20 || hasBeenAnalyzed} className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors shadow-md"><Search className="w-4 h-4" />{isHebrewText ? 'מצא הדים' : 'Find Echoes'}</button>
-                <button onClick={saveEntry} disabled={!diaryEntry.trim()} className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors shadow-md"><Save className="w-4 h-4" />{isHebrewText ? 'שמור' : 'Save'}</button>
+                <button onClick={saveEntry} disabled={!diaryEntry.trim() || isSaved} className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors shadow-md"><Save className="w-4 h-4" />{isHebrewText ? 'שמור' : 'Save'}</button>
               </>
             )}
              <button onClick={() => setCurrentView(currentView === 'editor' ? 'dashboard' : 'editor')} className="flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg transition-colors shadow-md">
@@ -226,7 +151,7 @@ const App = () => {
             <ImmersiveDashboard
                 entries={savedEntries}
                 isHebrew={isHebrewText}
-                onLoadEntry={loadEntry}
+                onLoadEntry={handleLoadEntry}
                 onDeleteEntry={deleteEntry}
                 onImportClick={() => setShowImportModal(true)}
                 onExportClick={handleExport}
