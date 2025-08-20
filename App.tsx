@@ -2,7 +2,8 @@
 import React, { useState, useCallback } from 'react';
 import type { DiaryEntry } from './types';
 import { useDiary } from './hooks/useDiary';
-import { Feather, Plus, Save, Search, Edit, LayoutDashboard } from './components/Icons';
+import { useAuth } from './hooks/useAuth';
+import { Feather, Plus, Save, Search, Edit, LayoutDashboard, GitHub } from './components/Icons';
 import { ImportModal } from './components/ImportModal';
 import { ImmersiveDashboard } from './components/ImmersiveDashboard';
 import { EditorView } from './components/EditorView';
@@ -12,6 +13,8 @@ type View = 'editor' | 'dashboard';
 const App = () => {
   const [currentView, setCurrentView] = useState<View>('editor');
   const [showImportModal, setShowImportModal] = useState(false);
+  
+  const { user, login, logout, isAuthenticated } = useAuth();
 
   const {
     diaryEntry,
@@ -75,12 +78,33 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-cream-50 to-stone-100 p-6 font-sans text-stone-800">
       <div className="max-w-7xl mx-auto">
-        <header className="text-center mb-8">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <Feather className="w-8 h-8 text-amber-600" />
-            <h1 className="text-4xl font-serif text-amber-900">{isHebrewText ? 'יומן הדי העבר' : 'Echo Chamber Diary'}</h1>
-            <Feather className="w-8 h-8 text-amber-600 scale-x-[-1]" />
-          </div>
+        <header className="mb-8">
+            <div className="flex justify-between items-center mb-4">
+                <div></div>
+                <div className="text-center">
+                    <div className="flex items-center justify-center gap-3">
+                        <Feather className="w-8 h-8 text-amber-600" />
+                        <h1 className="text-4xl font-serif text-amber-900">{isHebrewText ? 'יומן הדי העבר' : 'Echo Chamber Diary'}</h1>
+                        <Feather className="w-8 h-8 text-amber-600 scale-x-[-1]" />
+                    </div>
+                </div>
+                <div>
+                     {isAuthenticated ? (
+                        <div className="flex items-center gap-3">
+                            <img src={user?.avatarUrl} alt={user?.name} className="w-10 h-10 rounded-full border-2 border-amber-300" />
+                            <div>
+                                <p className="font-semibold text-sm text-stone-700">{user?.name}</p>
+                                <button onClick={logout} className="text-xs text-red-600 hover:underline">Log out</button>
+                            </div>
+                        </div>
+                    ) : (
+                        <button onClick={login} className="flex items-center gap-2 px-4 py-2 bg-stone-800 hover:bg-stone-900 text-white rounded-lg transition-colors shadow-md">
+                            <GitHub className="w-4 h-4" />
+                            Sign in with GitHub
+                        </button>
+                    )}
+                </div>
+            </div>
           <div className="flex items-center justify-center gap-4 mb-4 flex-wrap">
             <button onClick={handleCreateNewEntry} className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors shadow-md"><Plus className="w-4 h-4" />{isHebrewText ? 'רשומה חדשה' : 'New Entry'}</button>
             {currentView === 'editor' && (
@@ -94,7 +118,7 @@ const App = () => {
              </button>
           </div>
           {currentView === 'editor' && (
-             <div className="flex items-center justify-center gap-4 mb-4">
+             <div className="flex items-center justify-center gap-4">
                <input type="date" value={customDate} onChange={(e) => setCustomDate(e.target.value)} className="px-3 py-2 border border-amber-300 rounded-lg bg-white/80 text-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-400"/>
              </div>
           )}
@@ -129,6 +153,7 @@ const App = () => {
                 onDeleteEntry={deleteEntry}
                 onImportClick={() => setShowImportModal(true)}
                 onExportClick={handleExport}
+                isAuthenticated={isAuthenticated}
             />
         )}
       </div>

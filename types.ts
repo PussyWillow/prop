@@ -20,3 +20,8 @@ export interface DiaryEntry {
   savedAt: string;
   echoes: HistoricalEcho[];
 }
+
+export interface GitHubUser {
+  name: string;
+  avatarUrl: string;
+}
