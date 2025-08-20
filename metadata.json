@@ -1,0 +1,5 @@
+{
+  "name": "Echo Chamber Diary",
+  "description": "A React app that teaches history by blending it into your own diary entries. As you write, the app uses AI to find and display historical moments, quotes, and events that echo the themes in your writing, connecting your personal experience to the vast tapestry of human history.",
+  "requestFramePermissions": []
+}
