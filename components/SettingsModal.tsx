@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import type { GithubSyncConfig } from '../types';
-import { X, Info } from './Icons';
+import { X, Info, CheckCircle } from './Icons';
 
 interface SettingsModalProps {
   isOpen: boolean;
@@ -17,6 +17,18 @@ export const SettingsModal = ({ isOpen, onClose, onSave, onClear, initialConfig 
     filePath: 'diary.json',
     token: ''
   });
+
+  // This effect ensures the form is populated with the saved settings whenever the modal is opened.
+  useEffect(() => {
+    if (isOpen) {
+      setConfig(initialConfig || {
+        username: '',
+        repo: '',
+        filePath: 'diary.json',
+        token: ''
+      });
+    }
+  }, [initialConfig, isOpen]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setConfig({ ...config, [e.target.name]: e.target.value });
@@ -66,11 +78,15 @@ export const SettingsModal = ({ isOpen, onClose, onSave, onClear, initialConfig 
             <div>
                 <label htmlFor="token" className="block text-sm font-medium text-gray-700">Personal Access Token</label>
                 <input type="password" name="token" id="token" value={config.token} onChange={handleChange} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500" placeholder="ghp_..."/>
+                 <div className="mt-2 p-2 bg-amber-50 rounded-md border border-amber-200 text-xs text-amber-800 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-amber-600 flex-shrink-0" />
+                    <span>Make sure your token has the full <strong>`repo`</strong> scope to allow syncing.</span>
+                </div>
             </div>
 
             <div className="mt-4 p-4 bg-sky-50 rounded-lg border border-sky-200 text-sm text-sky-800 flex items-start gap-3">
               <Info className="w-8 h-8 text-sky-600 mt-0.5 flex-shrink-0"/>
-              <span>Create a <a href="https://github.com/settings/tokens/new?scopes=repo&description=EchoChamberDiarySync" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:text-sky-900">new Personal Access Token</a> with the <strong>'repo'</strong> scope to allow the app to read and write to your private repository.</span>
+              <span>Use this link to create a <a href="https://github.com/settings/tokens/new?scopes=repo&description=EchoChamberDiarySync" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:text-sky-900">new Personal Access Token</a>. It automatically selects the correct permissions for you.</span>
             </div>
 
             <div className="mt-6 flex justify-between items-center gap-4">
