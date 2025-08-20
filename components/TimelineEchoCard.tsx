@@ -1,3 +1,4 @@
+
 import React from 'react';
 import type { HistoricalEcho } from '../types';
 import { Star } from './Icons';
@@ -12,7 +13,7 @@ export const TimelineEchoCard = ({ echo }: TimelineEchoCardProps) => (
         <div className="absolute top-0 left-3 h-full w-px bg-stone-200"></div>
         <div className="absolute top-5 left-1 h-3 w-3 rounded-full bg-stone-400 border-2 border-white"></div>
         <div className="mb-8 ml-4">
-            <div className="bg-stone-50/80 backdrop-blur-sm border border-stone-200 rounded-lg p-4">
+            <div className="bg-stone-50/80 backdrop-blur-sm border border-stone-200 rounded-lg p-4 transition-shadow hover:shadow-md">
                 <time className="mb-1 text-sm font-normal leading-none text-stone-500">{echo.era}</time>
                 <div className="flex items-start gap-3 mt-1">
                     <span className="text-2xl mt-1">{echo.icon}</span>

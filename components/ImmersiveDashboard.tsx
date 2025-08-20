@@ -1,3 +1,4 @@
+
 import React, { useMemo } from 'react';
 import type { DiaryEntry, HistoricalEcho } from '../types';
 import { FileText, Star, Upload, Download, BarChart3, BookOpen, CloudUpload, CloudDownload } from './Icons';
@@ -73,7 +74,7 @@ export const ImmersiveDashboard = ({
         <div className="animate-fade-in grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Insights Panel */}
             <aside className="lg:col-span-1 lg:sticky top-6 self-start">
-                <div className="bg-white/60 backdrop-blur-sm border border-amber-200 rounded-lg p-6">
+                <div className="bg-white/60 backdrop-blur-sm border border-amber-200 rounded-lg p-6 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22%23a16207%22%20fill-opacity%3D%220.05%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M0%2040L40%200H20L0%2020M40%2040V20L20%2040%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E')]">
                      <h3 className="text-2xl font-serif text-amber-900 border-b pb-3 mb-4 flex items-center gap-3">
                         <BarChart3 className="w-6 h-6" />
                         {isHebrew ? 'תובנות' : 'Insights'}
@@ -87,7 +88,7 @@ export const ImmersiveDashboard = ({
                         {stats.topThemes.length > 0 ? (
                             <ul className="space-y-2">
                                 {stats.topThemes.map(([theme, count]) => (
-                                    <li key={theme} className="flex justify-between items-center text-sm bg-white p-2 rounded-md border">
+                                    <li key={theme} className="flex justify-between items-center text-sm bg-white/70 p-2 rounded-md border border-amber-200">
                                         <span className="capitalize text-gray-700">{theme}</span>
                                         <span className="font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">{count}</span>
                                     </li>
@@ -101,7 +102,7 @@ export const ImmersiveDashboard = ({
                         {isGithubConfigured ? (
                              <div className="relative">
                                 {isSyncing && (
-                                    <div className="absolute inset-0 bg-white/50 flex items-center justify-center rounded-lg">
+                                    <div className="absolute inset-0 bg-white/50 flex items-center justify-center rounded-lg z-10">
                                         <div className="w-6 h-6 border-2 border-amber-300 border-t-amber-600 rounded-full animate-spin"></div>
                                     </div>
                                 )}

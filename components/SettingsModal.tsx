@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import type { GithubSyncConfig } from '../types';
 import { X, Info, CheckCircle } from './Icons';
@@ -8,9 +9,10 @@ interface SettingsModalProps {
   onSave: (config: GithubSyncConfig) => void;
   onClear: () => void;
   initialConfig: GithubSyncConfig | null;
+  showToast: (message: string, type: 'success' | 'error' | 'info') => void;
 }
 
-export const SettingsModal = ({ isOpen, onClose, onSave, onClear, initialConfig }: SettingsModalProps) => {
+export const SettingsModal = ({ isOpen, onClose, onSave, onClear, initialConfig, showToast }: SettingsModalProps) => {
   const [config, setConfig] = useState<GithubSyncConfig>(initialConfig || {
     username: '',
     repo: '',
@@ -37,9 +39,10 @@ export const SettingsModal = ({ isOpen, onClose, onSave, onClear, initialConfig 
   const handleSave = () => {
     if (Object.values(config).every(field => field.trim() !== '')) {
       onSave(config);
+      showToast('Settings saved successfully!', 'success');
       onClose();
     } else {
-      alert('Please fill in all fields.');
+      showToast('Please fill in all fields.', 'error');
     }
   };
   
@@ -47,6 +50,7 @@ export const SettingsModal = ({ isOpen, onClose, onSave, onClear, initialConfig 
       if (confirm('Are you sure you want to clear your sync settings?')) {
         onClear();
         setConfig({ username: '', repo: '', filePath: 'diary.json', token: '' });
+        showToast('Sync settings cleared.', 'info');
         onClose();
       }
   };

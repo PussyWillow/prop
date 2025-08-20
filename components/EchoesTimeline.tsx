@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import type { HistoricalEcho } from '../types';
 import { Heart, MapPin, BookOpen, Star, ChevronDown } from './Icons';
@@ -64,7 +65,7 @@ export const EchoesTimeline = ({ echoes, isHebrew }: { echoes: HistoricalEcho[];
     }
 
     return (
-        <div className="h-full w-full">
+        <div className="w-full">
             <h3 className="text-xl font-serif text-amber-900 mb-4 pl-8 relative" style={{ direction: isHebrew ? 'rtl' : 'ltr' }}>
                 <div className={`absolute top-0 h-full w-px bg-amber-200 ${isHebrew ? 'right-3' : 'left-3'}`}></div>
                 {isHebrew ? 'הדים היסטוריים' : 'Historical Echoes'}

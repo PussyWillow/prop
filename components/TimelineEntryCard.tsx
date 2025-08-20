@@ -1,3 +1,4 @@
+
 import React from 'react';
 import type { DiaryEntry } from '../types';
 import { Calendar, Trash2, Star, Edit } from './Icons';
@@ -13,7 +14,7 @@ export const TimelineEntryCard = ({ entry, onLoad, onDelete }: TimelineEntryCard
         <div className="absolute top-0 left-3 h-full w-px bg-amber-300"></div>
         <div className="absolute top-5 left-0 h-5 w-5 rounded-full bg-amber-500 border-2 border-white shadow-sm"></div>
         <div className="mb-8 ml-4">
-            <div className="bg-white/60 backdrop-blur-sm border-2 border-amber-400 rounded-lg p-4 transition-shadow hover:shadow-lg">
+            <div className="bg-gradient-to-br from-white to-amber-50/50 backdrop-blur-sm border-2 border-amber-400 rounded-lg p-4 transition-all hover:shadow-lg hover:border-amber-500">
                 <div className="flex justify-between items-start gap-4">
                     <div className="flex-1">
                         <time className="mb-1 text-sm font-normal leading-none text-amber-600 flex items-center gap-2">

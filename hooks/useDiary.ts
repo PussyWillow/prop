@@ -1,10 +1,11 @@
+
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import type { DiaryEntry, HistoricalEcho, GithubSyncConfig } from '../types';
 import { useLocalStorage } from './useLocalStorage';
 import { getHistoricalEchoes } from '../services/geminiService';
 import { getDiaryFile, updateDiaryFile } from '../services/githubService';
 
-export const useDiary = (syncConfig: GithubSyncConfig | null) => {
+export const useDiary = (syncConfig: GithubSyncConfig | null, showToast: (message: string, type: 'success' | 'error' | 'info') => void) => {
   const [diaryEntry, setDiaryEntry] = useState('');
   const [entryTitle, setEntryTitle] = useState('');
   const [historicalEchoes, setHistoricalEchoes] = useState<HistoricalEcho[]>([]);
@@ -48,6 +49,7 @@ export const useDiary = (syncConfig: GithubSyncConfig | null) => {
   const fetchEchoes = useCallback(async () => {
     if (diaryEntry.trim().length < 20) {
       setError("Please write at least 20 characters to find echoes.");
+      showToast("Please write at least 20 characters to find echoes.", "info");
       return;
     }
     setIsLoading(true);
@@ -56,14 +58,20 @@ export const useDiary = (syncConfig: GithubSyncConfig | null) => {
       const echoes = await getHistoricalEchoes(diaryEntry, pastThemes);
       setHistoricalEchoes(echoes);
       setHasBeenAnalyzed(true);
+      if (echoes.length > 0) {
+          showToast(`Discovered ${echoes.length} new historical echoes!`, 'success');
+      } else {
+          showToast(`No specific echoes found, but your entry is saved.`, 'info');
+      }
     } catch (err) {
       setError('Failed to fetch historical echoes. Please try again.');
+      showToast('Failed to fetch historical echoes. Please try again.', 'error');
       console.error(err);
       setHasBeenAnalyzed(false);
     } finally {
       setIsLoading(false);
     }
-  }, [diaryEntry, pastThemes]);
+  }, [diaryEntry, pastThemes, showToast]);
   
   const saveEntry = useCallback(() => {
     if (!diaryEntry.trim()) return;
@@ -76,14 +84,18 @@ export const useDiary = (syncConfig: GithubSyncConfig | null) => {
       echoes: historicalEchoes
     };
 
+    let isNew = false;
     if (currentEntryId && savedEntries.some(e => e.id === currentEntryId)) {
       setSavedEntries(prev => prev.map(e => e.id === currentEntryId ? { ...e, ...entryData, savedAt: new Date().toISOString() } : e));
     } else {
+      isNew = true;
       const newEntry: DiaryEntry = { ...entryData, id: Date.now(), savedAt: new Date().toISOString() };
       setSavedEntries(prev => [newEntry, ...prev].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()));
       setCurrentEntryId(newEntry.id);
     }
-  }, [diaryEntry, entryTitle, customDate, isHebrewText, historicalEchoes, currentEntryId, savedEntries, setSavedEntries]);
+
+    showToast(isNew ? 'New entry saved!' : 'Entry updated successfully!', 'success');
+  }, [diaryEntry, entryTitle, customDate, isHebrewText, historicalEchoes, currentEntryId, savedEntries, setSavedEntries, showToast]);
 
   const createNewEntry = useCallback(() => {
     setDiaryEntry('');
@@ -103,14 +115,16 @@ export const useDiary = (syncConfig: GithubSyncConfig | null) => {
     setHistoricalEchoes(entry.echoes || []);
     setHasBeenAnalyzed(entry.echoes && entry.echoes.length > 0);
     setError(null);
-  }, []);
+    showToast(`Loaded entry: "${entry.title}"`, 'info');
+  }, [showToast]);
 
   const deleteEntry = useCallback((entryId: number) => {
       setSavedEntries(prev => prev.filter(e => e.id !== entryId));
+      showToast('Entry deleted.', 'success');
       if (currentEntryId === entryId) {
         createNewEntry();
       }
-  }, [currentEntryId, setSavedEntries, createNewEntry]);
+  }, [currentEntryId, setSavedEntries, createNewEntry, showToast]);
 
   const isSaved = useMemo(() => {
       if (!currentEntryId) return false;
@@ -122,7 +136,7 @@ export const useDiary = (syncConfig: GithubSyncConfig | null) => {
   // --- GitHub Sync Logic ---
   const syncFromGithub = useCallback(async () => {
     if (!syncConfig) {
-        alert("GitHub Sync is not configured.");
+        showToast("GitHub Sync is not configured.", "error");
         return;
     }
     setIsSyncing(true);
@@ -130,51 +144,49 @@ export const useDiary = (syncConfig: GithubSyncConfig | null) => {
     try {
         const githubData = await getDiaryFile(syncConfig);
         if (githubData && githubData.entries) {
+            let newEntriesCount = 0;
             setSavedEntries(prev => {
                 const combined = [...prev, ...githubData.entries];
                 const uniqueMap = new Map<number, DiaryEntry>();
                 combined.forEach(e => uniqueMap.set(e.id, e));
-                return Array.from(uniqueMap.values()).sort((a, b) => new Date(b.savedAt).getTime() - new Date(a.savedAt).getTime());
+                const merged = Array.from(uniqueMap.values()).sort((a, b) => new Date(b.savedAt).getTime() - new Date(a.savedAt).getTime());
+                newEntriesCount = merged.length - prev.length;
+                return merged;
             });
-            alert("Successfully synced from GitHub!");
+            showToast(newEntriesCount > 0 ? `Synced ${newEntriesCount} new entries from GitHub!` : "Diary is already up to date.", 'success');
         } else {
-            alert("No data found on GitHub, or the file is empty. Pushing local entries instead.");
+            showToast("No data on GitHub. Pushing local entries...", "info");
             await syncToGithub();
         }
     } catch (e: any) {
         setError(e.message);
-        alert(`Error syncing from GitHub: ${e.message}`);
+        showToast(`Error syncing from GitHub: ${e.message}`, "error");
     } finally {
         setIsSyncing(false);
     }
-  }, [syncConfig, setSavedEntries]);
+  }, [syncConfig, setSavedEntries, showToast]);
 
   const syncToGithub = useCallback(async () => {
      if (!syncConfig) {
-        alert("GitHub Sync is not configured.");
+        showToast("GitHub Sync is not configured.", "error");
+        return;
+    }
+    if (savedEntries.length === 0) {
+        showToast("No entries to sync.", "info");
         return;
     }
     setIsSyncing(true);
     setError(null);
     try {
         await updateDiaryFile(syncConfig, savedEntries);
-        alert("Successfully synced to GitHub!");
+        showToast("Successfully synced to GitHub!", "success");
     } catch (e: any) {
         setError(e.message);
-        alert(`Error syncing to GitHub: ${e.message}`);
+        showToast(`Error syncing to GitHub: ${e.message}`, "error");
     } finally {
         setIsSyncing(false);
     }
-  }, [syncConfig, savedEntries]);
-
-  // Initial sync on load
-  useEffect(() => {
-    if (syncConfig) {
-      console.log("Sync config found, attempting initial sync from GitHub.");
-      syncFromGithub();
-    }
-  }, [syncConfig]); // This will run only when syncConfig changes (i.e., on first load with config)
-
+  }, [syncConfig, savedEntries, showToast]);
 
   return {
     diaryEntry,

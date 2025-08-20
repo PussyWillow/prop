@@ -1,3 +1,4 @@
+
 export interface HistoricalEcho {
   id: number;
   type: string;
@@ -25,4 +26,10 @@ export interface GithubSyncConfig {
   repo: string;
   filePath: string;
   token: string;
+}
+
+export interface ToastMessage {
+  id: number;
+  message: string;
+  type: 'success' | 'error' | 'info';
 }

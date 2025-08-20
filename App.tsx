@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback } from 'react';
 import type { DiaryEntry } from './types';
 import { useDiary } from './hooks/useDiary';
@@ -7,6 +8,8 @@ import { ImportModal } from './components/ImportModal';
 import { ImmersiveDashboard } from './components/ImmersiveDashboard';
 import { EditorView } from './components/EditorView';
 import { SettingsModal } from './components/SettingsModal';
+import { useToast } from './contexts/ToastContext';
+import { ToastContainer } from './components/ToastContainer';
 
 type View = 'editor' | 'dashboard';
 
@@ -15,6 +18,7 @@ const App = () => {
   const [showImportModal, setShowImportModal] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
   
+  const { showToast } = useToast();
   const { config, saveConfig, clearConfig, isConfigured } = useGithubSync();
 
   const {
@@ -40,7 +44,7 @@ const App = () => {
     isSaved,
     syncFromGithub,
     syncToGithub,
-  } = useDiary(config);
+  } = useDiary(config, showToast);
 
   const handleLoadEntry = useCallback((entry: DiaryEntry) => {
       loadEntry(entry);
@@ -61,6 +65,7 @@ const App = () => {
     link.href = jsonString;
     link.download = "echo-chamber-diary-backup.json";
     link.click();
+    showToast('Diary exported successfully!', 'success');
   };
 
   const handleConfirmImport = (importedEntries: DiaryEntry[]) => {
@@ -77,93 +82,98 @@ const App = () => {
       return mergedEntries;
     });
     setShowImportModal(false);
+    showToast(`${importedEntries.length} entries imported.`, 'success');
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-cream-50 to-stone-100 p-6 font-sans text-stone-800">
-      <div className="max-w-7xl mx-auto">
-        <header className="mb-8">
-            <div className="flex justify-between items-center mb-4">
-                <div className="w-1/3"></div>
-                <div className="w-1/3 text-center">
-                    <div className="flex items-center justify-center gap-3">
-                        <Feather className="w-8 h-8 text-amber-600" />
-                        <h1 className="text-4xl font-serif text-amber-900">{isHebrewText ? 'יומן הדי העבר' : 'Echo Chamber Diary'}</h1>
-                        <Feather className="w-8 h-8 text-amber-600 scale-x-[-1]" />
-                    </div>
-                </div>
-                <div className="w-1/3 flex justify-end">
-                     <button onClick={() => setShowSettingsModal(true)} className="p-2 hover:bg-amber-100 rounded-full transition-colors" aria-label="Open sync settings">
-                        <Settings className="w-6 h-6 text-amber-700" />
-                    </button>
-                </div>
+    <>
+      <ToastContainer />
+      <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50 to-orange-50 p-6 font-sans text-stone-800">
+        <div className="max-w-7xl mx-auto">
+          <header className="mb-8">
+              <div className="flex justify-between items-center mb-4">
+                  <div className="w-1/3"></div>
+                  <div className="w-1/3 text-center">
+                      <div className="flex items-center justify-center gap-3">
+                          <Feather className="w-8 h-8 text-amber-600" />
+                          <h1 className="text-4xl font-serif text-amber-900">{isHebrewText ? 'יומן הדי העבר' : 'Echo Chamber Diary'}</h1>
+                          <Feather className="w-8 h-8 text-amber-600 scale-x-[-1]" />
+                      </div>
+                  </div>
+                  <div className="w-1/3 flex justify-end">
+                      <button onClick={() => setShowSettingsModal(true)} className="p-2 hover:bg-amber-100 rounded-full transition-colors" aria-label="Open sync settings">
+                          <Settings className="w-6 h-6 text-amber-700" />
+                      </button>
+                  </div>
+              </div>
+            <div className="flex items-center justify-center gap-4 mb-4 flex-wrap">
+              <button onClick={handleCreateNewEntry} className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors shadow-md"><Plus className="w-4 h-4" />{isHebrewText ? 'רשומה חדשה' : 'New Entry'}</button>
+              {currentView === 'editor' && (
+                <>
+                  <button onClick={fetchEchoes} disabled={isLoading || diaryEntry.trim().length < 20 || hasBeenAnalyzed} className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors shadow-md"><Search className="w-4 h-4" />{isHebrewText ? 'מצא הדים' : 'Find Echoes'}</button>
+                  <button onClick={saveEntry} disabled={!diaryEntry.trim() || isSaved} className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors shadow-md"><Save className="w-4 h-4" />{isHebrewText ? 'שמור' : 'Save'}</button>
+                </>
+              )}
+              <button onClick={() => setCurrentView(currentView === 'editor' ? 'dashboard' : 'editor')} className="flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg transition-colors shadow-md">
+                  {currentView === 'editor' ? <><LayoutDashboard className="w-4 h-4" />{isHebrewText ? 'תצוגת כרוניקה' : 'Chronicle View'}</> : <><Edit className="w-4 h-4" />{isHebrewText ? 'עורך' : 'Editor'}</>}
+              </button>
             </div>
-          <div className="flex items-center justify-center gap-4 mb-4 flex-wrap">
-            <button onClick={handleCreateNewEntry} className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors shadow-md"><Plus className="w-4 h-4" />{isHebrewText ? 'רשומה חדשה' : 'New Entry'}</button>
             {currentView === 'editor' && (
-              <>
-                <button onClick={fetchEchoes} disabled={isLoading || diaryEntry.trim().length < 20 || hasBeenAnalyzed} className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors shadow-md"><Search className="w-4 h-4" />{isHebrewText ? 'מצא הדים' : 'Find Echoes'}</button>
-                <button onClick={saveEntry} disabled={!diaryEntry.trim() || isSaved} className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors shadow-md"><Save className="w-4 h-4" />{isHebrewText ? 'שמור' : 'Save'}</button>
-              </>
+              <div className="flex items-center justify-center gap-4">
+                <input type="date" value={customDate} onChange={(e) => setCustomDate(e.target.value)} className="px-3 py-2 border border-amber-300 rounded-lg bg-white/80 text-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-400"/>
+              </div>
             )}
-             <button onClick={() => setCurrentView(currentView === 'editor' ? 'dashboard' : 'editor')} className="flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg transition-colors shadow-md">
-                {currentView === 'editor' ? <><LayoutDashboard className="w-4 h-4" />{isHebrewText ? 'תצוגת כרוניקה' : 'Chronicle View'}</> : <><Edit className="w-4 h-4" />{isHebrewText ? 'עורך' : 'Editor'}</>}
-             </button>
-          </div>
-          {currentView === 'editor' && (
-             <div className="flex items-center justify-center gap-4">
-               <input type="date" value={customDate} onChange={(e) => setCustomDate(e.target.value)} className="px-3 py-2 border border-amber-300 rounded-lg bg-white/80 text-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-400"/>
-             </div>
+          </header>
+
+          {showImportModal && (
+              <ImportModal 
+                  isOpen={showImportModal}
+                  onClose={() => setShowImportModal(false)}
+                  onImport={handleConfirmImport}
+              />
           )}
-        </header>
 
-        {showImportModal && (
-            <ImportModal 
-                isOpen={showImportModal}
-                onClose={() => setShowImportModal(false)}
-                onImport={handleConfirmImport}
-            />
-        )}
+          {showSettingsModal && (
+              <SettingsModal
+                  isOpen={showSettingsModal}
+                  onClose={() => setShowSettingsModal(false)}
+                  onSave={saveConfig}
+                  onClear={clearConfig}
+                  initialConfig={config}
+                  showToast={showToast}
+              />
+          )}
 
-        {showSettingsModal && (
-            <SettingsModal
-                isOpen={showSettingsModal}
-                onClose={() => setShowSettingsModal(false)}
-                onSave={saveConfig}
-                onClear={clearConfig}
-                initialConfig={config}
+          {currentView === 'editor' ? (
+            <EditorView
+              entryTitle={entryTitle}
+              setEntryTitle={setEntryTitle}
+              diaryEntry={diaryEntry}
+              handleDiaryChange={handleDiaryChange}
+              isHebrewText={isHebrewText}
+              isLoading={isLoading}
+              hasBeenAnalyzed={hasBeenAnalyzed}
+              historicalEchoes={historicalEchoes}
+              isSaved={isSaved}
+              error={error}
             />
-        )}
-
-        {currentView === 'editor' ? (
-          <EditorView
-            entryTitle={entryTitle}
-            setEntryTitle={setEntryTitle}
-            diaryEntry={diaryEntry}
-            handleDiaryChange={handleDiaryChange}
-            isHebrewText={isHebrewText}
-            isLoading={isLoading}
-            hasBeenAnalyzed={hasBeenAnalyzed}
-            historicalEchoes={historicalEchoes}
-            isSaved={isSaved}
-            error={error}
-          />
-        ) : (
-            <ImmersiveDashboard
-                entries={savedEntries}
-                isHebrew={isHebrewText}
-                onLoadEntry={handleLoadEntry}
-                onDeleteEntry={deleteEntry}
-                onImportClick={() => setShowImportModal(true)}
-                onExportClick={handleExport}
-                isGithubConfigured={isConfigured}
-                onSyncFromGithub={syncFromGithub}
-                onSyncToGithub={syncToGithub}
-                isSyncing={isSyncing}
-            />
-        )}
+          ) : (
+              <ImmersiveDashboard
+                  entries={savedEntries}
+                  isHebrew={isHebrewText}
+                  onLoadEntry={handleLoadEntry}
+                  onDeleteEntry={deleteEntry}
+                  onImportClick={() => setShowImportModal(true)}
+                  onExportClick={handleExport}
+                  isGithubConfigured={isConfigured}
+                  onSyncFromGithub={syncFromGithub}
+                  onSyncToGithub={syncToGithub}
+                  isSyncing={isSyncing}
+              />
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
