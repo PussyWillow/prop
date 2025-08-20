@@ -519,79 +519,127 @@
   },
   {
     "title": "25.02",
-    "content": "על אף האמונה המוצקה בברכותיי,  מצאתי את עצמי נאלצת לספור אותן. חלמתי שאני נכשלת בכל האוניברסיטאות. חלמתי שאני בונה קופסאות קטנות, קטנטנות, פיציות ממש מנייר a4. כל הדיבורים האלו על אלוהים, וחוק, ועוני, רוקנו אותי ממש מתוכן. יצא לי המילוי כמו מכרית ישנה, ונשאר לשכב שם בשמש. בחלום עברתי דרך הגנים למוסד היחיד שניאות לקבלני: המכללה לאדריכלות נוף.\n",
+    "content": "על אף האמונה המוצקה בברכותיי,  מצאתי את עצמי נאלצת לספור אותן. חלמתי שאני נכשלת בכל האוניברסיטאות. חלמתי שאני בונה קופסאות קטנות, קטנטנות, פיציות ממש מנייר a4. כל הדיבורים האלו על אלוהים, וחוק, ועוני, רוקנו אותי ממש מתוכן. יצא לי המילוי כמו מכרית ישנה, ונשאר לשכב שם בשמש. בחלום עברתי דרך הגנים למוסד היחיד שניאות לקבלני: המכללה לאדריכלות נוף. \n",
     "date": "2020-05-25",
     "isHebrew": true,
     "echoes": [
       {
-        "author": "Ecclesiastes",
-        "context": "This ancient biblical passage expresses a cyclical view of history and human experience, suggesting that fundamental truths and events recur, making reinterpretation a key to new insight.",
-        "era": "c. 3rd century BCE",
-        "icon": "♾️",
-        "id": 1755406452074,
-        "location": "Ancient Israel",
-        "text": "What has been will be again, what has been done will be done again; there is nothing new under the sun.",
-        "theme": "repetition",
-        "type": "wisdom literature"
+        "author": "Virginia Woolf",
+        "connection": "This reflects your feeling of being \"emptied of content\" and \"drained\" by external discourse, highlighting the historical burden of maintaining one's inner self against overwhelming external pressures.",
+        "context": "A prominent modernist writer, Virginia Woolf often explored the inner lives of her characters and herself, frequently documenting the mental toll of societal expectations and creative work in her private diaries.",
+        "era": "1920s London",
+        "icon": "⏳",
+        "id": 1755689722892,
+        "location": "London, England",
+        "text": "I am so tired of this incessant effort to be myself, to produce, to explain. The mind is stretched and stretched.",
+        "theme": "Exhaustion from demands",
+        "triggeringKeywords": [
+          "רוקנו אותי ממש מתוכן",
+          "יצא לי המילוי",
+          "emptied me of content",
+          "drained"
+        ],
+        "type": "diary"
       },
       {
-        "author": "Charles Dickens",
-        "context": "The famous plea from the orphan Oliver Twist, embodying the desperate situation of neglected children in Victorian England.",
-        "era": "1838",
-        "icon": "🏚️",
-        "id": 1755406452075,
-        "location": "England",
-        "text": "Please, sir, I want some more.",
-        "theme": "neglect",
-        "type": "novel"
+        "author": "Sei Shōnagon",
+        "connection": "Your dream of \"building tiny boxes from A4 paper\" echoes the historical experience of meticulous, repetitive work, where the effort feels endless and its ultimate purpose can be questioned, much like the detailed but often unending tasks of a Heian court lady.",
+        "context": "Sei Shōnagon was a court lady during Japan's Heian period, renowned for her observations and reflections on court life, nature, and personal feelings, recorded in her Pillow Book.",
+        "era": "Late 10th-early 11th century Japan",
+        "icon": "✍️",
+        "id": 1755689722893,
+        "location": "Heian-kyō (modern Kyoto), Japan",
+        "text": "The long, long nights, spent copying, copying, with only the rustle of silk and the soft glow of the lamp. One can only hope the effort is not entirely lost to the dust.",
+        "theme": "Tedium of meticulous labor",
+        "triggeringKeywords": [
+          "בונה קופסאות קטנות",
+          "קופסאות קטנות",
+          "נייר a4",
+          "building tiny boxes"
+        ],
+        "type": "diary"
       },
       {
-        "author": "Walt Whitman",
-        "context": "Whitman's celebration of the individual self, acknowledging and embracing the vastness and often contradictory nature of human experience and identity.",
-        "era": "1855",
-        "icon": "🎭",
-        "id": 1755406452076,
-        "location": "United States",
-        "text": "Do I contradict myself? Very well then I contradict myself, (I am large, I contain multitudes.)",
-        "theme": "identity",
-        "type": "poetry"
-      },
-      {
-        "author": "Rainer Maria Rilke",
-        "context": "Rilke advises patience and introspection for an aspiring poet, suggesting that answers to deep questions emerge through living experience, akin to a natural blooming process.",
-        "era": "1903",
-        "icon": "🌱",
-        "id": 1755406452077,
-        "location": "Germany",
-        "text": "Live the questions now. Perhaps you will then gradually, without noticing it, live along some distant day into the answer.",
-        "theme": "growth",
-        "type": "letters"
+        "author": "Charles Darwin",
+        "connection": "Your dream of \"failing all universities\" resonates with the universal fear of academic rejection and the pressure to succeed, a feeling even influential figures like Darwin experienced in their early, uncertain careers.",
+        "context": "Before his groundbreaking work on evolution, Charles Darwin struggled with his medical studies and felt immense pressure from his father regarding his academic and professional future at Cambridge.",
+        "era": "1820s-1830s England",
+        "icon": "🎓",
+        "id": 1755689722894,
+        "location": "Cambridge, England",
+        "text": "I am going to pass my examination, but I believe I shall be plucked.",
+        "theme": "Academic self-doubt",
+        "triggeringKeywords": [
+          "נכשלת בכל האוניברסיטאות",
+          "אוניברסיטאות",
+          "failed all universities",
+          "failing"
+        ],
+        "type": "letter"
       },
       {
         "author": "T.S. Eliot",
-        "context": "Eliot argues that true originality isn't a rejection of the past, but a re-evaluation and re-ordering of tradition through the new work.",
-        "era": "1919",
-        "icon": "📜",
-        "id": 1755406452078,
-        "location": "England",
-        "text": "The existing monuments form an ideal order among themselves, which is modified by the introduction of the new (the really new) work of art among them.",
-        "theme": "originality",
-        "type": "essay"
+        "connection": "Your feeling of being \"emptied of content\" and having your \"filling come out\" finds a poignant echo in Eliot's depiction of the \"hollow men,\" reflecting a shared historical experience of profound spiritual and existential depletion in the face of modern alienation.",
+        "context": "One of the most influential poets of the 20th century, T.S. Eliot explored themes of despair, spiritual emptiness, and the fragmentation of modern life in his post-World War I work.",
+        "era": "1925, London/America",
+        "icon": "👤",
+        "id": 1755689722895,
+        "location": "London, England",
+        "text": "We are the hollow men / We are the stuffed men / Leaning together / Headpiece filled with straw. Alas!",
+        "theme": "Profound existential emptiness",
+        "triggeringKeywords": [
+          "רוקנו אותי ממש מתוכן",
+          "יצא לי המילוי",
+          "emptied me of content",
+          "empty",
+          "hollow"
+        ],
+        "type": "poetry"
       },
       {
-        "author": "Marshall McLuhan",
-        "context": "McLuhan theorized that the form of a medium embeds itself in the message, altering how the message is perceived and understood, fundamentally shaping society.",
-        "era": "1964",
-        "icon": "📺",
-        "id": 1755406452079,
-        "location": "Canada",
-        "text": "The medium is the message.",
-        "theme": "media",
-        "type": "theory"
+        "author": "Beatrix Potter",
+        "connection": "Your dream of being accepted only by the \"College of Landscape Architecture\" reflects a historical pattern of finding unexpected fulfillment and acceptance in a path different from initial aspirations, much like Beatrix Potter found her true calling in nature and conservation away from societal expectations.",
+        "context": "Beatrix Potter, famed for her children's books, defied societal expectations for women of her time, finding her deepest passions not just in art but in natural science, farming, and significant land conservation in the English Lake District.",
+        "era": "Late 19th - early 20th century England",
+        "icon": "🌿",
+        "id": 1755689722896,
+        "location": "Lake District, England",
+        "text": "I am much more at home in the fields and among the animals, than in society. These quieter pursuits have offered me a freedom I never found elsewhere.",
+        "theme": "Unexpected fulfillment",
+        "triggeringKeywords": [
+          "מוסד היחיד שניאות לקבלני",
+          "המכללה לאדריכלות נוף",
+          "only institution that agreed to accept me",
+          "College of Landscape Architecture"
+        ],
+        "type": "journal entry"
+      },
+      {
+        "author": "Mary Boykin Chesnut",
+        "connection": "Your experience of being \"compelled to count your blessings\" despite believing in them resonates with historical moments where individuals, even amidst privilege, felt an underlying anxiety that forced a constant re-evaluation of their perceived good fortune.",
+        "context": "A prominent diarist during the American Civil War, Mary Boykin Chesnut offered a unique insight into the anxieties, hardships, and complex emotional landscape of the Southern elite during a period of immense upheaval and uncertainty.",
+        "era": "1860s American Civil War",
+        "icon": "⚖️",
+        "id": 1755689722897,
+        "location": "Confederate States of America",
+        "text": "We are always told to count our blessings, but sometimes the very act of enumeration makes one more aware of how fragile and fleeting they are, and how much is truly at risk.",
+        "theme": "Anxious gratitude",
+        "triggeringKeywords": [
+          "נאלצת לספור אותן",
+          "ברכותיי",
+          "compelled to count them",
+          "blessings"
+        ],
+        "type": "diary"
       }
     ],
     "id": 1755406457561,
-    "savedAt": "2025-08-20T10:35:27.058Z"
+    "savedAt": "2025-08-20T11:35:51.663Z",
+    "internalEcho": {
+      "connection": "This entry strongly echoes your writing from February 2025, as both explore themes of existential uncertainty and a sense of displacement, often manifested through vivid dreamscapes where identity feels fluid or lost.",
+      "keyQuote": "ובחלומי שוב לא זכרת את שמי, ונדמה לי שגם אני לא, וצורתך התעוותה מלפניי, וכל החדרים הוצפו, ושוב לא הייתי במקומי.",
+      "pastEntryId": 1755685320692
+    }
   },
   {
     "title": "11.11.22",
