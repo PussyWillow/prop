@@ -1,6 +1,9 @@
 import React, { useMemo } from 'react';
 import type { DiaryEntry, HistoricalEcho } from '../types';
-import { FileText, Star, Upload, Download, BarChart3, Calendar, Trash2, BookOpen } from './Icons';
+import { FileText, Star, Upload, Download, BarChart3, BookOpen } from './Icons';
+import { StatCard } from './StatCard';
+import { TimelineEntryCard } from './TimelineEntryCard';
+import { TimelineEchoCard } from './TimelineEchoCard';
 
 interface DashboardProps {
   entries: DiaryEntry[];
@@ -14,94 +17,6 @@ interface DashboardProps {
 type TimelineItem = 
     | { type: 'entry'; date: Date; data: DiaryEntry }
     | { type: 'echo'; date: Date; data: HistoricalEcho & { parentEntryTitle: string } };
-
-const getThemeColor = (theme?: string): string => {
-    const colors: { [key: string]: string } = {
-      impermanence: 'from-pink-400 to-rose-300',
-      friendship: 'from-green-400 to-emerald-300',
-      solitude: 'from-blue-400 to-indigo-300',
-      longing: 'from-purple-400 to-violet-300',
-      community: 'from-orange-400 to-amber-300',
-      creativity: 'from-red-400 to-pink-300',
-      inspiration: 'from-yellow-400 to-orange-300',
-      discovery: 'from-cyan-400 to-blue-300',
-      wonder: 'from-indigo-400 to-purple-300',
-      hope: 'from-emerald-400 to-green-300',
-      artistry: 'from-violet-400 to-purple-300',
-    };
-    return theme ? colors[theme.toLowerCase()] || 'from-gray-400 to-slate-300' : 'from-gray-400 to-slate-300';
-};
-
-
-const StatCard = ({ title, value, icon }: { title: string, value: string | number, icon: React.ReactNode }) => (
-    <div className="bg-amber-100/50 border border-amber-200 rounded-lg p-4">
-        <div className="flex items-center gap-3">
-            <div className="text-amber-600">{icon}</div>
-            <div>
-                <p className="text-sm text-amber-800 font-medium">{title}</p>
-                <p className="text-2xl font-semibold text-amber-900">{value}</p>
-            </div>
-        </div>
-    </div>
-);
-
-const TimelineEntryCard = ({ entry, onLoad, onDelete }: { entry: DiaryEntry, onLoad: () => void, onDelete: () => void }) => (
-    <div className="relative pl-8 group cursor-pointer" onClick={onLoad}>
-        <div className="absolute top-0 left-3 h-full w-px bg-amber-300"></div>
-        <div className="absolute top-5 left-0 h-5 w-5 rounded-full bg-amber-500 border-2 border-white shadow-sm"></div>
-        <div className="mb-8 ml-4">
-            <div className="bg-white/60 backdrop-blur-sm border-2 border-amber-400 rounded-lg p-4 transition-shadow hover:shadow-lg">
-                <div className="flex justify-between items-start">
-                    <div>
-                        <time className="mb-1 text-sm font-normal leading-none text-amber-600 flex items-center gap-2">
-                            <Calendar className="w-4 h-4" />
-                            {new Date(entry.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-                        </time>
-                        <h3 className="text-lg font-semibold text-gray-900">{entry.title}</h3>
-                        <p className="text-sm text-gray-600 line-clamp-2 mt-1">{entry.content}</p>
-                    </div>
-                    <button 
-                        onClick={(e) => { e.stopPropagation(); if (confirm('Are you sure you want to delete this entry?')) onDelete(); }}
-                        className="p-2 text-gray-400 hover:bg-red-100 hover:text-red-600 rounded-full transition-colors"
-                    >
-                        <Trash2 className="w-4 h-4" />
-                    </button>
-                </div>
-                {entry.echoes && entry.echoes.length > 0 && (
-                    <div className="mt-3 pt-3 border-t border-amber-200/50 flex items-center gap-2 text-xs text-amber-700">
-                        <Star className="w-4 h-4" />
-                        <span>{entry.echoes.length} echoes discovered</span>
-                    </div>
-                )}
-            </div>
-        </div>
-    </div>
-);
-
-const TimelineEchoCard = ({ echo }: { echo: HistoricalEcho & { parentEntryTitle: string } }) => (
-    <div className="relative pl-8 group">
-        <div className="absolute top-0 left-3 h-full w-px bg-stone-200"></div>
-        <div className="absolute top-5 left-1 h-3 w-3 rounded-full bg-stone-400 border-2 border-white"></div>
-        <div className="mb-8 ml-4">
-            <div className="bg-stone-50/80 backdrop-blur-sm border border-stone-200 rounded-lg p-4">
-                <time className="mb-1 text-sm font-normal leading-none text-stone-500">{echo.era}</time>
-                <div className="flex items-start gap-3 mt-1">
-                    <span className="text-2xl mt-1">{echo.icon}</span>
-                    <div>
-                        <h3 className="font-semibold text-gray-800">{echo.author}</h3>
-                        <p className="text-sm text-gray-600 italic">"{echo.text}"</p>
-                    </div>
-                </div>
-                <div className={`mt-2 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-medium text-white bg-gradient-to-r ${getThemeColor(echo.theme)}`}>
-                    <Star className="w-3 h-3"/>
-                    <span className="capitalize">{echo.theme}</span>
-                </div>
-                <p className="text-xs text-stone-500 mt-2 pt-2 border-t border-stone-200">Echo found in: "{echo.parentEntryTitle}"</p>
-            </div>
-        </div>
-    </div>
-);
-
 
 export const ImmersiveDashboard = ({ entries, isHebrew, onLoadEntry, onDeleteEntry, onImportClick, onExportClick }: DashboardProps) => {
 
