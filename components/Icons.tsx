@@ -223,3 +223,49 @@ export const Link = ({ className }: { className?: string }) => (
     <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"></path>
   </svg>
 );
+
+export const Hash = ({ className }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <line x1="4" y1="9" x2="20" y2="9"></line>
+        <line x1="4" y1="15" x2="20" y2="15"></line>
+        <line x1="10" y1="3" x2="8" y2="21"></line>
+        <line x1="16" y1="3" x2="14" y2="21"></line>
+    </svg>
+);
+
+export const Users = ({ className }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+        <circle cx="9" cy="7" r="4"></circle>
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+    </svg>
+);
+
+export const Sunrise = ({ className }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <path d="M12 2L12 6"/>
+        <path d="M6 12L2 12"/>
+        <path d="M22 12L18 12"/>
+        <path d="M18 6L20 4"/>
+        <path d="M4 4L6 6"/>
+        <path d="M18 18H6a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4Z"/>
+        <path d="M3 22H21"/>
+    </svg>
+);
+
+export const Type = ({ className }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <polyline points="4 7 4 4 20 4 20 7"></polyline>
+        <line x1="9" y1="20" x2="15" y2="20"></line>
+        <line x1="12" y1="4" x2="12" y2="20"></line>
+    </svg>
+);
+
+export const GitMerge = ({ className }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <circle cx="18" cy="18" r="3"></circle>
+        <circle cx="6" cy="6" r="3"></circle>
+        <path d="M6 21V9a9 9 0 0 1 9 9"></path>
+    </svg>
+);

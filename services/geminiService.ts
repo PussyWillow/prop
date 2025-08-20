@@ -24,8 +24,9 @@ const responseSchema = {
             theme: { type: Type.STRING, description: "A short, descriptive theme (2-4 words) that captures the emotional core of the connection (e.g., 'finding solace in solitude')." },
             icon: { type: Type.STRING, description: "A single emoji that visually represents the echo." },
             connection: { type: Type.STRING, description: "A concise, one-sentence explanation of why this historical echo is relevant to the user's diary entry." },
+            triggeringKeywords: { type: Type.ARRAY, items: { type: Type.STRING }, description: "An array of the exact words or short phrases from the user's diary entry that triggered this echo." },
         },
-        required: ['id', 'type', 'era', 'author', 'text', 'context', 'location', 'theme', 'icon', 'connection']
+        required: ['id', 'type', 'era', 'author', 'text', 'context', 'location', 'theme', 'icon', 'connection', 'triggeringKeywords']
     },
 };
 
@@ -46,8 +47,9 @@ export const getHistoricalEchoes = async (diaryText: string, pastThemes: string)
         Crucially, you should look for "familiar moments." This means if the new entry touches on a theme seen in the user's past (e.g., they often write about 'solitude'), try to find an echo that deepens this recurring theme, perhaps from a different angle or a different historical figure who also contemplated it. This makes the connection feel personal and part of an ongoing conversation with history.
 
         For each echo, you must provide these fields:
-        1. 'theme': A short, descriptive phrase (2-4 words), not just a single word (e.g., 'the bittersweetness of memory').
-        2. 'connection': A single sentence explaining *why* this echo connects to the user's entry. This is the most critical field; it MUST NOT be empty. For instance, if the user writes about feeling isolated while working late, and you find an echo from a lonely lighthouse keeper, the connection could be: 'This reflects your own sense of isolation, showing that this feeling has been shared by people in even the most remote circumstances throughout history.'
+        1. 'theme': This is a critical field. Provide a short, descriptive phrase (2-4 words) that captures the emotional core, NOT a single word. Good example: 'the bittersweetness of memory'. Bad example: 'memory'.
+        2. 'connection': This is the most critical field. It is a single sentence explaining *why* this echo connects to the user's entry. It MUST NOT be empty. For instance, if the user writes about feeling isolated while working late, and you find an echo from a lonely lighthouse keeper, the connection could be: 'This reflects your own sense of isolation, showing that this feeling has been shared by people in even the most remote circumstances throughout history.'
+        3. 'triggeringKeywords': This is also critical. It MUST be an array of the exact words or short phrases from the user's diary entry that made you choose this echo. This helps the user understand the AI's reasoning. For example: ["working late", "isolated"].
 
         User's Past Themes (for context):
         "${pastThemes}"

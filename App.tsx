@@ -10,6 +10,7 @@ import { SettingsModal } from './components/SettingsModal';
 import { useToast } from './contexts/ToastContext';
 import { ToastContainer } from './components/ToastContainer';
 import { useTheme } from './contexts/ThemeContext';
+import { motion } from 'framer-motion';
 
 type View = 'editor' | 'dashboard';
 
@@ -102,25 +103,30 @@ const App = () => {
                       </div>
                   </div>
                   <div className="w-1/3 flex justify-end items-center gap-2">
-                       <button onClick={toggleTheme} className="p-2 hover:bg-amber-100 dark:hover:bg-stone-700 rounded-full transition-colors" aria-label="Toggle theme">
+                       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={toggleTheme} className="p-2 hover:bg-amber-100 dark:hover:bg-stone-700 rounded-full transition-colors" aria-label="Toggle theme">
                          {theme === 'light' ? <Moon className="w-6 h-6 text-amber-700" /> : <Sun className="w-6 h-6 text-amber-400" />}
-                      </button>
-                      <button onClick={() => setShowSettingsModal(true)} className="p-2 hover:bg-amber-100 dark:hover:bg-stone-700 rounded-full transition-colors" aria-label="Open sync settings">
+                      </motion.button>
+                      <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} onClick={() => setShowSettingsModal(true)} className="p-2 hover:bg-amber-100 dark:hover:bg-stone-700 rounded-full transition-colors" aria-label="Open sync settings">
                           <Settings className="w-6 h-6 text-amber-700 dark:text-amber-400" />
-                      </button>
+                      </motion.button>
                   </div>
               </div>
             <div className="flex items-center justify-center gap-4 mb-4 flex-wrap">
-              <button onClick={handleCreateNewEntry} className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors shadow-md dark:shadow-black/20"><Plus className="w-4 h-4" />{isHebrewText ? 'רשומה חדשה' : 'New Entry'}</button>
+              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={handleCreateNewEntry} className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors shadow-md dark:shadow-black/20"><Plus className="w-4 h-4" />{isHebrewText ? 'רשומה חדשה' : 'New Entry'}</motion.button>
               {currentView === 'editor' && (
                 <>
-                  <button onClick={fetchEchoes} disabled={isLoading || diaryEntry.trim().length < 20 || hasBeenAnalyzed} className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors shadow-md dark:shadow-black/20"><Search className="w-4 h-4" />{isHebrewText ? 'מצא הדים' : 'Find Echoes'}</button>
-                  <button onClick={saveEntry} disabled={!diaryEntry.trim() || isSaved} className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors shadow-md dark:shadow-black/20"><Save className="w-4 h-4" />{isHebrewText ? 'שמור' : 'Save'}</button>
+                  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={fetchEchoes} disabled={isLoading || diaryEntry.trim().length < 20 || hasBeenAnalyzed} className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors shadow-md dark:shadow-black/20"><Search className="w-4 h-4" />{isHebrewText ? 'מצא הדים' : 'Find Echoes'}</motion.button>
+                  <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={saveEntry} disabled={!diaryEntry.trim() || isSaved} className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors shadow-md dark:shadow-black/20"><Save className="w-4 h-4" />{isHebrewText ? 'שמור' : 'Save'}</motion.button>
                 </>
               )}
-              <button onClick={() => setCurrentView(currentView === 'editor' ? 'dashboard' : 'editor')} className="flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg transition-colors shadow-md dark:shadow-black/20">
-                  {currentView === 'editor' ? <><LayoutDashboard className="w-4 h-4" />{isHebrewText ? 'תצוגת כרוניקה' : 'Chronicle View'}</> : <><Edit className="w-4 h-4" />{isHebrewText ? 'עורך' : 'Editor'}</>}
-              </button>
+              <div className="p-1 bg-amber-200/50 dark:bg-stone-700/50 rounded-lg flex items-center gap-1">
+                <button onClick={() => setCurrentView('editor')} className={`px-3 py-1.5 text-sm font-semibold rounded-md transition-colors flex items-center gap-2 ${currentView === 'editor' ? 'bg-white/80 dark:bg-stone-800 text-amber-800 dark:text-amber-200 shadow' : 'text-stone-600 dark:text-stone-400 hover:bg-white/50 dark:hover:bg-stone-600/50'}`}>
+                  <Edit className="w-4 h-4" /> {isHebrewText ? 'עורך' : 'Editor'}
+                </button>
+                 <button onClick={() => setCurrentView('dashboard')} className={`px-3 py-1.5 text-sm font-semibold rounded-md transition-colors flex items-center gap-2 ${currentView === 'dashboard' ? 'bg-white/80 dark:bg-stone-800 text-amber-800 dark:text-amber-200 shadow' : 'text-stone-600 dark:text-stone-400 hover:bg-white/50 dark:hover:bg-stone-600/50'}`}>
+                  <LayoutDashboard className="w-4 h-4" /> {isHebrewText ? 'לוח מחוונים' : 'Dashboard'}
+                </button>
+              </div>
             </div>
             {currentView === 'editor' && (
               <div className="flex items-center justify-center gap-4">

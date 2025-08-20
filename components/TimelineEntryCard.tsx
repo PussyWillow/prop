@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import type { DiaryEntry } from '../types';
 import { Calendar, Trash2, Star, Edit, ChevronDown } from './Icons';
@@ -11,8 +10,36 @@ interface TimelineEntryCardProps {
     onDelete: () => void;
 }
 
+const HighlightedContent = ({ content, keywords }: { content: string, keywords: string[] }) => {
+    if (!keywords || keywords.length === 0) {
+        return <>{content.split('\n').map((line, i) => <p key={i} className="mb-2 last:mb-0">{line}</p>)}</>;
+    }
+    // Escape special characters for regex and join with '|'
+    const escapedKeywords = keywords.map(kw => kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    const regex = new RegExp(`(${escapedKeywords.join('|')})`, 'gi');
+    
+    return (
+        <>
+            {content.split('\n').map((line, lineIndex) => (
+                <p key={lineIndex} className="mb-2 last:mb-0">
+                    {line.split(regex).map((part, i) =>
+                        escapedKeywords.some(kw => new RegExp(`^${kw}$`, 'i').test(part)) ? (
+                            <span key={i} className="bg-amber-200 dark:bg-amber-700/50 rounded transition-colors px-1 py-0.5">
+                                {part}
+                            </span>
+                        ) : (
+                            <span key={i}>{part}</span>
+                        )
+                    )}
+                </p>
+            ))}
+        </>
+    );
+};
+
 export const TimelineEntryCard = ({ entry, onLoad, onDelete }: TimelineEntryCardProps) => {
     const [isExpanded, setIsExpanded] = useState(false);
+    const [hoveredEchoKeywords, setHoveredEchoKeywords] = useState<string[]>([]);
     const hasEchoes = entry.echoes && entry.echoes.length > 0;
 
     return (
@@ -21,7 +48,7 @@ export const TimelineEntryCard = ({ entry, onLoad, onDelete }: TimelineEntryCard
             <div className="absolute top-5 left-0 h-5 w-5 rounded-full bg-amber-500 dark:bg-amber-400 border-2 border-white dark:border-stone-800 shadow-sm"></div>
             <div className="mb-8 ml-4">
                 <div 
-                    className={`bg-gradient-to-br from-white to-amber-50/50 dark:from-stone-800 dark:to-stone-800/50 backdrop-blur-sm border-2 ${isExpanded ? 'border-amber-500' : 'border-amber-400 dark:border-stone-700'} rounded-lg transition-all hover:shadow-lg hover:border-amber-500 dark:hover:border-amber-500 overflow-hidden`}
+                    className={`bg-gradient-to-br from-white to-amber-50/50 dark:from-stone-800 dark:to-stone-800/50 backdrop-blur-sm border-2 ${isExpanded ? 'border-amber-500 dark:border-amber-400' : 'border-amber-400 dark:border-stone-700'} rounded-lg transition-all hover:shadow-lg hover:border-amber-500 dark:hover:border-amber-500 overflow-hidden`}
                 >
                     <div 
                         className={`p-4 ${hasEchoes ? 'cursor-pointer' : ''}`}
@@ -63,7 +90,7 @@ export const TimelineEntryCard = ({ entry, onLoad, onDelete }: TimelineEntryCard
                     </div>
 
                     <AnimatePresence>
-                        {isExpanded && hasEchoes && (
+                        {isExpanded && (
                             <motion.div
                                 initial={{ height: 0, opacity: 0 }}
                                 animate={{ height: 'auto', opacity: 1 }}
@@ -71,13 +98,24 @@ export const TimelineEntryCard = ({ entry, onLoad, onDelete }: TimelineEntryCard
                                 transition={{ duration: 0.4, ease: "easeInOut" }}
                                 className="overflow-hidden"
                             >
-                                <div className="p-4 border-t border-amber-200/50 dark:border-stone-700">
-                                    <h4 className="font-semibold text-sm mb-2 text-amber-800 dark:text-amber-300">Historical Echoes:</h4>
-                                    <div className="space-y-4">
-                                        {entry.echoes.map(echo => (
-                                            <TimelineEchoCard key={echo.id} echo={echo} />
-                                        ))}
+                                <div className="p-4 border-t border-amber-200/50 dark:border-stone-700/50 space-y-4">
+                                    <div className="prose prose-sm dark:prose-invert prose-p:text-stone-700 dark:prose-p:text-stone-300 font-serif leading-relaxed">
+                                        <HighlightedContent content={entry.content} keywords={hoveredEchoKeywords} />
                                     </div>
+                                    {hasEchoes && (
+                                        <div>
+                                            <h4 className="font-semibold text-sm mb-2 text-amber-800 dark:text-amber-300">Historical Echoes:</h4>
+                                            <div className="space-y-4">
+                                                {entry.echoes.map(echo => (
+                                                    <TimelineEchoCard 
+                                                        key={echo.id} 
+                                                        echo={echo} 
+                                                        onHover={(keywords) => setHoveredEchoKeywords(keywords)}
+                                                    />
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             </motion.div>
                         )}

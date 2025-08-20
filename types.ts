@@ -11,6 +11,7 @@ export interface HistoricalEcho {
   theme: string;
   icon: string;
   connection: string;
+  triggeringKeywords?: string[];
 }
 
 export interface DiaryEntry {

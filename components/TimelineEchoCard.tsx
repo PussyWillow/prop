@@ -1,15 +1,18 @@
-
-
 import React from 'react';
 import type { HistoricalEcho } from '../types';
 import { Star, MapPin, Link } from './Icons';
 
 interface TimelineEchoCardProps {
     echo: HistoricalEcho;
+    onHover: (keywords: string[]) => void;
 }
 
-export const TimelineEchoCard = ({ echo }: TimelineEchoCardProps) => (
-    <div className="bg-stone-50/80 dark:bg-stone-800/50 backdrop-blur-sm border border-stone-200 dark:border-stone-700 rounded-lg p-3 space-y-3">
+export const TimelineEchoCard = ({ echo, onHover }: TimelineEchoCardProps) => (
+    <div 
+        className="bg-stone-50/80 dark:bg-stone-800/50 backdrop-blur-sm border border-stone-200 dark:border-stone-700 rounded-lg p-3 space-y-3 transition-shadow hover:shadow-md"
+        onMouseEnter={() => onHover(echo.triggeringKeywords || [])}
+        onMouseLeave={() => onHover([])}
+    >
         <div className="flex items-start gap-3">
             <span className="text-2xl mt-1">{echo.icon}</span>
             <div className="flex-1">

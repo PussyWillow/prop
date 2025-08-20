@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const StatCard = ({ title, value, icon }: { title: string, value: string | number, icon: React.ReactNode }) => (
-    <div className="bg-amber-100/50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-lg p-4">
+export const StatCard = ({ title, value, icon }: { title: string, value: string | number | React.ReactNode, icon: React.ReactNode }) => (
+    <div className="bg-amber-100/50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-lg p-4 col-span-1">
         <div className="flex items-center gap-3">
             <div className="text-amber-600 dark:text-amber-400">{icon}</div>
             <div>

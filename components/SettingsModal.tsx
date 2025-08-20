@@ -47,11 +47,14 @@ export const SettingsModal = ({ isOpen, onClose, onSave, onClear, initialConfig,
   };
   
   const handleClear = () => {
-      if (confirm('Are you sure you want to clear your sync settings?')) {
+      const confirmation = prompt('To clear all sync settings, please type "clear" and click OK.');
+      if (confirmation === 'clear') {
         onClear();
         setConfig({ username: '', repo: '', filePath: 'diary.json', token: '' });
         showToast('Sync settings cleared.', 'info');
         onClose();
+      } else if (confirmation !== null) {
+        showToast('Clear operation cancelled.', 'info');
       }
   };
 
