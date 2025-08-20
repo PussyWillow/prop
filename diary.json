@@ -352,170 +352,338 @@
   },
   {
     "title": "3.11.24",
-    "content": "משהו השתנה, משהו זז, וזה לא רק הכובע שלי שהפך בין לילה לגדול מידי עבור ראשי.\nהים התקרב קצת לעיר, נחמד מצידו, אין לי מושג מתי הספיק. השלפוחית שלי נחלשה מאוד, אבל העבדים האדיבים שלי הצביעו עבורי לכיוון שירותי הנשים בלי שהייתי צריכה לשאול. אולי מכאן הבחילה, הנזלת, הדמעות. יש נוכחות גבוהה של אלרגנים באוויר ואי אפשר לעבוד עליי לגבי זה.\nנדמה לי שאני תמיד פוגשת את אותו העורב על פח ברחוב בסמוך לצ׳ארלס קלור. ואני תמיד אומרת: היי, ",
+    "content": "משהו השתנה, משהו זז, וזה לא רק הכובע שלי שהפך בין לילה לגדול מידי עבור ראשי.\nהים התקרב קצת לעיר, נחמד מצידו, אין לי מושג מתי הספיק. השלפוחית שלי נחלשה מאוד, אבל העבדים האדיבים שלי הצביעו עבורי לכיוון שירותי הנשים בלי שהייתי צריכה לשאול. אולי מכאן הבחילה, הנזלת, הדמעות. יש נוכחות גבוהה של אלרגנים באוויר ואי אפשר לעבוד עליי לגבי זה.\nנדמה לי שאני תמיד פוגשת את אותו העורב על פח ברחוב בסמוך לצ׳ארלס קלור. ואני תמיד אומרת: היי, זוכר אותי? נהגת להאכיל את אבי בתקופה בה גר בבידוד במערה\n",
     "date": "2024-11-03",
     "isHebrew": true,
     "echoes": [
       {
-        "author": "Matsuo Bashō",
-        "connection": "Just as Bashō found a moment of quiet contemplation in the recurring image of a crow, your daily encounter with the same crow on the street highlights how even mundane urban routines can offer moments of familiarity and observation.",
-        "context": "Bashō often observed nature in his poetry, finding profound meaning in simple, recurring sights within his daily life.",
-        "era": "17th Century Japan",
-        "icon": "🐦",
-        "id": 1755686688161,
-        "location": "Japan",
-        "text": "On a withered branch / A crow has settled / Autumn evening.",
-        "theme": "Recurring urban encounter",
-        "type": "poetry"
+        "author": "Philo of Alexandria",
+        "connection": "Your father's \"isolation in a cave\" echoes the ancient practice of intentional self-seclusion, where individuals retreated to solitary places for deep contemplation and connection beyond societal norms.",
+        "context": "Philo described the Therapeutae, a Jewish ascetic community living near Lake Mareotis in Egypt, known for their solitary contemplation and communal gatherings.",
+        "era": "1st Century CE",
+        "icon": "🧘",
+        "id": 1755690055193,
+        "location": "Lake Mareotis, Egypt",
+        "text": "There are many in every country who, delighting in contemplation, take to solitude, not from misanthropy, nor from any desire to withdraw themselves, but because they have fallen in love with divine philosophy.",
+        "theme": "Intentional self-seclusion",
+        "triggeringKeywords": [
+          "בידוד במערה",
+          "אבי"
+        ],
+        "type": "text"
       },
       {
         "author": "Heraclitus",
-        "connection": "Your observation of the sea subtly approaching the city mirrors Heraclitus's ancient insight that the world is in a constant state of flux, with changes often occurring without our direct awareness of their process.",
-        "context": "Heraclitus, an ancient Greek philosopher, emphasized the constant, underlying change in the natural world, a concept known as 'flux'.",
-        "era": "c. 535 – c. 475 BC",
+        "connection": "Your observation that \"something changed, something moved\" and the sea approaching mirrors Heraclitus's ancient wisdom that all things are in constant motion and transformation, inviting you to embrace life's inherent fluidity.",
+        "context": "This famous fragment from the Greek philosopher Heraclitus encapsulates his central idea of universal flux, that everything is in a state of constant change.",
+        "era": "5th Century BCE",
         "icon": "🌊",
-        "id": 1755686688162,
-        "location": "Ephesus, Ionia (Ancient Greece)",
-        "text": "Everything flows and nothing abides; everything gives way and nothing stays fixed.",
-        "theme": "Gradual environmental flux",
+        "id": 1755690055194,
+        "location": "Ephesus, Ionia",
+        "text": "No man ever steps in the same river twice, for it's not the same river and he's not the same man.",
+        "theme": "Embracing universal flux",
+        "triggeringKeywords": [
+          "משהו השתנה",
+          "משהו זז",
+          "הים התקרב"
+        ],
         "type": "philosophy"
       },
       {
+        "author": "Matsuo Bashō",
+        "connection": "Your recurring encounter with \"the same crow\" and speaking to it about memory resonates with the Japanese haiku tradition, where simple observations of nature like a crow can evoke deep feelings of continuity and timeless connection.",
+        "context": "One of Bashō's most iconic haikus, it evokes a sense of stark beauty, solitude, and the passage of time through the enduring image of a crow in nature.",
+        "era": "17th Century Japan",
+        "icon": "🐦‍⬛",
+        "id": 1755690055195,
+        "location": "Japan",
+        "text": "On a bare branch a crow is perched / autumn evening.",
+        "theme": "Enduring natural cycles",
+        "triggeringKeywords": [
+          "אותו העורב",
+          "זוכר אותי"
+        ],
+        "type": "poetry"
+      },
+      {
         "author": "Virginia Woolf",
-        "connection": "Your feeling of your hat becoming too big reflects a sense of internal disproportion or a shifting identity, much like Virginia Woolf's attempts to solidify her own sense of self amidst life's changes.",
-        "context": "Virginia Woolf's diaries frequently reflect her inner struggles with identity, mental health, and the elusive nature of the self as she navigated her personal and artistic life.",
-        "era": "20th Century England",
+        "connection": "Your detailed account of physical discomfort and the feeling of your body acting independently, even with \"kind slaves\" guiding you, reflects Virginia Woolf's intimate diary entries on the often-unpredictable nature of the human body and its demands.",
+        "context": "Virginia Woolf often explored her physical and mental health in her diaries, detailing her struggles with illness and the disjunction between mind and body.",
+        "era": "Early 20th Century",
+        "icon": "🤕",
+        "id": 1755690055196,
+        "location": "Richmond, England",
+        "text": "The body is a peculiar thing. It takes its own course, quite independent of what one wishes or thinks.",
+        "theme": "Disconnect of body",
+        "triggeringKeywords": [
+          "השלפוחית שלי נחלשה",
+          "הבחילה, הנזלת, הדמעות",
+          "העבדים האדיבים שלי"
+        ],
+        "type": "diary"
+      },
+      {
+        "author": "Lewis Carroll",
+        "connection": "The feeling that \"my hat became too big for my head overnight\" perfectly captures Alice's fantastical experience of rapidly outgrowing her familiar world and self, symbolizing the bewildering process of personal transformation.",
+        "context": "From Alice's Adventures in Wonderland, Alice experiences profound physical changes, growing larger or smaller, which often leads to discomfort and a sense of her own identity being in flux.",
+        "era": "19th Century",
         "icon": "🎩",
-        "id": 1755686688163,
-        "location": "England",
-        "text": "I am trying to make myself a little more solid.",
-        "theme": "Body's shifting reality",
-        "type": "diary"
+        "id": 1755690055197,
+        "location": "England (fictional Wonderland)",
+        "text": "Curiouser and curiouser! cried Alice (she was so much surprised, that for the moment she quite forgot how to speak good English).",
+        "theme": "Outgrowing one's self",
+        "triggeringKeywords": [
+          "הכובע שלי שהפך בין לילה לגדול מידי עבור ראשי",
+          "משהו השתנה"
+        ],
+        "type": "literature"
       },
       {
-        "author": "Hippocrates",
-        "connection": "Your keen awareness of unseen allergens in the air echoes Hippocrates' ancient medical insights into how the atmosphere and environmental conditions subtly but profoundly influence human health.",
-        "context": "Hippocrates, often called the 'Father of Medicine,' was among the first to systematically observe and theorize about the impact of environmental factors, including air quality, on human health.",
-        "era": "c. 460 – c. 370 BC",
-        "icon": "🌬️",
-        "id": 1755686688164,
-        "location": "Ancient Greece",
-        "text": "From the air, and particularly from the weather, come diseases.",
-        "theme": "Perceiving hidden influences",
-        "type": "medical treatise"
-      },
-      {
-        "author": "Samuel Pepys",
-        "connection": "Your repeated encounter with the crow, a small but consistent part of your day, mirrors Samuel Pepys' meticulous documentation of the daily routines that, in their recurrence, define the rhythm and meaning of life.",
-        "context": "Samuel Pepys' extensive diary meticulously records the daily routines and observations of life in 17th-century London, revealing how recurring events shape one's perception and experience.",
-        "era": "17th Century",
-        "icon": "📅",
-        "id": 1755686688165,
-        "location": "London, England",
-        "text": "And so to bed, after another day of business and pleasure.",
-        "theme": "Meaning in everyday cycles",
-        "type": "diary"
-      },
-      {
-        "author": "René Magritte",
-        "connection": "Your unique observations, like the 'kind slaves' or the sea subtly approaching, echo René Magritte's art, which similarly challenged conventional perceptions and revealed the subjective, often surreal, nature of reality.",
-        "context": "René Magritte's surrealist artwork often questioned the nature of reality and representation, inviting viewers to look beyond the obvious and perceive the world from a new, often perplexing, perspective.",
-        "era": "20th Century",
-        "icon": "🖼️",
-        "id": 1755686688166,
-        "location": "Belgium/France",
-        "text": "Ceci n'est pas une pipe.",
-        "theme": "Unique individual perspective",
-        "type": "art/philosophy"
+        "author": "Benjamin Franklin",
+        "connection": "Your statement \"and you can't trick me about that\" reflects Benjamin Franklin's emphasis on shrewd observation and learning from direct experience, showcasing a wisdom that isn't easily swayed by external deceptions.",
+        "context": "Franklin, known for his practical wisdom, emphasized the importance of learning from experience and observation rather than being easily swayed or deceived.",
+        "era": "18th Century",
+        "icon": "💡",
+        "id": 1755690055198,
+        "location": "Philadelphia, Pennsylvania",
+        "text": "Experience keeps a dear school, but fools will learn in no other, and scarce in that.",
+        "theme": "Trusting shrewd perception",
+        "triggeringKeywords": [
+          "אי אפשר לעבוד עליי"
+        ],
+        "type": "autobiography"
       }
     ],
     "id": 1755686657379,
-    "savedAt": "2025-08-20T10:45:21.848Z"
+    "savedAt": "2025-08-20T11:42:47.552Z",
+    "internalEcho": {
+      "connection": "This entry resonates with the new one through its shared theme of surreal, dreamlike experiences and a sense of disorientation, where reality feels shifted and familiar elements appear in uncanny ways.",
+      "keyQuote": "ובחלומי שוב לא זכרת את שמי, ונדמה לי שגם אני לא, וצורתך התעוותה מלפניי, וכל החדרים הוצפו, ושוב לא הייתי במקומי.",
+      "pastEntryId": 1755685320692
+    }
   },
   {
     "title": "4.12.22",
     "content": "כולם קצת לא בסדר וגם אני לא. היום, מועקה גדולה. היום, עיניים שלא נפקחות עד הסוף. ייתכן שזו קרקע פורה לתפילות. ייתכן גם שלא כיביתי את הדוד.\nלפעמים אני מרגישה את הנשימות הכבדות של אלוהים על הצוואר וזה אחלה. אבל אני רוצה להרגיש גם את קצות אצבעותיו, דוחפות אותי בעדינות לכיוון הנכון.\nיהיה עכשיו סבבה; יש גוש עמוק של מועקה סמיכה והאוזניים והלחיים שלי בוערות. לרגליים שלי הייתה תכונה ללכת בעצמן לפעמים, הן יתהלכו שוב בעצמן לו אבקש. ואני מבקשת. אני רוצה מאוד. אני צריכה חסד, אני לא יודעת בדיוק איזה, אני צריכה שייעשה עימי חסד מתוק",
     "date": "2022-12-04",
     "isHebrew": true,
-    "echoes": [],
+    "echoes": [
+      {
+        "author": "Søren Kierkegaard",
+        "connection": "Your description of a \"great unease\" and \"thick lump of distress\" mirrors Kierkegaard's profound and persistent feelings of anguish, highlighting the universal nature of deep internal discomfort.",
+        "context": "Kierkegaard's exploration of dread (Angst) and despair, often linking it to existential freedom and the human condition.",
+        "era": "19th Century",
+        "icon": "🌪️",
+        "id": 1755689953870,
+        "location": "Denmark",
+        "text": "I am assailed by a cruel and incessant anguish of soul... I cannot comprehend it, I cannot measure it, I cannot flee from it.",
+        "theme": "Existential anguish",
+        "triggeringKeywords": [
+          "מועקה גדולה",
+          "גוש עמוק של מועקה סמיכה"
+        ],
+        "type": "philosophical text"
+      },
+      {
+        "author": "Thomas Aquinas",
+        "connection": "Your desire for God's fingertips to \"gently push you in the right direction\" and your plea for \"sweet grace\" echo Aquinas's supplication for divine direction and clarity, demonstrating a shared human need for higher guidance.",
+        "context": "A prayer by the influential scholastic philosopher and theologian, seeking divine wisdom and guidance in his intellectual and spiritual pursuits.",
+        "era": "13th Century",
+        "icon": "🙏",
+        "id": 1755689953871,
+        "location": "Italy",
+        "text": "Grant me, O Lord, to know what I ought to know, to love what I ought to love, to praise what is most pleasing to Thee, to esteem what is most precious in Thy sight, to condemn what is vile in Thine eyes.",
+        "theme": "Seeking divine wisdom",
+        "triggeringKeywords": [
+          "דוחפות אותי בעדינות לכיוון הנכון",
+          "צריכה חסד מתוק"
+        ],
+        "type": "prayer"
+      },
+      {
+        "author": "Lao Tzu",
+        "connection": "Your longing for your \"legs to walk by themselves\" even as you \"ask\" them to, reflects the Taoist wisdom of surrendering to an innate flow or intuition, allowing the path to emerge organically.",
+        "context": "This quote encapsulates the Taoist principle of wu wei (non-action or effortless action), suggesting that true progress comes from allowing things to unfold naturally and intuitively, rather than forced effort.",
+        "era": "6th Century BCE",
+        "icon": "👣",
+        "id": 1755689953872,
+        "location": "Ancient China",
+        "text": "A good traveler has no fixed plans, and is not intent on arriving.",
+        "theme": "Trusting intuitive flow",
+        "triggeringKeywords": [
+          "הרגליים שלי הייתה תכונה ללכת בעצמן",
+          "יתהלכו שוב בעצמן לו אבקש"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "John the Apostle",
+        "connection": "Your feeling of \"eyes not fully opening\" resonates with the biblical metaphor of struggling to perceive spiritual light or truth amidst inner darkness, a common experience on a path of seeking.",
+        "context": "The opening of John's Gospel emphasizes light, truth, and divine understanding, contrasting it with darkness and spiritual ignorance.",
+        "era": "1st Century CE",
+        "icon": "👁️",
+        "id": 1755689953873,
+        "location": "Judea/Asia Minor",
+        "text": "In the beginning was the Word, and the Word was with God, and the Word was God... The light shines in the darkness, and the darkness has not overcome it.",
+        "theme": "Longing for inner clarity",
+        "triggeringKeywords": [
+          "עיניים שלא נפקחות עד הסוף"
+        ],
+        "type": "religious scripture"
+      },
+      {
+        "author": "John Newton",
+        "connection": "Your fervent desire for an unspecified \"sweet grace\" echoes the deep human longing for unmerited divine intervention and comfort, a feeling eloquently expressed in this enduring hymn about redemption and spiritual sight.",
+        "context": "A famous Christian hymn written by a former slave trader who found redemption and spiritual transformation, expressing profound gratitude for divine grace.",
+        "era": "18th Century",
+        "icon": "✨",
+        "id": 1755689953874,
+        "location": "England",
+        "text": "Amazing Grace! How sweet the sound that saved a wretch like me! I once was lost, but now am found; Was blind, but now I see.",
+        "theme": "Unmerited divine favor",
+        "triggeringKeywords": [
+          "צריכה חסד",
+          "חסד מתוק"
+        ],
+        "type": "hymn"
+      },
+      {
+        "author": "King David",
+        "connection": "Your sense of deep unease and the feeling that your situation is \"fertile ground for prayers\" parallels the psalmist's desperate cry for divine attention and mercy from a place of profound distress.",
+        "context": "A penitential psalm, expressing a fervent plea for mercy and deliverance from distress or sin, often interpreted as a cry from a place of profound despair.",
+        "era": "Ancient Israel (c. 10th-6th Century BCE)",
+        "icon": "🗣️",
+        "id": 1755689953875,
+        "location": "Ancient Jerusalem",
+        "text": "Out of the depths I cry to you, O Lord; Lord, hear my voice. Let your ears be attentive to my cry for mercy.",
+        "theme": "Crying out for mercy",
+        "triggeringKeywords": [
+          "קרקע פורה לתפילות",
+          "מועקה גדולה"
+        ],
+        "type": "religious scripture"
+      }
+    ],
     "id": 1755686186877,
-    "savedAt": "2025-08-20T10:37:22.815Z"
+    "savedAt": "2025-08-20T11:39:25.823Z",
+    "internalEcho": {
+      "connection": "This entry echoes your past writing, showing a persistent plea to God for relief and guidance amidst a heavy heart, when feeling unable to bear the weight of internal struggle.",
+      "keyQuote": "אלוהים, השם, אבא - אתה בוודאי דואג לי. אבל מה קורה ללב שלי? ולמה ככה? לפעמים נדמה לי שאינני יכולה לשאת עוד.",
+      "pastEntryId": 1755688688396
+    }
   },
   {
     "title": ".24.02",
-    "content": "ספיר סבורה שכל מה שניתן להגיד כבר נאמר, לכן על מנת לומר דבר מה בעל חשיבות כל שצריך לעשות הוא לנסח מחדש. אז היא אומרת: ׳יומני היקר; מוריסי היה אבא שלי, האמטיוי היה אמא שלי. בשנת 92 הותירו אותי מולו ולא בדקו מה קורה עם זה במשך חמש עשרה שנה. כבנה הנטוש של מארי אנטואנט, גם אני גדלתי פרא׳. ספיר זורקת שמות. היא מרגישה חיבור עז לעונות השנה, ומחויבות לאביב. היא תוהה אם תפרח בזמן. היא תוהה אם בתור ביתו של מוריסי גם היא היורשת של ביישנות, גסה בצורה נפשעת.\n",
+    "content": "ספיר סבורה שכל מה שניתן להגיד כבר נאמר, לכן על מנת לומר דבר מה בעל חשיבות כל שצריך לעשות הוא לנסח מחדש. אז היא אומרת: ׳יומני היקר; מוריסי היה אבא שלי, האמטיוי היה אמא שלי. בשנת 92 הותירו אותי מולו ולא בדקו מה קורה עם זה במשך חמש עשרה שנה. כבנה הנטוש של מארי אנטואנט, גם אני גדלתי פרא׳. ספיר זורקת שמות. היא מרגישה חיבור עז לעונות השנה, ומחויבות לאביב. היא תוהה אם תפרח בזמן. היא תוהה אם בתור ביתו של מוריסי גם היא היורשת של ביישנות, גסה בצורה נפשעת.\n ",
     "date": "2020-02-24",
     "isHebrew": true,
     "echoes": [
       {
-        "author": "Ecclesiastes (traditional author, Solomon)",
-        "context": "This ancient wisdom text expresses a profound sense of the cyclical nature of existence, where human actions and experiences are endlessly repeated.",
-        "era": "c. 10th-3rd Century BCE",
-        "icon": "🔄",
-        "id": 1755406987732,
-        "location": "Ancient Israel (Jerusalem)",
-        "text": "What has been will be again, what has been done will be done again; there is nothing new under the sun.",
-        "theme": "repetition",
-        "type": "scripture"
+        "author": "Lucius Annaeus Seneca",
+        "connection": "Your reflection that all has been said and importance lies in rephrasing echoes Seneca's stoic view that ancient wisdom is perpetually relevant and can be re-expressed to resonate anew.",
+        "context": "A prominent Roman Stoic philosopher, Seneca often emphasized that true wisdom comes from internalizing and applying existing knowledge rather than always seeking novelty, and that old truths gain new power through re-examination.",
+        "era": "1st Century CE",
+        "icon": "📚",
+        "id": 1755689805501,
+        "location": "Ancient Rome",
+        "text": "What has been said by one may be repeated by another, but it does not follow that what is repeated is less useful.",
+        "theme": "Wisdom in rephrasing",
+        "triggeringKeywords": [
+          "כל מה שניתן להגיד כבר נאמר",
+          "לנסח מחדש"
+        ],
+        "type": "philosophy"
       },
       {
-        "author": "Louis XVII (via historical event)",
-        "context": "The son of Louis XVI and Marie Antoinette, he was separated from his family during the French Revolution and died in prison due to neglect and harsh conditions, his fate a symbol of an innocent life 'grown wild' by abandonment.",
-        "era": "Late 18th Century",
-        "icon": "🥀",
-        "id": 1755406987733,
-        "location": "Paris, France",
-        "text": "Abandoned and left to grow wild in the Temple prison, a tragic consequence of the revolution.",
-        "theme": "neglect",
-        "type": "event"
+        "author": "Jean-Jacques Rousseau",
+        "connection": "Your feeling of 'growing wild' like Marie Antoinette's abandoned son resonates with Rousseau's philosophical advocacy for a natural, unconstrained development, contrasting with societal norms, reflecting a search for authentic identity outside conventional structures.",
+        "context": "An influential Enlightenment philosopher, Rousseau critiqued traditional education and society, advocating for an upbringing that allowed individuals to develop naturally, guided by their innate goodness rather than corrupting social conventions.",
+        "era": "18th Century",
+        "icon": "🌳",
+        "id": 1755689805502,
+        "location": "Geneva / France",
+        "text": "Man is born free, and everywhere he is in chains.",
+        "theme": "Freedom in wild growth",
+        "triggeringKeywords": [
+          "כבנה הנטוש של מארי אנטואנט",
+          "גדלתי פרא"
+        ],
+        "type": "philosophy"
       },
       {
-        "author": "Mary Shelley",
-        "context": "As the daughter of radical intellectuals Mary Wollstonecraft and William Godwin, Mary Shelley's identity was profoundly shaped by her unconventional upbringing and the intellectual legacy she inherited and reinterpreted, much like Sapir's self-identification through cultural figures.",
-        "era": "Early 19th Century",
-        "icon": "🧬",
-        "id": 1755406987734,
-        "location": "England",
-        "text": "The offspring of philosophical and literary giants, crafting narratives of creation and identity.",
-        "theme": "identity",
-        "type": "biography"
-      },
-      {
-        "author": "Ecclesiastes (traditional author, Solomon)",
-        "context": "This verse reflects on the natural rhythm of life, emphasizing that there is an appointed time for everything, echoing Sapir's contemplation of 'blooming in time' with the seasons.",
-        "era": "c. 10th-3rd Century BCE",
-        "icon": "⏳",
-        "id": 1755406987735,
-        "location": "Ancient Israel (Jerusalem)",
-        "text": "To everything there is a season, and a time to every purpose under the heaven.",
-        "theme": "growth",
-        "type": "scripture"
-      },
-      {
-        "author": "Walt Whitman",
-        "context": "In 'Song of Myself,' Whitman embraces a multifaceted and often contradictory self, a 'multitude' of experiences and traits, resonating with Sapir's query about inheriting conflicting qualities like 'shyness, terribly crude.'",
-        "era": "Mid-19th Century",
-        "icon": "🎭",
-        "id": 1755406987736,
-        "location": "USA",
-        "text": "Do I contradict myself? Very well then I contradict myself, (I am large, I contain multitudes.)",
-        "theme": "identity",
+        "author": "Matsuo Bashō",
+        "connection": "Your contemplation of blooming in time, tied to the seasons, finds an echo in Bashō's haiku, which often captures the subtle, perfect unfolding of nature, suggesting that growth has its own inherent rhythm.",
+        "context": "The most famous Edo period poet, Bashō elevated haiku to a serious art form, often composing poems that distilled moments of profound natural observation and introspection into a few syllables, emphasizing tranquility and the passage of time.",
+        "era": "17th Century",
+        "icon": "🐸",
+        "id": 1755689805503,
+        "location": "Japan",
+        "text": "The old pond / A frog jumps in / The sound of water.",
+        "theme": "Nature's perfect timing",
+        "triggeringKeywords": [
+          "חיבור עז לעונות השנה",
+          "מחויבות לאביב",
+          "תפרח בזמן"
+        ],
         "type": "poetry"
       },
       {
-        "author": "Pablo Picasso",
-        "context": "This famous quote, often attributed to Picasso, encapsulates the idea that originality in art and thought often comes not from pure invention, but from creatively reinterpreting, 'stealing' from, and re-contextualizing existing ideas, aligning with Sapir's belief in rephrasing as the path to significance.",
+        "author": "Søren Kierkegaard",
+        "connection": "Your self-description as inheriting 'shyness' yet being 'grossly offensive' mirrors Kierkegaard's exploration of the individual's struggle to find authentic selfhood, often by confronting their perceived flaws or anxieties rather than conforming.",
+        "context": "A Danish philosopher often considered the first existentialist, Kierkegaard explored the complexities of individual existence, freedom, and the subjective nature of truth, frequently through intense self-reflection and an analysis of human despair and anxiety.",
+        "era": "19th Century",
+        "icon": "🤔",
+        "id": 1755689805504,
+        "location": "Copenhagen, Denmark",
+        "text": "To dare is to lose one's footing for a moment. To not dare is to lose oneself.",
+        "theme": "Authenticity through daring",
+        "triggeringKeywords": [
+          "ביישנות",
+          "גסה בצורה נפשעת",
+          "היורשת של ביישנות"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "Marshall McLuhan",
+        "connection": "Your identification with Morrissey and MTV as 'parents' resonates with McLuhan's theory that the medium itself profoundly shapes our experience and identity, highlighting how cultural channels can become formative influences.",
+        "context": "A visionary Canadian philosopher of communication theory, McLuhan famously asserted that 'the medium is the message,' arguing that the form of media (like television or music) is more impactful than its content in shaping human thought and society.",
         "era": "20th Century",
-        "icon": "🎨",
-        "id": 1755406987737,
-        "location": "France",
-        "text": "Good artists copy, great artists steal.",
-        "theme": "originality",
-        "type": "quote"
+        "icon": "📺",
+        "id": 1755689805505,
+        "location": "Toronto, Canada",
+        "text": "The medium is the message.",
+        "theme": "Media shaping identity",
+        "triggeringKeywords": [
+          "מוריסי היה אבא שלי",
+          "האמטיוי היה אמא שלי"
+        ],
+        "type": "theory"
+      },
+      {
+        "author": "Jorge Luis Borges",
+        "connection": "Your observation that all has been said and the importance lies in rephrasing aligns with Borges's playful yet profound ideas about how true originality might be found not in creating anew, but in re-interpreting and re-contextualizing existing works.",
+        "context": "An Argentine short-story writer, essayist, poet, and translator, Borges is celebrated for his philosophical and fantastical tales that often explore themes of identity, reality, infinity, and the nature of literature itself, frequently questioning the very concept of originality.",
+        "era": "20th Century",
+        "icon": "📖",
+        "id": 1755689805506,
+        "location": "Buenos Aires, Argentina",
+        "text": "Originality is an impossibility, a foolish dream.",
+        "theme": "Originality in reinterpretation",
+        "triggeringKeywords": [
+          "כל מה שניתן להגיד כבר נאמר",
+          "לנסח מחדש"
+        ],
+        "type": "literature"
       }
     ],
     "id": 1755406432810,
-    "savedAt": "2025-08-20T10:35:41.575Z"
+    "savedAt": "2025-08-20T11:38:28.774Z",
+    "internalEcho": {
+      "connection": "This entry echoes your contemplation on identity and inherited traits, particularly through the lens of a parental figure's influence and the yearning for timely personal growth amidst vulnerability.",
+      "keyQuote": "אלוהים, השם, אבא - אתה בוודאי דואג לי. אבל מה קורה ללב שלי? ... צריך לתת לו לייצר איזה עלה או שניים בטרם יפול קורבן שוב...",
+      "pastEntryId": 1755688688396
+    }
   },
   {
     "title": "25.02",
