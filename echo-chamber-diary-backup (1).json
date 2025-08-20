@@ -1,0 +1,154 @@
+[
+  {
+    "title": "25.02",
+    "content": "על אף האמונה המוצקה בברכותיי,  מצאתי את עצמי נאלצת לספור אותן. חלמתי שאני נכשלת בכל האוניברסיטאות. חלמתי שאני בונה קופסאות קטנות, קטנטנות, פיציות ממש מנייר a4. כל הדיבורים האלו על אלוהים, וחוק, ועוני, רוקנו אותי ממש מתוכן. יצא לי המילוי כמו מכרית ישנה, ונשאר לשכב שם בשמש. בחלום עברתי דרך הגנים למוסד היחיד שניאות לקבלני: המכללה לאדריכלות נוף.\n",
+    "date": "2025-08-17",
+    "isHebrew": true,
+    "echoes": [
+      {
+        "author": "Ecclesiastes",
+        "context": "This ancient biblical passage expresses a cyclical view of history and human experience, suggesting that fundamental truths and events recur, making reinterpretation a key to new insight.",
+        "era": "c. 3rd century BCE",
+        "icon": "♾️",
+        "id": 1755406452074,
+        "location": "Ancient Israel",
+        "text": "What has been will be again, what has been done will be done again; there is nothing new under the sun.",
+        "theme": "repetition",
+        "type": "wisdom literature"
+      },
+      {
+        "author": "Charles Dickens",
+        "context": "The famous plea from the orphan Oliver Twist, embodying the desperate situation of neglected children in Victorian England.",
+        "era": "1838",
+        "icon": "🏚️",
+        "id": 1755406452075,
+        "location": "England",
+        "text": "Please, sir, I want some more.",
+        "theme": "neglect",
+        "type": "novel"
+      },
+      {
+        "author": "Walt Whitman",
+        "context": "Whitman's celebration of the individual self, acknowledging and embracing the vastness and often contradictory nature of human experience and identity.",
+        "era": "1855",
+        "icon": "🎭",
+        "id": 1755406452076,
+        "location": "United States",
+        "text": "Do I contradict myself? Very well then I contradict myself, (I am large, I contain multitudes.)",
+        "theme": "identity",
+        "type": "poetry"
+      },
+      {
+        "author": "Rainer Maria Rilke",
+        "context": "Rilke advises patience and introspection for an aspiring poet, suggesting that answers to deep questions emerge through living experience, akin to a natural blooming process.",
+        "era": "1903",
+        "icon": "🌱",
+        "id": 1755406452077,
+        "location": "Germany",
+        "text": "Live the questions now. Perhaps you will then gradually, without noticing it, live along some distant day into the answer.",
+        "theme": "growth",
+        "type": "letters"
+      },
+      {
+        "author": "T.S. Eliot",
+        "context": "Eliot argues that true originality isn't a rejection of the past, but a re-evaluation and re-ordering of tradition through the new work.",
+        "era": "1919",
+        "icon": "📜",
+        "id": 1755406452078,
+        "location": "England",
+        "text": "The existing monuments form an ideal order among themselves, which is modified by the introduction of the new (the really new) work of art among them.",
+        "theme": "originality",
+        "type": "essay"
+      },
+      {
+        "author": "Marshall McLuhan",
+        "context": "McLuhan theorized that the form of a medium embeds itself in the message, altering how the message is perceived and understood, fundamentally shaping society.",
+        "era": "1964",
+        "icon": "📺",
+        "id": 1755406452079,
+        "location": "Canada",
+        "text": "The medium is the message.",
+        "theme": "media",
+        "type": "theory"
+      }
+    ],
+    "id": 1755406457561,
+    "savedAt": "2025-08-17T04:54:17.561Z"
+  },
+  {
+    "title": ".24.02",
+    "content": "ספיר סבורה שכל מה שניתן להגיד כבר נאמר, לכן על מנת לומר דבר מה בעל חשיבות כל שצריך לעשות הוא לנסח מחדש. אז היא אומרת: ׳יומני היקר; מוריסי היה אבא שלי, האמטיוי היה אמא שלי. בשנת 92 הותירו אותי מולו ולא בדקו מה קורה עם זה במשך חמש עשרה שנה. כבנה הנטוש של מארי אנטואנט, גם אני גדלתי פרא׳. ספיר זורקת שמות. היא מרגישה חיבור עז לעונות השנה, ומחויבות לאביב. היא תוהה אם תפרח בזמן. היא תוהה אם בתור ביתו של מוריסי גם היא היורשת של ביישנות, גסה בצורה נפשעת.\n",
+    "date": "2025-08-17",
+    "isHebrew": true,
+    "echoes": [
+      {
+        "author": "Ecclesiastes (traditional author, Solomon)",
+        "context": "This ancient wisdom text expresses a profound sense of the cyclical nature of existence, where human actions and experiences are endlessly repeated.",
+        "era": "c. 10th-3rd Century BCE",
+        "icon": "🔄",
+        "id": 1755406987732,
+        "location": "Ancient Israel (Jerusalem)",
+        "text": "What has been will be again, what has been done will be done again; there is nothing new under the sun.",
+        "theme": "repetition",
+        "type": "scripture"
+      },
+      {
+        "author": "Louis XVII (via historical event)",
+        "context": "The son of Louis XVI and Marie Antoinette, he was separated from his family during the French Revolution and died in prison due to neglect and harsh conditions, his fate a symbol of an innocent life 'grown wild' by abandonment.",
+        "era": "Late 18th Century",
+        "icon": "🥀",
+        "id": 1755406987733,
+        "location": "Paris, France",
+        "text": "Abandoned and left to grow wild in the Temple prison, a tragic consequence of the revolution.",
+        "theme": "neglect",
+        "type": "event"
+      },
+      {
+        "author": "Mary Shelley",
+        "context": "As the daughter of radical intellectuals Mary Wollstonecraft and William Godwin, Mary Shelley's identity was profoundly shaped by her unconventional upbringing and the intellectual legacy she inherited and reinterpreted, much like Sapir's self-identification through cultural figures.",
+        "era": "Early 19th Century",
+        "icon": "🧬",
+        "id": 1755406987734,
+        "location": "England",
+        "text": "The offspring of philosophical and literary giants, crafting narratives of creation and identity.",
+        "theme": "identity",
+        "type": "biography"
+      },
+      {
+        "author": "Ecclesiastes (traditional author, Solomon)",
+        "context": "This verse reflects on the natural rhythm of life, emphasizing that there is an appointed time for everything, echoing Sapir's contemplation of 'blooming in time' with the seasons.",
+        "era": "c. 10th-3rd Century BCE",
+        "icon": "⏳",
+        "id": 1755406987735,
+        "location": "Ancient Israel (Jerusalem)",
+        "text": "To everything there is a season, and a time to every purpose under the heaven.",
+        "theme": "growth",
+        "type": "scripture"
+      },
+      {
+        "author": "Walt Whitman",
+        "context": "In 'Song of Myself,' Whitman embraces a multifaceted and often contradictory self, a 'multitude' of experiences and traits, resonating with Sapir's query about inheriting conflicting qualities like 'shyness, terribly crude.'",
+        "era": "Mid-19th Century",
+        "icon": "🎭",
+        "id": 1755406987736,
+        "location": "USA",
+        "text": "Do I contradict myself? Very well then I contradict myself, (I am large, I contain multitudes.)",
+        "theme": "identity",
+        "type": "poetry"
+      },
+      {
+        "author": "Pablo Picasso",
+        "context": "This famous quote, often attributed to Picasso, encapsulates the idea that originality in art and thought often comes not from pure invention, but from creatively reinterpreting, 'stealing' from, and re-contextualizing existing ideas, aligning with Sapir's belief in rephrasing as the path to significance.",
+        "era": "20th Century",
+        "icon": "🎨",
+        "id": 1755406987737,
+        "location": "France",
+        "text": "Good artists copy, great artists steal.",
+        "theme": "originality",
+        "type": "quote"
+      }
+    ],
+    "id": 1755406432810,
+    "savedAt": "2025-08-17T05:03:23.975Z"
+  }
+]
