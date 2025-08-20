@@ -1,4 +1,3 @@
-
 export interface HistoricalEcho {
   id: number;
   type: string;
@@ -21,7 +20,9 @@ export interface DiaryEntry {
   echoes: HistoricalEcho[];
 }
 
-export interface GitHubUser {
-  name: string;
-  avatarUrl: string;
+export interface GithubSyncConfig {
+  username: string;
+  repo: string;
+  filePath: string;
+  token: string;
 }

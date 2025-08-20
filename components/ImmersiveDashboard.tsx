@@ -1,10 +1,10 @@
-
 import React, { useMemo } from 'react';
 import type { DiaryEntry, HistoricalEcho } from '../types';
 import { FileText, Star, Upload, Download, BarChart3, BookOpen, CloudUpload, CloudDownload } from './Icons';
 import { StatCard } from './StatCard';
 import { TimelineEntryCard } from './TimelineEntryCard';
 import { TimelineEchoCard } from './TimelineEchoCard';
+import LoadingSpinner from './LoadingSpinner';
 
 interface DashboardProps {
   entries: DiaryEntry[];
@@ -13,14 +13,28 @@ interface DashboardProps {
   onDeleteEntry: (id: number) => void;
   onImportClick: () => void;
   onExportClick: () => void;
-  isAuthenticated: boolean;
+  isGithubConfigured: boolean;
+  onSyncFromGithub: () => void;
+  onSyncToGithub: () => void;
+  isSyncing: boolean;
 }
 
 type TimelineItem = 
     | { type: 'entry'; date: Date; data: DiaryEntry }
     | { type: 'echo'; date: Date; data: HistoricalEcho & { parentEntryTitle: string } };
 
-export const ImmersiveDashboard = ({ entries, isHebrew, onLoadEntry, onDeleteEntry, onImportClick, onExportClick, isAuthenticated }: DashboardProps) => {
+export const ImmersiveDashboard = ({ 
+    entries, 
+    isHebrew, 
+    onLoadEntry, 
+    onDeleteEntry, 
+    onImportClick, 
+    onExportClick, 
+    isGithubConfigured,
+    onSyncFromGithub,
+    onSyncToGithub,
+    isSyncing,
+}: DashboardProps) => {
 
     const stats = useMemo(() => {
         const totalEntries = entries.length;
@@ -84,11 +98,16 @@ export const ImmersiveDashboard = ({ entries, isHebrew, onLoadEntry, onDeleteEnt
                         )}
                     </div>
                     <div className="mt-6 pt-6 border-t border-amber-200 flex flex-col sm:flex-row lg:flex-col gap-3">
-                        {isAuthenticated ? (
-                             <>
-                                <button onClick={() => alert('Syncing from GitHub...')} className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-800 text-white rounded-lg transition-colors shadow-sm"><CloudDownload className="w-4 h-4" />Sync from GitHub</button>
-                                <button onClick={() => alert('Syncing to GitHub...')} disabled={entries.length === 0} className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-800 text-white rounded-lg transition-colors shadow-sm disabled:bg-gray-400"><CloudUpload className="w-4 h-4" />Sync to GitHub</button>
-                            </>
+                        {isGithubConfigured ? (
+                             <div className="relative">
+                                {isSyncing && (
+                                    <div className="absolute inset-0 bg-white/50 flex items-center justify-center rounded-lg">
+                                        <div className="w-6 h-6 border-2 border-amber-300 border-t-amber-600 rounded-full animate-spin"></div>
+                                    </div>
+                                )}
+                                <button onClick={onSyncFromGithub} disabled={isSyncing} className="w-full flex items-center justify-center gap-2 px-4 py-2 mb-3 bg-gray-700 hover:bg-gray-800 text-white rounded-lg transition-colors shadow-sm disabled:bg-gray-400 disabled:cursor-wait"><CloudDownload className="w-4 h-4" />Sync from GitHub</button>
+                                <button onClick={onSyncToGithub} disabled={entries.length === 0 || isSyncing} className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-800 text-white rounded-lg transition-colors shadow-sm disabled:bg-gray-400 disabled:cursor-wait"><CloudUpload className="w-4 h-4" />Sync to GitHub</button>
+                            </div>
                         ) : (
                              <>
                                 <button onClick={onImportClick} className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors shadow-sm"><Upload className="w-4 h-4" />{isHebrew ? 'ייבוא' : 'Import'}</button>

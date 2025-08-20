@@ -1,26 +1,21 @@
 import React, { useState, useCallback } from 'react';
 import type { DiaryEntry } from './types';
 import { useDiary } from './hooks/useDiary';
-import { useAuth } from './hooks/useAuth';
-import { Feather, Plus, Save, Search, Edit, LayoutDashboard, GitHub } from './components/Icons';
+import { useGithubSync } from './hooks/useGithubSync';
+import { Feather, Plus, Save, Search, Edit, LayoutDashboard, Settings } from './components/Icons';
 import { ImportModal } from './components/ImportModal';
 import { ImmersiveDashboard } from './components/ImmersiveDashboard';
 import { EditorView } from './components/EditorView';
-import { AuthCallback } from './components/AuthCallback';
+import { SettingsModal } from './components/SettingsModal';
 
 type View = 'editor' | 'dashboard';
 
 const App = () => {
-  const path = window.location.pathname;
-
-  if (path === '/auth/callback') {
-    return <AuthCallback />;
-  }
-
   const [currentView, setCurrentView] = useState<View>('editor');
   const [showImportModal, setShowImportModal] = useState(false);
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
   
-  const { user, login, logout, isAuthenticated } = useAuth();
+  const { config, saveConfig, clearConfig, isConfigured } = useGithubSync();
 
   const {
     diaryEntry,
@@ -29,6 +24,7 @@ const App = () => {
     handleDiaryChange,
     historicalEchoes,
     isLoading,
+    isSyncing,
     error,
     customDate,
     setCustomDate,
@@ -41,8 +37,10 @@ const App = () => {
     createNewEntry,
     loadEntry,
     deleteEntry,
-    isSaved
-  } = useDiary();
+    isSaved,
+    syncFromGithub,
+    syncToGithub,
+  } = useDiary(config);
 
   const handleLoadEntry = useCallback((entry: DiaryEntry) => {
       loadEntry(entry);
@@ -86,29 +84,18 @@ const App = () => {
       <div className="max-w-7xl mx-auto">
         <header className="mb-8">
             <div className="flex justify-between items-center mb-4">
-                <div></div>
-                <div className="text-center">
+                <div className="w-1/3"></div>
+                <div className="w-1/3 text-center">
                     <div className="flex items-center justify-center gap-3">
                         <Feather className="w-8 h-8 text-amber-600" />
                         <h1 className="text-4xl font-serif text-amber-900">{isHebrewText ? 'יומן הדי העבר' : 'Echo Chamber Diary'}</h1>
                         <Feather className="w-8 h-8 text-amber-600 scale-x-[-1]" />
                     </div>
                 </div>
-                <div>
-                     {isAuthenticated ? (
-                        <div className="flex items-center gap-3">
-                            <img src={user?.avatarUrl} alt={user?.name} className="w-10 h-10 rounded-full border-2 border-amber-300" />
-                            <div>
-                                <p className="font-semibold text-sm text-stone-700">{user?.name}</p>
-                                <button onClick={logout} className="text-xs text-red-600 hover:underline">Log out</button>
-                            </div>
-                        </div>
-                    ) : (
-                        <button onClick={login} className="flex items-center gap-2 px-4 py-2 bg-stone-800 hover:bg-stone-900 text-white rounded-lg transition-colors shadow-md">
-                            <GitHub className="w-4 h-4" />
-                            Sign in with GitHub
-                        </button>
-                    )}
+                <div className="w-1/3 flex justify-end">
+                     <button onClick={() => setShowSettingsModal(true)} className="p-2 hover:bg-amber-100 rounded-full transition-colors" aria-label="Open sync settings">
+                        <Settings className="w-6 h-6 text-amber-700" />
+                    </button>
                 </div>
             </div>
           <div className="flex items-center justify-center gap-4 mb-4 flex-wrap">
@@ -138,6 +125,16 @@ const App = () => {
             />
         )}
 
+        {showSettingsModal && (
+            <SettingsModal
+                isOpen={showSettingsModal}
+                onClose={() => setShowSettingsModal(false)}
+                onSave={saveConfig}
+                onClear={clearConfig}
+                initialConfig={config}
+            />
+        )}
+
         {currentView === 'editor' ? (
           <EditorView
             entryTitle={entryTitle}
@@ -159,7 +156,10 @@ const App = () => {
                 onDeleteEntry={deleteEntry}
                 onImportClick={() => setShowImportModal(true)}
                 onExportClick={handleExport}
-                isAuthenticated={isAuthenticated}
+                isGithubConfigured={isConfigured}
+                onSyncFromGithub={syncFromGithub}
+                onSyncToGithub={syncToGithub}
+                isSyncing={isSyncing}
             />
         )}
       </div>
