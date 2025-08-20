@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import type { DiaryEntry } from './types';
 import { useDiary } from './hooks/useDiary';
@@ -7,10 +6,17 @@ import { Feather, Plus, Save, Search, Edit, LayoutDashboard, GitHub } from './co
 import { ImportModal } from './components/ImportModal';
 import { ImmersiveDashboard } from './components/ImmersiveDashboard';
 import { EditorView } from './components/EditorView';
+import { AuthCallback } from './components/AuthCallback';
 
 type View = 'editor' | 'dashboard';
 
 const App = () => {
+  const path = window.location.pathname;
+
+  if (path === '/auth/callback') {
+    return <AuthCallback />;
+  }
+
   const [currentView, setCurrentView] = useState<View>('editor');
   const [showImportModal, setShowImportModal] = useState(false);
   
