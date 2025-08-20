@@ -164,6 +164,115 @@
     "savedAt": "2025-08-20T10:45:21.848Z"
   },
   {
+    "title": "24.2.23",
+    "content": "הכל\nבסדר.\nמובן שחלק מהדברים יותר בסדר וחלקם דרסטית פחות. אבל בממוצע - הכל בסדר.\nאני קללה. אני רווקה בת שלושים עם חתולה. אין זיווג הגון בנמצא עבורי. אנשים שקדו על דברים שונים וגם אני; בניתי את העולם הפנימי שלי כמו חוות נמלים. רוצים לראות? אפשר להראות? יש איזשהי תועלת בלראות? אני לא מרגישה ככה יותר. אני מרגישה אחרת. אני מרגישה את השמש על הלחי לפעמים, זה מרגיש טוב ונכון, אנסה להפנות אליה את כל הפרצוף כפי שעושה הסינגוניום הורוד שלי.",
+    "date": "2023-02-24",
+    "isHebrew": true,
+    "echoes": [
+      {
+        "author": "Ralph Waldo Emerson",
+        "connection": "This echoes your resolve to cultivate your unique inner world, reminding you that true strength comes from trusting your own path and not seeking external validation for your deepest self.",
+        "context": "Emerson's essay advocates for individualism and self-reliance, encouraging people to trust their own thoughts and intuitions rather than conforming to societal pressures.",
+        "era": "19th Century America",
+        "icon": "🌳",
+        "id": 1755688957570,
+        "location": "Concord, Massachusetts, USA",
+        "text": "\"Trust thyself: every heart vibrates to that iron string.\" - from Self-Reliance.",
+        "theme": "Trusting inner wisdom",
+        "triggeringKeywords": [
+          "built my inner world",
+          "Is there any use in showing?"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "Mary Wollstonecraft",
+        "connection": "Your feeling of being \"a curse\" as a single woman resonates with historical critiques of societal pressures that often confined women's worth to their marital status, a theme Wollstonecraft passionately challenged.",
+        "context": "Wollstonecraft argued for women's education and rationality, criticizing the societal expectation for women to be solely focused on marriage and domesticity.",
+        "era": "Late 18th - Early 19th Century Europe",
+        "icon": "📜",
+        "id": 1755688957571,
+        "location": "London, England",
+        "text": "\"It is time to effect a revolution in female manners—time to restore to them their lost dignity—and make them, as a part of the human species, labour by improving their reason to become more excellent.\"",
+        "theme": "Challenging societal norms",
+        "triggeringKeywords": [
+          "I am a curse",
+          "single woman",
+          "no suitable match"
+        ],
+        "type": "social commentary"
+      },
+      {
+        "author": "Matsuo Bashō",
+        "connection": "Your turning towards the sun on your cheek mirrors the timeless wisdom found in Bashō's haiku, highlighting how profound peace and contentment can be found in the quiet, simple moments of nature.",
+        "context": "A classic haiku by Bashō, embodying the Zen aesthetic of finding profound beauty and tranquility in simple, transient moments of nature.",
+        "era": "17th Century Japan",
+        "icon": "🐸",
+        "id": 1755688957572,
+        "location": "Japan",
+        "text": "\"Old pond... a frog jumps in... sound of water.\"",
+        "theme": "Simplicity's profound beauty",
+        "triggeringKeywords": [
+          "sun on my cheek",
+          "feels good and right"
+        ],
+        "type": "poetry"
+      },
+      {
+        "author": "Marcus Aurelius",
+        "connection": "Your reflection that 'everything is okay' despite varying degrees of 'okayness' aligns with the Stoic practice of acknowledging life's challenges while asserting control over one's internal response to them.",
+        "context": "Marcus Aurelius's Meditations are a series of personal writings on Stoic philosophy, emphasizing the importance of controlling one's perceptions and maintaining inner tranquility amidst external chaos.",
+        "era": "2nd Century Roman Empire",
+        "icon": "🏛️",
+        "id": 1755688957573,
+        "location": "Roman Empire",
+        "text": "\"If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.\"",
+        "theme": "Mastering inner peace",
+        "triggeringKeywords": [
+          "Everything is okay",
+          "drastically less so",
+          "on average"
+        ],
+        "type": "philosophy"
+      },
+      {
+        "author": "Rainer Maria Rilke",
+        "connection": "Your declaration of feeling 'different' and the intention to turn towards the sun echoes Rilke's powerful call for personal transformation, a recognition that growth demands an active shift in one's path.",
+        "context": "This famous concluding line from Rilke's poem is an imperative to self-transformation, suggesting that encountering profound beauty or truth demands a fundamental change in one's existence.",
+        "era": "Early 20th Century Germany/France",
+        "icon": "🦋",
+        "id": 1755688957574,
+        "location": "Paris, France",
+        "text": "\"You must change your life.\" - from Archaic Torso of Apollo.",
+        "theme": "Imperative for change",
+        "triggeringKeywords": [
+          "I don't feel like that anymore",
+          "I feel different",
+          "turn my whole face towards it"
+        ],
+        "type": "poetry"
+      },
+      {
+        "author": "Henry David Thoreau",
+        "connection": "Your meticulous building of an 'inner world like an ant farm' resonates with Thoreau's deliberate pursuit of a life stripped down to its essentials, focused on rich internal experience rather than external accumulation.",
+        "context": "Thoreau's account of living simply in a cabin by Walden Pond, advocating for self-sufficiency, introspection, and a deliberate engagement with life, often by cultivating one's inner world away from societal distractions.",
+        "era": "19th Century America",
+        "icon": "🌲",
+        "id": 1755688957575,
+        "location": "Concord, Massachusetts, USA",
+        "text": "\"I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.\" - from Walden.",
+        "theme": "Deliberate self-cultivation",
+        "triggeringKeywords": [
+          "built my inner world",
+          "ant farm"
+        ],
+        "type": "memoir"
+      }
+    ],
+    "id": 1755688931696,
+    "savedAt": "2025-08-20T11:23:03.033Z"
+  },
+  {
     "title": "25.01.23",
     "content": "אם זה משמח אותך. נראה שזה הפסיק לשמח אותך.\nאני יודעת שאני לא בת יחידה, אבל אני מרגישה את עצמי עומדת בפינה זה כבר זמן מה. אלוהים, השם, אבא - אתה בוודאי דואג לי. אבל מה קורה ללב שלי? ולמה ככה? לפעמים נדמה לי שאינני יכולה לשאת עוד. הלב שלי מלא והוא אומנם מעוצב על מנת שיוכל להתרוקן ולהתמלא שוב עד אין קץ, אבל צריך להיות קץ, לא קץ כל הקיצים, אולי ליתר דיוק הפוגה קלה, צריכה להיות איזשהי בריזה קלה ורכה, צריך לתת לו לייצר איזה עלה או שניים בטרם יפול קורבן שוב לחתולה שמנה וימצא עצמו הפוך על הרצפה",
     "date": "2023-01-25",
